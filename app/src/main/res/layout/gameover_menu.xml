@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_gravity="center"
+        android:textColor="@color/lightBlue"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/gameover"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/scoreBack"
+        android:background="@color/darkerBlue"
+        android:alpha="0.7"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textColor="@color/lightBlue"
+            android:textSize="30sp"
+            android:paddingBottom="20dp"
+            android:id="@+id/score"
+            android:text="@string/score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/lightBlue"
+            android:paddingTop="60dp"
+            android:textSize="15sp"
+            android:id="@+id/highscore"
+            android:text="@string/highscore"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="10dp"
+            android:id="@+id/shadowScore"
+            android:alpha="1"
+            android:contentDescription="@string/shadowScore"
+            android:background="@color/darkerBlue"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/rate"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/round_corners_blue"
+            android:orientation="vertical"
+            android:alpha="0.7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:textColor="@color/lightBlue"
+                android:textSize="13sp"
+                android:alpha="1"
+                android:text="@string/rate"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:contentDescription="@string/rateImage"
+                android:alpha="1"
+                android:src="@drawable/stars_dark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mute"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/round_corners_blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:alpha="0.7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/muteText"
+                android:paddingTop="10dp"
+                android:textColor="@color/lightBlue"
+                android:textSize="13sp"
+                android:alpha="1"
+                android:text="@string/mute"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:id="@+id/muteImage"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:contentDescription="@string/muteImage"
+                android:alpha="1"
+                android:src="@drawable/mute"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skins"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/round_corners_blue"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:alpha="0.7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="1"
+                android:paddingTop="10dp"
+                android:text="@string/skins"
+                android:textColor="@color/lightBlue"
+                android:textSize="9sp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:contentDescription="@string/skinImage"
+                android:alpha="1"
+                android:src="@mipmap/alien_hdpi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/round_corners_blue"
+            android:orientation="vertical"
+            android:alpha="0.7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="1"
+                android:paddingTop="10dp"
+                android:text="@string/home"
+                android:textColor="@color/lightBlue"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:contentDescription="@string/homeImage"
+                android:alpha="1"
+                android:src="@drawable/to_home"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:id="@+id/restart"
+        android:orientation="horizontal"
+        android:background="@drawable/round_corners_blue"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.7">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/restartImage"
+            android:alpha="1"
+            android:src="@drawable/repeat_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:alpha="1"
+            android:text="@string/restart"
+            android:textColor="@color/lightBlue"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/achievment"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/round_corners_blue"
+                    android:orientation="vertical"
+                    android:alpha="0.7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="8sp"
+                        android:alpha="1"
+                        android:text="@string/achievementText"/>
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/rateImage"
+                        android:alpha="1"
+                        android:src="@drawable/games_achievements_vector"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scoreGameOver"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/round_corners_blue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:alpha="0.7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/scoreText"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="13sp"
+                        android:alpha="1"
+                        android:text="@string/scoreText"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/scoreButton"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/scoreImage"
+                        android:alpha="1"
+                        android:src="@drawable/games_leaderboards_white_vector"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/noAds"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/round_corners_blue"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:alpha="0.7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha="1"
+                        android:paddingTop="10dp"
+                        android:text="@string/noAdsText"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/noAdsImage"
+                        android:alpha="1"
+                        android:src="@drawable/hand_vector"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/round_corners_blue"
+                    android:orientation="vertical"
+                    android:alpha="0.7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha="1"
+                        android:paddingTop="10dp"
+                        android:text="@string/shareText"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/shareImage"
+                        android:alpha="1"
+                        android:src="@drawable/share_vector"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

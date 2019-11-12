@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="814038ac-42ac-493c-9795-a83bcc8acfec" name="Default" comment="--M" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/blame/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/check-manifest/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/prebuild/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/splits-support/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/tmp/" />
+    <ignored path="$PROJECT_DIR$/app/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/app/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/classes/debug/" />
+    <ignored path="$PROJECT_DIR$/app/build/intermediates/classes/test/debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RF8M32PL3QM" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="AtomicOrbital" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="other" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AtomicOrbital" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/math/Rectangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/CoordinateSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Vector2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Vector2DPolar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/de/numpy/orbital/orbital4/BuildConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/game/GameThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/BaseThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>signin</find>
+      <find>scoreView</find>
+      <find>restartClicked</find>
+      <find>ar</find>
+      <find>view</find>
+      <find>resumeS</find>
+      <find>glActiveTexture</find>
+      <find>PlayerLog</find>
+      <find>de.numpy.orbital.orbital4.v2</find>
+      <find>maxen</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>de.numpy.orbital</replace>
+      <replace>Marvin</replace>
+    </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\Marvin\Keystores\key.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/hitbox/ReactHitboxComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/photon/PhotonLogicComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/player/PlayerController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/googleplayservices/GameServiceIdMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/gameservices/GameServiceIdMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/googleplayservices/GooglePlayGamesLeaderBoardEntry.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/googleplayservices/GooglePlayGamesAchievement.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/googleplayservices/Achievement.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/googleplayservices/LeaderBoardEntry.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/android/googleplayservices/GooglePlayGamesClient.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/gameservices/LeaderBoardEntry.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/gameservices/leaderboard/LeaderBoardEntry.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/gameservices/achievements/Achievement.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/math/MathUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/Vector2D.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/HitboxComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/constants/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/Circle.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/Rectangle.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/player/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/player/PlayerInputComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/hitbox/HitboxComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/Entity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/hitbox/RectHitboxComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/math/Rectangle.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/math/Shape2D.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/math/Circle.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/NullCollisionComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/NullComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/hitbox/CircleHitboxComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/player/PlayerLogicComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/event/EventType.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/Game.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/Intersector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/CollisionComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/mainmenu/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameObjects.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/android/advertising/ADController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/gameover_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/gameover/GameOverController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/graphic/OpenGLView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/CoordinateSystem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/game/GameThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1697" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Atomic Orbital" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Atomic Orbital" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Atomic Orbital" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Atomic Orbital" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="orbital" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/app/release/app-release.apk" />
+    <property name="ExportApk.ApkPath" value="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="VectorAssetImportPath" value="C:\Users\Marvin\AndroidStudioProjects\Orbital 4 Stuff" />
+    <property name="android.profiler.active" value="true" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532976397911" />
+    <property name="device.picker.selection" value="6PQ0217601001344" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1542660070280" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="de.numpy.orbital.orbital4.v2.android.gdx" />
+      <recent name="de.numpy.orbital.orbital4.v2.android.achievements" />
+      <recent name="de.numpy.orbital.orbital4.v2.googleplay.leaderboard" />
+      <recent name="de.numpy.orbital.orbital4.v2.googleplay" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.numpy.orbital.orbital4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\res\raw" />
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\res\drawable" />
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\res\drawable-v24" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.numpy.orbital.orbital4.v2.game.entitiy.components.basic.hitbox" />
+      <recent name="de.numpy.orbital.orbital4.utility" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\java\de\numpy\orbital\orbital4\v1\gameobjects\player" />
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\java\de\numpy\orbital\orbital4\v2\android\gdx" />
+      <recent name="C:\Users\Marvin\AndroidStudioProjects\AtomicOrbital\app\src\main\java\de\numpy\orbital\orbital4\v2\graphic\openGL" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtomicOrbital [androidDependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="androidDependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AtomicOrbital [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AtomicOrbital:app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="app" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.AtomicOrbital [androidDependencies]" />
+      <item itemvalue="Gradle.AtomicOrbital [signingReport]" />
+      <item itemvalue="Gradle.AtomicOrbital:app [build]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AtomicOrbital:app [build]" />
+        <item itemvalue="Gradle.AtomicOrbital [signingReport]" />
+        <item itemvalue="Gradle.AtomicOrbital [androidDependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="814038ac-42ac-493c-9795-a83bcc8acfec" name="Default" comment="" />
+      <created>1513701524203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513701524203</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Photon noch implementieren&#10;und Bugs müssen noch gefixxt werden">
+      <created>1513804148292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513804148292</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Menu zumindest optisch da :D">
+      <created>1513977692464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513977692464</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sound und Speicher Klassen hinzugefügt">
+      <created>1514030951886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1514030951886</updated>
+    </task>
+    <task id="LOCAL-00004" summary="unvollständiges Menu hinzugefügt">
+      <created>1514101175993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514101175993</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-noch Fehlt Werbung und Hardcore Modus">
+      <created>1514564184315</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514564184315</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fertig">
+      <created>1514643353801</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1514643353801</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Version 2.0.3">
+      <created>1514727505340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514727505340</updated>
+    </task>
+    <task id="LOCAL-00008" summary="--Google Play Game Services Hinzugefügt">
+      <created>1516402408219</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516402408219</updated>
+    </task>
+    <task id="LOCAL-00009" summary="--Google Play Game Services Hinzugefügt">
+      <created>1516467173441</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1516467173441</updated>
+    </task>
+    <task id="LOCAL-00010" summary="--Google Play Game Services Hinzugefügt">
+      <created>1516468576158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1516468576158</updated>
+    </task>
+    <task id="LOCAL-00011" summary="--Google Play Game Services Hinzugefügt">
+      <created>1516822947025</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1516822947025</updated>
+    </task>
+    <task id="LOCAL-00012" summary="--Google Play Game Services Hinzugefügt">
+      <created>1518525942081</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1518525942081</updated>
+    </task>
+    <task id="LOCAL-00013" summary="--Grafiken für Alien">
+      <created>1518639741303</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1518639741303</updated>
+    </task>
+    <task id="LOCAL-00014" summary="--Math und Random Util Klassen">
+      <created>1527706867096</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1527706867096</updated>
+    </task>
+    <task id="LOCAL-00015" summary="--Google Play Game Services">
+      <created>1528052172216</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528052172216</updated>
+    </task>
+    <task id="LOCAL-00016" summary="--GameService Interfaces entfernt.">
+      <created>1528997251713</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1528997251713</updated>
+    </task>
+    <task id="LOCAL-00017" summary="--Kreis und Rechteck Klassen hinzugefügt">
+      <created>1529244895656</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1529244895656</updated>
+    </task>
+    <task id="LOCAL-00018" summary="--Hitbox, Collision und Player">
+      <created>1529603351815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1529603351816</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Resources Explorer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6335617" visible="true" weight="0.09980119" />
+      <window_info id="Structure" order="1" sideWeight="0.4953917" side_tool="true" weight="0.25" />
+      <window_info id="Captures" order="2" sideWeight="0.4953917" side_tool="true" weight="0.25" />
+      <window_info id="Build Variants" order="3" sideWeight="0.36643836" side_tool="true" weight="0.23349634" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5109983" side_tool="true" weight="0.18704157" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47992048" visible="true" weight="0.32739937" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6968215" weight="0.32641292" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6002445" weight="0.38034683" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32718894" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5200795" side_tool="true" visible="true" weight="0.32739937" />
+      <window_info anchor="bottom" id="Android Monitor" order="8" visible="true" weight="0.27553445" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.45599023" weight="0.32718894" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47921762" weight="0.30414745" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19377163" />
+      <window_info anchor="bottom" id="Gradle Console" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Android Profiler" order="13" show_stripe_button="false" sideWeight="0.48471883" weight="0.32871974" />
+      <window_info anchor="bottom" id="Logcat" order="14" sideWeight="0.4932763" weight="0.3965318" />
+      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49105367" weight="0.14551084" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24970178" />
+      <window_info anchor="right" id="Android Model" order="3" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.3294621" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Flutter Inspector" order="9" weight="0.027506113" />
+      <window_info anchor="right" id="Preview" order="10" weight="0.3294621" />
+      <window_info anchor="right" x="92" y="92" width="1496" height="826" id="Documentation" order="11" type="FLOATING" />
+      <window_info anchor="right" id="Flutter Outline" order="12" weight="0.3294621" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6335617" visible="true" weight="0.23288509" />
+      <window_info id="Structure" order="1" sideWeight="0.4953917" weight="0.25" />
+      <window_info id="Captures" order="2" sideWeight="0.4953917" weight="0.25" />
+      <window_info id="Build Variants" order="3" sideWeight="0.36643836" side_tool="true" weight="0.23349634" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5109983" side_tool="true" weight="0.18704157" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48777506" weight="0.328341" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8893643" weight="0.32718894" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49022004" weight="0.218894" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32718894" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5207824" side_tool="true" visible="true" weight="0.31451613" />
+      <window_info anchor="bottom" id="Android Monitor" order="8" visible="true" weight="0.27553445" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.45599023" weight="0.32718894" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.47921762" visible="true" weight="0.31451613" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19470046" />
+      <window_info anchor="bottom" id="Gradle Console" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Android Profiler" order="13" show_stripe_button="false" weight="0.32949308" />
+      <window_info anchor="bottom" id="Logcat" order="14" sideWeight="0.49511003" weight="0.39746544" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Android Model" order="3" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.3294621" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" x="92" y="92" width="1496" height="826" id="Documentation" order="9" type="FLOATING" />
+      <window_info anchor="right" id="Preview" order="10" weight="0.3294621" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Photon noch implementieren&#10;und Bugs müssen noch gefixxt werden" />
+    <MESSAGE value="Menu zumindest optisch da :D" />
+    <MESSAGE value="Sound und Speicher Klassen hinzugefügt" />
+    <MESSAGE value="unvollständiges Menu hinzugefügt" />
+    <MESSAGE value="-noch Fehlt Werbung und Hardcore Modus" />
+    <MESSAGE value="Fertig" />
+    <MESSAGE value="Version 2.0.3" />
+    <MESSAGE value="--Google Play Game Services Hinzugefügt" />
+    <MESSAGE value="--Grafiken für Alien" />
+    <MESSAGE value="--Alles" />
+    <MESSAGE value="--Math und Random Util Klassen" />
+    <MESSAGE value="--Google Play Game Services" />
+    <MESSAGE value="--GameService Interfaces entfernt." />
+    <MESSAGE value="--Kreis und Rechteck Klassen hinzugefügt" />
+    <MESSAGE value="--Hitbox, Collision und Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="--Hitbox, Collision und Player" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="((zzn)task).shadow$_klass_" custom="com.google.android.gms.tasks.zzn" />
+        <watch expression="pos.pos" />
+        <watch expression="pos.pos" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/util/Intersector.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v2/game/entitiy/components/basic/CollisionComponent.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-games-11.8.0.aar/74badc661712894ddee5c369dcc70660/jars/classes.jar!/com/google/android/gms/games/Games.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/start_background_vector_blue.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/start_background_vector_red.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameObject.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/orbit/OrbitController.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="99" column="39" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/background/BackgroundView.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/fps/FPSView.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/fps/FPSController.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/gameover/GameOverView.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/gameover/HighscoreView.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameObjects.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameThread.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/android/advertising/ADController.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/mainmenu/MenuActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/gameobjects/GameActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/orbital4/v1/overlay/gameover/GameOverController.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/gameover_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/audio/AndroidAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/audio/AndroidLogAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/graphic/AndroidBitmapLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/graphic/OpenGLView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/graphic/AndroidGraphic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/AndroidInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/settings/AndroidSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/settings/AndroidStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/settings/SharedPreferencesBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/opengl/BitmapRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/opengl/BitmapSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/opengl/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2293">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/googleplayservices/GooglePlayGamesClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/android/googleplayservices/GooglePlayServicesUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/math/RandomXS128.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/math/MathUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="321" column="17" selection-start-line="321" selection-start-column="17" selection-end-line="321" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/math/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/math/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/BaseThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/CoordinateSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/util/Vector2DPolar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/de/numpy/orbital/orbital4/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/game/GameThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/de/numpy/orbital/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".125"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/normalButton"
+            android:layout_height="match_parent"
+            android:background="@color/darkerBlue"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="NORMAL"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/hardcoreButton"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:text="HARDCORE"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/score"/>
+
+        <TextView
+            android:id="@+id/normalScore"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="fill_horizontal"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/hardcoreScore"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="0"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/score_hardcore"/>
+
+    </LinearLayout>
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".58"
+        android:layout_gravity="center"/>
+
+    <!-- Other views -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:layout_marginTop="30dp"
+        android:id="@+id/startButton"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/startImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/start_background_vector_blue" />
+
+
+        <TextView
+            android:id="@+id/startTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/lightBlue"
+            android:textSize="70sp"
+            android:text="@string/start"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+
+        <Button
+            android:id="@+id/rateButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/achievement_button"/>
+
+        <Button
+            android:id="@+id/leaderboardButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/leaderboard_button"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/login_button"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

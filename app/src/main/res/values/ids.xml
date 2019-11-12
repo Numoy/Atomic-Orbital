@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <!-- app_id -->
+    <string name="app_id">239790895284</string>
+    <!-- package_name -->
+    <string name="package_name">de.numpy.orbital.orbital4</string>
+    <!-- leaderboard Highscore -->
+    <string name="leaderboard_highscore">CgkItOGapf0GEAIQAQ</string>
+    <!-- leaderboard Highscore Hardcore -->
+    <string name="leaderboard_highscore_hardcore">CgkItOGapf0GEAIQAg</string>
+    <!-- leaderboard Most Games Played -->
+    <string name="leaderboard_most_games_played">CgkItOGapf0GEAIQAw</string>
+
+        <!-- achievement 50 Games -->
+        <string name="achievement_50_games" translatable="false">CgkItOGapf0GEAIQBw</string>
+        <!-- achievement 150 Games -->
+        <string name="achievement_150_games" translatable="false">CgkItOGapf0GEAIQCA</string>
+        <!-- achievement 500 Games -->
+        <string name="achievement_500_games" translatable="false">CgkItOGapf0GEAIQCQ</string>
+        <!-- achievement 20 Points Normal -->
+        <string name="achievement_20_points_normal" translatable="false">CgkItOGapf0GEAIQCg</string>
+        <!-- achievement 20 Points Hardcore -->
+        <string name="achievement_20_points_hardcore" translatable="false">CgkItOGapf0GEAIQCw</string>
+        <!-- achievement 35 Points Normal -->
+        <string name="achievement_35_points_normal" translatable="false">CgkItOGapf0GEAIQDA</string>
+        <!-- achievement 35 Points Hardcore -->
+        <string name="achievement_35_points_hardcore" translatable="false">CgkItOGapf0GEAIQDQ</string>
+        <!-- achievement 50 Points Normal -->
+        <string name="achievement_50_points_normal" translatable="false">CgkItOGapf0GEAIQDg</string>
+        <!-- achievement 50 Points Hardcore -->
+        <string name="achievement_50_points_hardcore" translatable="false">CgkItOGapf0GEAIQDw</string>
+        <!-- achievement Total of 500 Points -->
+        <string name="achievement_total_of_500_points" translatable="false">CgkItOGapf0GEAIQEA</string>
+        <!-- achievement Total of 1000 Points -->
+        <string name="achievement_total_of_1000_points" translatable="false">CgkItOGapf0GEAIQEQ</string>
+        <!-- achievement Total of 10000 Points -->
+        <string name="achievement_total_of_10000_points" translatable="false">CgkItOGapf0GEAIQEg</string>
+        <!-- leaderboard Normal Highscore -->
+        <string name="leaderboard_normal_highscore" translatable="false">CgkItOGapf0GEAIQAQ</string>
+        <!-- leaderboard Hardcore Highscore -->
+        <string name="leaderboard_hardcore_highscore" translatable="false">CgkItOGapf0GEAIQAg</string>
+        <!-- leaderboard Most played Games -->
+        <string name="leaderboard_most_played_games" translatable="false">CgkItOGapf0GEAIQAw</string>
+
+
+</resources>
