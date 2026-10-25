@@ -1,475 +1,232 @@
 import 'dart:math';
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:atomic_orbital/models/entity.dart';
 import 'package:atomic_orbital/models/vector2d.dart';
-import 'package:atomic_orbital/constants/game_constants.dart';
 
-// Position Component
+final _floatBuffer = Float32List(1);
+
+// The released Java game stores every motion value as a 32-bit float.
+double float32(num value) {
+  _floatBuffer[0] = value.toDouble();
+  return _floatBuffer[0];
+}
+
+final double javaDegreesToRadians = float32(0.017453292);
+
 class PositionComponent {
   Vector2D position;
 
   PositionComponent({Vector2D? position})
       : position = position ?? Vector2D.zero();
 
-  void add(Vector2D offset) {
-    position.add(offset);
-  }
-
-  void setPosition(Vector2D newPosition) {
-    position.x = newPosition.x;
-    position.y = newPosition.y;
-  }
-
-  double distanceTo(PositionComponent other) {
-    return position.distanceTo(other.position);
-  }
+  void add(Vector2D offset) => position.add(offset);
+  void setPosition(Vector2D value) => position = value;
+  double distanceTo(PositionComponent other) =>
+      position.distanceTo(other.position);
 }
 
-// Size Component
 class SizeComponent {
   final double width;
   final double height;
 
   const SizeComponent(this.width, this.height);
-
   double get radius => (width + height) / 4;
-  double get area => width * height;
 }
 
-// Velocity Component
 class VelocityComponent {
   Vector2D velocity;
-
   VelocityComponent({Vector2D? velocity})
       : velocity = velocity ?? Vector2D.zero();
-
-  void add(Vector2D acceleration) {
-    velocity.add(acceleration);
-  }
-
-  void setVelocity(Vector2D newVelocity) {
-    velocity.x = newVelocity.x;
-    velocity.y = newVelocity.y;
-  }
-
-  void applyFriction(double friction) {
-    velocity.multiply(friction);
-  }
 }
 
-// Graphic Component
 class GraphicComponent {
   Color color;
   bool isVisible;
 
-  GraphicComponent({
-    this.color = Colors.white,
-    this.isVisible = true,
-  });
+  GraphicComponent({this.color = Colors.white, this.isVisible = true});
 
   void render(Canvas canvas, Entity entity, Offset center) {
     if (!isVisible) return;
-
-    final paint = Paint()
-      ..color = color
-      ..style = PaintingStyle.fill;
-
-    final position = Offset(
-      center.dx + entity.position.position.x,
-      center.dy + entity.position.position.y,
+    canvas.drawCircle(
+      Offset(entity.position.position.x, entity.position.position.y),
+      entity.size.radius,
+      Paint()..color = color,
     );
-
-    switch (entity.type) {
-      case EntityType.atom:
-        canvas.drawCircle(position, entity.size.radius, paint);
-        break;
-      case EntityType.player:
-        canvas.drawCircle(position, entity.size.radius, paint);
-        break;
-      case EntityType.photon:
-        canvas.drawCircle(position, entity.size.radius, paint);
-        break;
-      case EntityType.energy:
-        final rect = Rect.fromCenter(
-          center: position,
-          width: entity.size.width,
-          height: entity.size.height,
-        );
-        canvas.drawRect(rect, paint);
-        break;
-      default:
-        canvas.drawCircle(position, entity.size.radius, paint);
-    }
   }
 }
 
-// Logic Component
 class LogicComponent {
-  LogicComponent();
-
-  void update(Entity entity, double deltaTime) {
-    // Base logic - can be overridden by specific components
-  }
+  void update(Entity entity, double deltaTime) {}
 }
 
-// Collision Component
 class CollisionComponent {
   bool isCollidable;
-
   CollisionComponent({this.isCollidable = true});
 
-  void update(Entity entity, double deltaTime) {
-    // Base collision update logic
-  }
+  void update(Entity entity, double deltaTime) {}
 
-  bool collidesWith(Entity entity1, Entity entity2) {
-    if (!isCollidable || !entity2.collision.isCollidable) return false;
-
-    final distance = entity1.position.distanceTo(entity2.position);
-    final combinedRadius = entity1.size.radius + entity2.size.radius;
-
-    return distance <= combinedRadius;
+  bool collidesWith(Entity first, Entity second) {
+    if (!isCollidable || !second.collision.isCollidable) return false;
+    final distance = first.position.position - second.position.position;
+    final extent = float32(first.size.radius + second.size.radius);
+    return float32(distance.x).abs() < extent &&
+        float32(distance.y).abs() < extent;
   }
 }
 
-// Player Logic Component
 class PlayerLogicComponent extends LogicComponent {
-  double orbitRadius;
-  double orbitSpeed;
-  double currentAngle;
-  double targetRadius;
-  double currentRadius;
+  final int screenWidth;
+  final int screenHeight;
+  late final double minRadius;
+  late final double maxRadius;
+  late final double speedRadiusBasis;
+  late final double accRadius;
+  late double speedRadiusLimit;
+  late double currentRadius;
+  double currentAngle = 0;
+  double speedRadius = 0;
+  double speedOrbit = 3;
+  int direction = 1;
   bool isTouching = false;
+  bool animation = false;
+  int animCount = 0;
 
-  // Match original radius constraints
-  double get minRadius =>
-      GameConstants.screenWidth * 0.2; // 1/5 of screen width
-  double get maxRadius =>
-      GameConstants.screenWidth * 0.8; // 80% of screen width
+  PlayerLogicComponent({required num screenWidth, required num screenHeight})
+      : screenWidth = screenWidth.toInt(),
+        screenHeight = screenHeight.toInt() {
+    minRadius = (this.screenWidth ~/ 5).toDouble();
+    maxRadius = ((this.screenWidth * 9) ~/ 20).toDouble();
+    speedRadiusBasis = (this.screenWidth ~/ 50).toDouble();
+    speedRadiusLimit = float32(speedRadiusBasis / 2);
+    accRadius = (this.screenWidth ~/ 200).toDouble();
+    currentRadius = float32(float32(minRadius + maxRadius) / 2);
+  }
 
-  PlayerLogicComponent({
-    this.orbitRadius = 0.0, // Will be set dynamically
-    this.orbitSpeed = 2.0,
-  })  : currentAngle = pi, // Start at bottom
-        targetRadius = 0.0, // Will be set dynamically
-        currentRadius = 0.0; // Will be set dynamically
+  void positionPlayer(Entity entity) {
+    final angle = float32(currentAngle * javaDegreesToRadians);
+    entity.position.setPosition(Vector2D(
+      float32(screenWidth ~/ 2 + float32(currentRadius * float32(sin(angle)))),
+      float32(screenHeight ~/ 2 + float32(currentRadius * float32(cos(angle)))),
+    ));
+  }
 
   @override
   void update(Entity entity, double deltaTime) {
-    // Orbital movement around the atom
-    currentAngle += orbitSpeed * deltaTime;
-
-    // Update radius based on touch state
+    currentAngle = float32(currentAngle + float32(direction * speedOrbit));
+    if (currentAngle < 0) currentAngle = float32(currentAngle + 360);
+    if (currentAngle >= 360) currentAngle = float32(currentAngle - 360);
     if (isTouching) {
-      // Matches Java: MAX_RADIUS = Display.WIDTH * 0.8 (Original constants)
-      // We clamp to 0.45 to ensure it stays on screen (Radius < 0.5)
-      targetRadius = GameConstants.screenWidth * 0.45;
+      speedRadius = float32(speedRadius + accRadius);
+      if (speedRadius > speedRadiusLimit) speedRadius = speedRadiusLimit;
     } else {
-      // Matches Java: MIN_RADIUS = Display.WIDTH * 1/5 (0.2)
-      targetRadius = GameConstants.screenWidth * 0.2;
+      speedRadius = float32(speedRadius - accRadius);
+      if (speedRadius < -speedRadiusLimit) speedRadius = -speedRadiusLimit;
     }
-
-    // Smoothly interpolate to target radius
-    final radiusSpeed = 100.0 * GameConstants.scaleFactor; // pixels per second
-    final radiusDiff = targetRadius - currentRadius;
-    if (radiusDiff.abs() > 1.0) {
-      final radiusChange = radiusSpeed * deltaTime;
-      if (radiusDiff > 0) {
-        currentRadius += radiusChange;
-        if (currentRadius > targetRadius) currentRadius = targetRadius;
-      } else {
-        currentRadius -= radiusChange;
-        if (currentRadius < targetRadius) currentRadius = targetRadius;
+    currentRadius = float32(currentRadius + speedRadius);
+    currentRadius = currentRadius.clamp(minRadius, maxRadius);
+    positionPlayer(entity);
+    if (animation) {
+      final radius = float32(entity.size.radius * float32(0.99));
+      entity.size = SizeComponent(radius * 2, radius * 2);
+      animCount++;
+      if (animCount > 30) {
+        animation = false;
+        animCount = 0;
       }
     }
-
-    entity.position
-        .setPosition(Vector2D.fromPolar(currentRadius, currentAngle));
   }
 
-  void setTouching(bool touching) {
-    isTouching = touching;
-  }
-
-  void changeOrbitSpeed(double newSpeed) {
-    orbitSpeed = newSpeed;
-  }
-
-  void reverseDirection() {
-    orbitSpeed = -orbitSpeed;
-  }
+  void setTouching(bool touching) => isTouching = touching;
+  void reverseDirection() => direction = -direction;
+  void updateSpeed(int orbits) =>
+      speedRadiusLimit = float32(speedRadiusBasis / orbits);
+  void shrink() => animation = true;
 }
 
-// Photon Type Interface
-abstract class PhotonType {
-  void init(PositionComponent position);
-  void update(double deltaTime);
+class Orbit {
+  double radius;
+  double rotation = 0;
+  final int direction;
+
+  Orbit(this.radius, this.direction);
 }
 
-// Straight Photon Type
-class StraightPhotonType extends PhotonType {
-  late PositionComponent position;
-  final double speed = 100.0 * GameConstants.scaleFactor;
-  late double direction;
+enum PhotonTrajectory { straight, sinus, spiral }
 
-  @override
-  void init(PositionComponent position) {
-    this.position = position;
-    direction = position.position.angle;
-  }
-
-  @override
-  void update(double deltaTime) {
-    final velocity = Vector2D.fromPolar(speed, direction);
-    position.add(velocity * deltaTime);
-  }
-}
-
-// Spiral Photon Type
-class SpiralPhotonType extends PhotonType {
-  late PositionComponent position;
-  final double radialSpeed = 60.0 * GameConstants.scaleFactor;
-  final double angularSpeed = 80.0 * GameConstants.scaleFactor;
-  final int direction; // 1 or -1
-  late double initialAngle;
-
-  SpiralPhotonType(this.direction);
-
-  @override
-  void init(PositionComponent position) {
-    this.position = position;
-    initialAngle = position.position.angle;
-  }
-
-  @override
-  void update(double deltaTime) {
-    final currentAngle = position.position.angle;
-    final radialVelocity = Vector2D.fromPolar(radialSpeed, currentAngle);
-    final angularVelocity =
-        Vector2D.fromPolar(angularSpeed * direction, currentAngle + pi / 2);
-
-    final totalVelocity = radialVelocity + angularVelocity;
-    position.add(totalVelocity * deltaTime);
-  }
-}
-
-// Sinus Photon Type
-class SinusPhotonType extends PhotonType {
-  late PositionComponent position;
-  final double radialSpeed = 60.0 * GameConstants.scaleFactor;
-  // Reduced angular speed and frequency for smoother curve
-  final double angularSpeed = 100.0 * GameConstants.scaleFactor;
-  final double frequency = 3.0; // Was 6.0, reduced for less frantic waving
-  late double initialAngle;
-  double time = 0.0;
-
-  @override
-  void init(PositionComponent position) {
-    this.position = position;
-    initialAngle = position.position.angle;
-  }
-
-  @override
-  void update(double deltaTime) {
-    time += deltaTime;
-    final currentAngle = position.position.angle;
-    final distance = position.position.magnitude;
-
-    final radialVelocity = Vector2D.fromPolar(radialSpeed, currentAngle);
-    final angularVelocity = Vector2D.fromPolar(
-        angularSpeed * cos(frequency * time) * distance / 100,
-        currentAngle + pi / 2);
-
-    final totalVelocity = radialVelocity + angularVelocity;
-    position.add(totalVelocity * deltaTime);
-  }
-}
-
-// Photon Logic Component
 class PhotonLogicComponent extends LogicComponent {
-  late PhotonType photonType;
-  double spawnTimer;
-  bool isSpawning;
+  final int screenWidth;
+  final int screenHeight;
+  final PhotonTrajectory trajectory;
+  final int direction;
+  late final double radialVelocity;
+  double polarRadius;
+  double polarAngle;
+  double radius = 0;
+  bool growing = true;
+  double angularVelocity = 1;
 
-  PhotonLogicComponent({required this.photonType})
-      : spawnTimer =
-            GameConstants.photonAppearTime, // Use appear time for animation
-        isSpawning = true;
+  PhotonLogicComponent({
+    required num screenWidth,
+    required num screenHeight,
+    required this.trajectory,
+    required double angle,
+    this.direction = 1,
+  })  : screenWidth = screenWidth.toInt(),
+        screenHeight = screenHeight.toInt(),
+        polarAngle = float32(angle),
+        polarRadius = float32(screenWidth.toInt() * float32(0.125)) {
+    final factor = switch (trajectory) {
+      PhotonTrajectory.straight => float32(0.008333334),
+      PhotonTrajectory.sinus => float32(0.0055555557),
+      PhotonTrajectory.spiral => float32(0.006666667),
+    };
+    radialVelocity = float32(this.screenWidth * factor);
+  }
+
+  void positionPhoton(Entity entity) {
+    final radians = polarAngle * 0.017453292519943295;
+    entity.position.setPosition(Vector2D(
+      (screenWidth ~/ 2 + polarRadius * sin(radians)).toInt().toDouble(),
+      (screenHeight ~/ 2 + polarRadius * cos(radians)).toInt().toDouble(),
+    ));
+  }
 
   @override
   void update(Entity entity, double deltaTime) {
-    if (isSpawning) {
-      spawnTimer -= deltaTime;
-
-      // Scale up during spawn phase
-      final scale = 1.0 - (spawnTimer / GameConstants.photonAppearTime);
-      entity.size = SizeComponent(
-          GameConstants.photonSize * scale, GameConstants.photonSize * scale);
-
-      if (spawnTimer <= 0) {
-        isSpawning = false;
-        photonType.init(entity.position);
-        // Set final size
-        entity.size =
-            SizeComponent(GameConstants.photonSize, GameConstants.photonSize);
-      }
-    } else {
-      photonType.update(deltaTime);
-    }
-
-    // Delete if too far out (like original: > 200 units)
-    // 200 units = Screen Width in scaling logic
-    if (entity.position.position.magnitude > 200 * GameConstants.scaleFactor) {
+    if (growing) return;
+    polarRadius = float32(polarRadius + radialVelocity);
+    if (polarRadius > screenHeight) {
       entity.markForDeletion();
+      return;
     }
+    switch (trajectory) {
+      case PhotonTrajectory.sinus:
+        polarAngle = float32(
+          polarAngle + 1.5 * sin(float32(polarRadius / 50)),
+        );
+      case PhotonTrajectory.spiral:
+        polarAngle = float32(polarAngle + float32(direction * angularVelocity));
+        if (polarAngle >= 360) polarAngle = float32(polarAngle - 360);
+        if (polarAngle < 0) polarAngle = float32(polarAngle + 360);
+      case PhotonTrajectory.straight:
+        break;
+    }
+    positionPhoton(entity);
   }
 }
 
-// Photon Spawner Logic Component
-class PhotonSpawnerLogicComponent extends LogicComponent {
-  final List<Entity> entityQueue;
-  final int Function() getCurrentScore;
-  double spawnTimer = 0.0; // Start at 0 like original
-  int entityId = 1;
-  final Random random = Random();
-
-  PhotonSpawnerLogicComponent({
-    required this.entityQueue,
-    required this.getCurrentScore,
-  });
-
-  @override
-  void update(Entity entity, double deltaTime) {
-    // Only spawn when game is active (like original)
-    // The game engine will control when this is called
-
-    // Decrement timer (like original)
-    spawnTimer -= deltaTime;
-
-    if (spawnTimer <= 0) {
-      spawnPhotons();
-      // Add interval to timer (like original)
-      spawnTimer += GameConstants.photonWaveInterval;
-    }
-  }
-
-  void spawnPhotons() {
-    final score = getCurrentScore();
-    // User request: Start with 1, increase with score.
-    // Balancing: 1 + score ~/ 3 to avoid screen clutter too fast.
-    final count = 1 + score ~/ 3;
-    final groupCount = 1 + random.nextInt(min(4, count).toInt());
-
-    // Random type and direction for this batch
-    final type = random.nextInt(3);
-    final direction = random.nextBool() ? 1 : -1;
-
-    var startPos = 2 * pi * random.nextDouble();
-
-    for (int i = 1; i <= count; i++) {
-      // Create photon with current start position
-      final photon = Entity(
-        id: entityId++,
-        type: EntityType.photon,
-        position: PositionComponent(
-            position: Vector2D.fromPolar(GameConstants.atomSize / 2,
-                startPos)), // Match original: ATOM_SIZE / 2
-        size: SizeComponent(GameConstants.photonSize, GameConstants.photonSize),
-        velocity: VelocityComponent(),
-        graphic: GraphicComponent(color: GameConstants.photonColor),
-        logic: PhotonLogicComponent(
-            photonType: _createPhotonType(type, direction)),
-        collision: CollisionComponent(),
-      );
-
-      entityQueue.add(photon);
-
-      // Update position for next photon
-      startPos += (2 * pi / groupCount); // 360 / groupCount in radians
-
-      // Add spacing between groups like original
-      if (i % groupCount == 0) {
-        // Add 10 degrees spacing between groups
-        startPos += 10 * pi / 180; // Convert degrees to radians
-      }
-
-      // Keep within 0..2pi for cleanliness (optional but good practice)
-      if (startPos > 2 * pi) startPos -= 2 * pi;
-    }
-  }
-
-  PhotonType _createPhotonType(int type, int direction) {
-    switch (type) {
-      case 0:
-        return StraightPhotonType();
-      case 1:
-        return SpiralPhotonType(direction);
-      case 2:
-        return SinusPhotonType();
-      default:
-        return StraightPhotonType();
-    }
-  }
-}
-
-// Energy Logic Component (for individual energy entities)
 class EnergyLogicComponent extends LogicComponent {
-  double time = 0.0;
+  int onOrbit;
+  double angle;
+  double rotation = 0;
+
+  EnergyLogicComponent({required this.onOrbit, required this.angle});
 
   @override
   void update(Entity entity, double deltaTime) {
-    time += deltaTime;
-
-    // Make energy pulse/glow by changing color intensity
-    final intensity = 0.5 + 0.5 * sin(time * 3.0); // Pulse every ~2 seconds
-    final color = Color.fromARGB(
-      255,
-      (GameConstants.energyColor.red * intensity).round(),
-      (GameConstants.energyColor.green * intensity).round(),
-      (GameConstants.energyColor.blue * intensity).round(),
-    );
-
-    entity.graphic = GraphicComponent(
-      color: color,
-    );
-  }
-}
-
-// Energy Spawner Logic Component
-class EnergySpawnerLogicComponent extends LogicComponent {
-  final List<Entity> entityQueue;
-  double spawnTimer = 0.0;
-  int entityId = 1;
-  final Random random = Random();
-
-  EnergySpawnerLogicComponent({
-    required this.entityQueue,
-  });
-
-  @override
-  void update(Entity entity, double deltaTime) {
-    spawnTimer += deltaTime;
-
-    // Spawn energy every 3-5 seconds
-    if (spawnTimer >= 3.0 + random.nextDouble() * 2.0) {
-      spawnTimer = 0.0;
-      spawnEnergy();
-    }
-  }
-
-  void spawnEnergy() {
-    final angle = random.nextDouble() * 2 * pi;
-    final radius = GameConstants.atomSize + random.nextDouble() * 100;
-
-    final energy = Entity(
-      id: entityId++,
-      type: EntityType.energy,
-      position: PositionComponent(position: Vector2D.fromPolar(radius, angle)),
-      size: const SizeComponent(15, 15),
-      graphic: GraphicComponent(color: GameConstants.energyColor),
-      collision: CollisionComponent(),
-    );
-
-    entityQueue.add(energy);
+    rotation = float32(rotation + 2);
+    if (rotation > 90) rotation = float32(rotation - 90);
   }
 }

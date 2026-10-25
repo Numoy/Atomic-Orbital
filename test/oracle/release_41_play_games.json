@@ -1,0 +1,1200 @@
+{
+  "cases": [
+    {
+      "label": "score_0_hardcore_false",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_19_hardcore_false",
+      "score": 19,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 19,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 19
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_20_hardcore_false",
+      "score": 20,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 20,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 20
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_34_hardcore_false",
+      "score": 34,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 34,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 34
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_35_hardcore_false",
+      "score": 35,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 35,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 35
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_49_hardcore_false",
+      "score": 49,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 49,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 49
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_50_hardcore_false",
+      "score": 50,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 50,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 50
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_51_hardcore_false",
+      "score": 51,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 51,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAQ",
+            "score": 51
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_19_hardcore_false",
+      "score": 19,
+      "hardcore": false,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 19,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_20_hardcore_false",
+      "score": 20,
+      "hardcore": false,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 20,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_35_hardcore_false",
+      "score": 35,
+      "hardcore": false,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 35,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_50_hardcore_false",
+      "score": 50,
+      "hardcore": false,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 50,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDg"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_0_hardcore_true",
+      "score": 0,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_19_hardcore_true",
+      "score": 19,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 19,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 19
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_20_hardcore_true",
+      "score": 20,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 20,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 20
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_34_hardcore_true",
+      "score": 34,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 34,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 34
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_35_hardcore_true",
+      "score": 35,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 35,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 35
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_49_hardcore_true",
+      "score": 49,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 49,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 49
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_50_hardcore_true",
+      "score": 50,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 50,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 50
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "score_51_hardcore_true",
+      "score": 51,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 51,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 51
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_19_hardcore_true",
+      "score": 19,
+      "hardcore": true,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 19,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_20_hardcore_true",
+      "score": 20,
+      "hardcore": true,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 20,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_35_hardcore_true",
+      "score": 35,
+      "hardcore": true,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 35,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "no_new_record_50_hardcore_true",
+      "score": 50,
+      "hardcore": true,
+      "previousHighScore": 50,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 1,
+      "totalPoints": 50,
+      "events": [
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_49",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 48,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 49,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 48
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_50",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 49,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 50,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 49
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_149",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 148,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 149,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 148
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_150",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 149,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 150,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 149
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCA"
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_499",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 498,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 499,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 498
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCA"
+          }
+        }
+      ]
+    },
+    {
+      "label": "completed_games_500",
+      "score": 0,
+      "hardcore": false,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 499,
+      "totalPointsBefore": 0,
+      "gamesPlayed": 500,
+      "totalPoints": 0,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 499
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCQ"
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_499",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 498,
+      "gamesPlayed": 1,
+      "totalPoints": 499,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_500",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 499,
+      "gamesPlayed": 1,
+      "totalPoints": 500,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_999",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 998,
+      "gamesPlayed": 1,
+      "totalPoints": 999,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_1000",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 999,
+      "gamesPlayed": 1,
+      "totalPoints": 1000,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEQ"
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_9999",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 9998,
+      "gamesPlayed": 1,
+      "totalPoints": 9999,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEQ"
+          }
+        }
+      ]
+    },
+    {
+      "label": "total_points_10000",
+      "score": 1,
+      "hardcore": false,
+      "previousHighScore": 10,
+      "gamesPlayedBefore": 0,
+      "totalPointsBefore": 9999,
+      "gamesPlayed": 1,
+      "totalPoints": 10000,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 0
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "all_highest_tiers",
+      "score": 50,
+      "hardcore": true,
+      "previousHighScore": 0,
+      "gamesPlayedBefore": 499,
+      "totalPointsBefore": 9950,
+      "gamesPlayed": 500,
+      "totalPoints": 10000,
+      "events": [
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "CgkItOGapf0GEAIQAg",
+            "score": 50
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQDw"
+          }
+        },
+        {
+          "method": "submitScore",
+          "arguments": {
+            "leaderboardId": "gamesPlayed",
+            "score": 499
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEQ"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQEg"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCA"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQBw"
+          }
+        },
+        {
+          "method": "unlockAchievement",
+          "arguments": {
+            "achievementId": "CgkItOGapf0GEAIQCQ"
+          }
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "apkSha256": "de2eab0ee467a81a4f3cdb7da1955cd5c3784630836c113861bf14ca859d9824",
+    "sourceSha256": "3d5f6d49f0a8217b57a7c58805bb960936fe63914c14ca54130573a6f3e34c3d",
+    "stringsSha256": "429f651aa7d79d9cc206c7c4fb29f5cb38094fde486e5c7cc5f08ab19012e543",
+    "scope": "Unmodified game-completion rule methods, signed-in logical request order; SDK/UI delivery is not executed.",
+    "approvedCorrections": {
+      "gamesPlayedLeaderboard": "CgkItOGapf0GEAIQAw",
+      "gamesPlayedCount": "Submit the completed count; the original submitted the previous count to its preference-key string."
+    }
+  }
+}

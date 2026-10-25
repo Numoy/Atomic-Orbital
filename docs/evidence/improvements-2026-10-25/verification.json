@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25",
+  "version": "2.3.0",
+  "build": 44,
+  "analysis": "No issues found",
+  "full_flutter_tests": 394,
+  "final_focused_menu_daily_tests": 69,
+  "store_render_checks": 51,
+  "packaged_store_images": 52,
+  "android": {
+    "file": "build/releases/2.3.0+44/review-improvements/app-production-release.aab",
+    "bytes": 56060541,
+    "sha256": "43c0717150f6670bb42044f03865281960cf3549891c770cd26b435b49972f13",
+    "signature": "jarsigner verification passed; expected self-signed upload certificate"
+  },
+  "ios": {
+    "simulator_build": "passed",
+    "version": "2.3.0",
+    "build": "44",
+    "bundle_id": "de.numpy.orbital.atomic-orbital",
+    "distribution_archive": "not created in this pass"
+  },
+  "simulator_checks": {
+    "device": "Atomic Orbital iPhone",
+    "os": "iOS 26.2",
+    "native_export": "Saved JSON through On My iPhone picker; 670-byte file visible in Recents",
+    "native_import": "Selected same exported file, verified preview, confirmed restore, returned home with Normal 28 / Hardcore 12 and 100 Stars preserved",
+    "daily": "UTC date/reset dialog, practice skip, ready state and daily-specific pause observed; ended run without Normal/Hardcore record changes"
+  },
+  "unchanged_oracle_fixtures": true,
+  "not_done": [
+    "Physical device frame/audio/lifecycle and native provider checks",
+    "Signed store-installed in-place upgrade",
+    "Five newcomer observations",
+    "Real Game Center/Play Games authentication acceptance",
+    "iOS distribution archive/export",
+    "Store upload or public submission"
+  ],
+  "concurrent_source_drift_after_candidate": [
+    "lib/game/skin_shop.dart"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-23T04:33:28.201249+00:00",
+  "repository": "https://github.com/Numoy/marvinmaerz",
+  "branch": "main",
+  "commit": "972b09b5e339ec55051fed21db1d2ac5597162fb",
+  "signed_commit": true,
+  "deployment": "Existing Netlify production Git integration; pushed main",
+  "pages": [
+    {
+      "url": "https://marvinmaerz.com/atomic-orbital/privacy",
+      "final_url": "https://marvinmaerz.com/atomic-orbital/privacy/",
+      "http_status": 200,
+      "title": "Atomic Orbital — Privacy Policy",
+      "article_text_matches_committed_source": true,
+      "has_privacy_support_crosslinks": true,
+      "has_public_support_email": true,
+      "body_sha256": "9cf37c85893f55c470d317df739fd3590f26eb005bc755dfccf79360cbb0bb8c",
+      "source_sha256": "a097d460548651f82c19ccae3fab3a5de9860081a6fa10644c241be235a1ece0",
+      "saved_response": "privacy.html",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Server": "Netlify",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "ETag": "\"d877c013a2be58e3a151ab49c69ee0d3-ssl\"",
+        "X-Nf-Request-Id": "01M5KGJ2ZF6NM5Z9C2Z08WBB0T"
+      }
+    },
+    {
+      "url": "https://marvinmaerz.com/atomic-orbital/support",
+      "final_url": "https://marvinmaerz.com/atomic-orbital/support/",
+      "http_status": 200,
+      "title": "Atomic Orbital — Support",
+      "article_text_matches_committed_source": true,
+      "has_privacy_support_crosslinks": true,
+      "has_public_support_email": true,
+      "body_sha256": "7dbe7c52439eb25eed1547fb1d98385db3276af2ed7d1712fe429babb4439e39",
+      "source_sha256": "9b2b09793167b9b3277d732cd4213ef45a6874ba3ccaac98bbae8e658cdf08e2",
+      "saved_response": "support.html",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Server": "Netlify",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "ETag": "\"11660e57979e179596b352e8d909ba58-ssl\"",
+        "X-Nf-Request-Id": "01M5KGJ3MCW52CVVS63RP8HP1V"
+      }
+    }
+  ],
+  "unrelated_generic_policy_unchanged": true,
+  "website_remaining_status": "?? .playwright-mcp/"
+}

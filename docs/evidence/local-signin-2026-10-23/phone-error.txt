@@ -1,0 +1,16 @@
+10-23 21:00:43.444 E/PlayGamesServices[SignInAuthenticator]( 3654): **** DEVELOPER_ERROR
+10-23 21:00:43.444 E/PlayGamesServices[SignInAuthenticator]( 3654): **** (1) Your package name and certificate fingerprint do not match
+10-23 21:00:43.444 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Package name         : de.numpy.orbital.orbital4
+10-23 21:00:43.444 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Cert SHA1 fingerprint: 7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34
+10-23 21:00:47.267 E/PlayGamesServices[SignInAuthenticator]( 3654): **** DEVELOPER_ERROR
+10-23 21:00:47.267 E/PlayGamesServices[SignInAuthenticator]( 3654): **** (1) Your package name and certificate fingerprint do not match
+10-23 21:00:47.267 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Package name         : de.numpy.orbital.orbital4
+10-23 21:00:47.267 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Cert SHA1 fingerprint: 7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34
+10-23 21:00:54.725 E/PlayGamesServices[SignInAuthenticator]( 3654): **** DEVELOPER_ERROR
+10-23 21:00:54.725 E/PlayGamesServices[SignInAuthenticator]( 3654): **** (1) Your package name and certificate fingerprint do not match
+10-23 21:00:54.725 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Package name         : de.numpy.orbital.orbital4
+10-23 21:00:54.725 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Cert SHA1 fingerprint: 7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34
+10-23 21:00:59.194 E/PlayGamesServices[SignInAuthenticator]( 3654): **** DEVELOPER_ERROR
+10-23 21:00:59.194 E/PlayGamesServices[SignInAuthenticator]( 3654): **** (1) Your package name and certificate fingerprint do not match
+10-23 21:00:59.194 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Package name         : de.numpy.orbital.orbital4
+10-23 21:00:59.194 E/PlayGamesServices[SignInAuthenticator]( 3654): **** Cert SHA1 fingerprint: 7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34

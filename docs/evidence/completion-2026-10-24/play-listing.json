@@ -1,0 +1,8 @@
+{
+  "checkedOn": "2026-10-24",
+  "status": "Prepared locally; not saved to Play Console",
+  "blocker": "Publisher API edit commit returned 403 PERMISSION_DENIED. Console upload picker did not open through browser automation. Unsaved Console form changes were discarded and the isolated API edit was deleted.",
+  "preparedCopy": "docs/store/2.3.0/listings.json",
+  "preparedImages": "store-assets/2.3.0/manifest.json",
+  "reviewSubmitted": false
+}

@@ -1,0 +1,425 @@
+{
+  "@@locale": "de",
+  "play": "SPIELEN",
+  "tryAgain": "NOCH EINMAL",
+  "home": "START",
+  "menu": "Menü",
+  "normal": "Normal",
+  "hardcore": "Hardcore",
+  "howToPlay": "Spielanleitung",
+  "howToPlayTitle": "SPIELANLEITUNG",
+  "share": "Teilen",
+  "shareScore": "Punktzahl teilen",
+  "shareGame": "Atomic Orbital teilen",
+  "trophies": "Trophäen",
+  "achievements": "Erfolge",
+  "scores": "Bestenlisten",
+  "leaderboard": "Bestenliste",
+  "signIn": "Anmelden",
+  "playGames": "Play Games",
+  "disconnect": "Play Games trennen",
+  "rate": "Bewerten",
+  "controls": "Gedrückt: nach außen · Loslassen: nach innen",
+  "oneHit": "Ein Treffer. Spiel vorbei.",
+  "regenerates": "Gesundheit regeneriert sich.",
+  "worldShop": "Welten-Shop",
+  "gameOver": "SPIEL VORBEI",
+  "pickupsCollected": "GESAMMELTE OBJEKTE",
+  "newBest": "NEUER REKORD!",
+  "personalBest": "Persönlicher Rekord",
+  "paused": "PAUSE",
+  "resume": "WEITER",
+  "soundOff": "Ton aus",
+  "soundOn": "Ton an",
+  "enableSound": "Ton einschalten",
+  "muteSound": "Ton ausschalten",
+  "endRun": "Lauf beenden",
+  "endRunLabel": "Lauf beenden und zum Start zurückkehren",
+  "gotIt": "VERSTANDEN",
+  "holdRelease": "Halten: außen, loslassen: innen",
+  "holdHelp": "Halte eine beliebige Stelle gedrückt, um nach außen zu beschleunigen. Lass los, um zur inneren Umlaufbahn zurückzukehren.",
+  "collectPickups": "Objekte sammeln",
+  "collectHelp": "Jedes Objekt gibt einen Punkt und kehrt deine Richtung um.",
+  "avoidHazards": "Rote Gefahren meiden",
+  "hazardHelp": "Normal: Treffer verringern die Gesundheit, die sich regeneriert. Hardcore: Ein Treffer beendet den Lauf.",
+  "takeBreak": "Pause machen",
+  "pauseHelp": "Nutze Pause, Zurück oder Escape/P. Auch Unterbrechungen pausieren den Lauf. Spiele weiter, wenn du bereit bist.",
+  "pauseGame": "Spiel pausieren",
+  "touchToStart": "ZUM STARTEN TIPPEN",
+  "holdLabel": "Gedrückt halten: nach außen; loslassen: nach innen.",
+  "readyLabel": "Tippen oder Leertaste zum Starten. Halten: nach außen; loslassen: nach innen.",
+  "progress": "Fortschritt",
+  "statistics": "Statistik",
+  "settings": "Einstellungen",
+  "nextGoal": "Nächstes Ziel",
+  "unlocked": "Freigeschaltet",
+  "locked": "Gesperrt",
+  "allComplete": "Alle Erfolge erreicht",
+  "completedRuns": "Abgeschlossene Läufe",
+  "totalPoints": "Punkte abgeschlossener Läufe",
+  "playTime": "Erfasste Spielzeit",
+  "worldsOwned": "Freigeschaltete Welten",
+  "normalBest": "Rekord Normal",
+  "hardcoreBest": "Rekord Hardcore",
+  "localProgress": "Fortschritt wird auf diesem Gerät gespeichert. Eine Deinstallation oder das Löschen der App-Daten kann ihn entfernen.",
+  "music": "Musik",
+  "effects": "Soundeffekte",
+  "haptics": "Vibration",
+  "language": "Sprache",
+  "systemLanguage": "Systemsprache",
+  "privacy": "Datenschutz",
+  "support": "Hilfe und Kontakt",
+  "deleteData": "Anleitung zum Datenlöschen",
+  "version": "Version",
+  "retry": "Erneut versuchen",
+  "savePending": "Fortschritt wird gespeichert …",
+  "saveFailed": "Fortschritt konnte nicht gespeichert werden. Bitte vor dem Schließen erneut versuchen.",
+  "saveUnreadable": "Gespeicherter Fortschritt konnte nicht gelesen werden. Der ursprüngliche Spielstand bleibt erhalten. In den Einstellungen kannst du eine Sicherung wiederherstellen.",
+  "connection": "Verbindung",
+  "offline": "Offline spielen",
+  "connected": "Verbunden",
+  "retrySync": "Synchronisierung wiederholen",
+  "platformTrophies": "Online-Erfolge",
+  "practice": "Steuerung üben",
+  "skip": "Überspringen",
+  "next": "Weiter",
+  "practiceTitle": "Übung",
+  "practiceHold": "Halte irgendwo gedrückt",
+  "practiceRelease": "Jetzt loslassen",
+  "practiceDone": "Du bist bereit",
+  "startPlaying": "Spiel starten",
+  "hardcoreIntro": "Ein Treffer beendet den Lauf.",
+  "notAvailable": "Diese Aktion ist auf diesem Gerät nicht verfügbar.",
+  "signInCancelled": "Anmeldung nicht abgeschlossen. Du kannst offline weiterspielen.",
+  "actionFailed": "Diese Aktion konnte nicht geöffnet werden. Bitte erneut versuchen.",
+  "textFailed": "Spieltext konnte nicht vorbereitet werden.",
+  "returnMenu": "Zum Start zurückkehren",
+  "hangar": "Hangar",
+  "stars": "Sterne",
+  "fieldGuide": "Über Sterne",
+  "fieldGuideTitle": "HANDBUCH",
+  "fluxTagline": "Eine gute Umlaufbahn zahlt sich aus.",
+  "backHangar": "ZURÜCK ZUM HANGAR",
+  "fluxEarnTitle": "1 Objekt = 1 Stern",
+  "fluxEarnHelp": "Sammle in beiden Modi. Deine Sterne werden während des Spielens gespeichert.",
+  "fluxSpendTitle": "Neue Welten freischalten",
+  "fluxSpendHelp": "Schalte mit Sternen Welten im Hangar frei. Für jede Welt gelten dieselben Regeln.",
+  "fluxSaveTitle": "Deine Sammlung, dein Gerät",
+  "fluxSaveHelp": "Du startest mit 100 Sternen. Guthaben und Welten werden auf diesem Gerät gespeichert; eine Deinstallation oder das Löschen der App-Daten kann sie entfernen.",
+  "equipped": "Ausgewählt",
+  "owned": "Freigeschaltet",
+  "useWorld": "Welt auswählen",
+  "unlock": "Freischalten",
+  "collectMore": "Sammle mehr Sterne, um diese Welt freizuschalten.",
+  "walletFailed": "Änderung konnte nicht gespeichert werden. Deine Sterne wurden nicht ausgegeben. Bitte erneut versuchen.",
+  "fluxFailed": "Sterne konnten nicht gespeichert werden. Bitte vor dem Schließen erneut versuchen.",
+  "saving": "Speichern …",
+  "unavailable": "Nicht verfügbar",
+  "previousWorld": "Vorherige Welt",
+  "nextWorld": "Nächste Welt",
+  "bestLabel": "BESTE  {score}",
+  "@bestLabel": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "scoreLabel": "Punkte {score}",
+  "@scoreLabel": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "worldShopBalance": "Welten-Shop · {balance} Sterne",
+  "@worldShopBalance": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      }
+    }
+  },
+  "earnedFlux": "{amount, plural, =1{+1 Stern gespeichert} other{+{amount} Sterne gespeichert}}",
+  "@earnedFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "pendingFlux": "{amount, plural, =1{+1 Stern · noch nicht gespeichert} other{+{amount} Sterne · noch nicht gespeichert}}",
+  "@pendingFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "progressCount": "{current} / {target}",
+  "@progressCount": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "unlockedCount": "{count} von {total} freigeschaltet",
+  "@unlockedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "syncPending": "{count} Updates warten auf Synchronisierung",
+  "@syncPending": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unlockPrice": "Freischalten · {price} Sterne",
+  "@unlockPrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "moreFlux": "{amount, plural, =1{Noch 1 Stern zum Freischalten} other{Noch {amount} Sterne zum Freischalten}}",
+  "@moreFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "oneTimePrice": "{price} Sterne · einmalig freischalten",
+  "@oneTimePrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "fluxBalance": "{balance, plural, =1{1 Stern} other{{balance} Sterne}}",
+  "@fluxBalance": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      }
+    }
+  },
+  "fluxProgress": "{balance} von {price} Sterne",
+  "@fluxProgress": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      },
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursMinutes": "{hours} Std. {minutes} Min.",
+  "@hoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementEarned": "Erfolg: {title}",
+  "@achievementEarned": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "shareMessage": "{score, plural, one{Ich habe 1 Punkt in Atomic Orbital erreicht. Schaffst du mehr?} other{Ich habe {score} Punkte in Atomic Orbital erreicht. Schaffst du mehr?}}",
+  "@shareMessage": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementTitle": "{id, select, normal20{20 Punkte Normal} normal35{35 Punkte Normal} normal50{50 Punkte Normal} hardcore20{20 Punkte Hardcore} hardcore35{35 Punkte Hardcore} hardcore50{50 Punkte Hardcore} points500{Insgesamt 500 Punkte} points1000{Insgesamt 1000 Punkte} points10000{Insgesamt 10000 Punkte} games50{50 Spiele} games150{150 Spiele} games500{500 Spiele} firstContact{Erster Kontakt} findingOrbit{Umlaufbahn gefunden} hardcoreCadet{Hardcore-Kadett} steadyHands{Ruhige Hände} newHorizons{Neue Horizonte} worldTour{Weltenreise} other{Erfolg}}",
+  "@achievementTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "achievementDescription": "{id, select, normal20{Erreiche 20 Punkte in einem abgeschlossenen Normal-Lauf.} normal35{Erreiche 35 Punkte in einem abgeschlossenen Normal-Lauf.} normal50{Erreiche 50 Punkte in einem abgeschlossenen Normal-Lauf.} hardcore20{Erreiche 20 Punkte in einem abgeschlossenen Hardcore-Lauf.} hardcore35{Erreiche 35 Punkte in einem abgeschlossenen Hardcore-Lauf.} hardcore50{Erreiche 50 Punkte in einem abgeschlossenen Hardcore-Lauf.} points500{Sammle 500 Punkte in abgeschlossenen Läufen.} points1000{Sammle 1000 Punkte in abgeschlossenen Läufen.} points10000{Sammle 10000 Punkte in abgeschlossenen Läufen.} games50{Schließe 50 Läufe ab.} games150{Schließe 150 Läufe ab.} games500{Schließe 500 Läufe ab.} firstContact{Sammle dein erstes Objekt in einem echten Lauf.} findingOrbit{Erreiche 5 Punkte in Normal.} hardcoreCadet{Erreiche 5 Punkte in Hardcore.} steadyHands{Erreiche 10 Normal-Punkte, bevor du getroffen wirst.} newHorizons{Schalte deine erste Themenwelt frei.} worldTour{Erreiche je 5 Punkte in Classic, Cow Abduction und Deep Blue.} other{Erfolg}}",
+  "@achievementDescription": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldName": "{id, select, classic{Classic} cow_abduction{Kuh­entführung} deep_blue{Tiefblau} spider_web{Netzflucht} dragon_hoard{Drachen­schatz} sunflower{Pollen­patrouille} frost_bite{Frostbiss} haunted_harvest{Spuknacht} junkyard_dash{Schrottjagd} volcano_hop{Vulkanflug} cheese_chase{Käsejagd} jungle_jam{Dschungelspaß} other{Welt}}",
+  "@worldName": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldDescription": "{id, select, classic{Die ursprüngliche atomare Arena.} cow_abduction{Fliege mit der MOO-1. Beame Kühe an Bord. Weiche der Erdabwehr aus.} deep_blue{Steuere den Bathyscout. Sammle Schatztruhen. Weiche der Tinte des Kraken aus.} spider_web{Fliege als kleine Fliege. Schnapp dir Zuckerwürfel. Weiche den Spinnennetzen aus.} dragon_hoard{Steuere einen kleinen Ritter. Sammle Edelsteine. Weiche dem Drachenfeuer aus.} sunflower{Fliege als Biene. Sammle Pollen. Weiche den Kernen der Sonnenblume aus.} frost_bite{Steuere einen Pinguin. Sammle Fische. Weiche dem Eis des Schneemonsters aus.} haunted_harvest{Schwebe als kleiner Geist. Sammle Bonbons. Weiche den Fledermäusen des Kürbisses aus.} junkyard_dash{Steuere eine Reparaturdrohne. Sammle Schrauben. Weiche den Funken des Roboters aus.} volcano_hop{Fliege als Flugsaurier. Rette Eier. Weiche der Lava aus.} cheese_chase{Flitze als Maus. Schnapp dir Käse. Weiche den Wollknäueln der Katze aus.} jungle_jam{Fliege als Tukan. Sammle Bananen. Weiche den Kokosnüssen des Affen aus.} other{Wähle deine nächste Welt.}}",
+  "@worldDescription": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "walletUnavailable": "Guthaben nicht verfügbar",
+  "equippedReady": "Ausgewählt · startbereit",
+  "worldReady": "Welt freigeschaltet · bereit zur Auswahl",
+  "you": "DU",
+  "holdToStart": "ZUM STARTEN HALTEN",
+  "health": "GESUNDHEIT",
+  "oneHitLabel": "EIN TREFFER",
+  "profileChanged": "Dein Spieleprofil hat sich geändert. Updates bleiben für das ursprüngliche Profil gespeichert. Wechsle zurück, um sie zu synchronisieren.",
+  "syncFailed": "Synchronisierung nicht abgeschlossen. Deine lokalen Rekorde bleiben erhalten.",
+  "rangeWarning": "Die veröffentlichte Bestenliste kann diese Punktzahl nicht annehmen. Dein lokaler Rekord bleibt gespeichert.",
+  "nativeSignInCancelled": "Anmeldung nicht abgeschlossen. Du kannst offline weiterspielen.",
+  "disconnectService": "{service} trennen",
+  "@disconnectService": {
+    "placeholders": {
+      "service": {
+        "type": "String"
+      }
+    }
+  },
+  "endRunHelp": "Beim Verlassen bleiben erspielte Erfolge erhalten. Rekorde und Laufstatistiken werden erst bei Game Over aktualisiert.",
+  "practiceHoldHelp": "Bewege den weißen Punkt nach außen. Halte gedrückt, bis er das Quadrat erreicht.",
+  "practiceReleaseHelp": "Jedes Quadrat kehrt deine Richtung um. Lass los, um nach innen zu wechseln und das nächste zu sammeln.",
+  "practiceDoneHelp": "Halten: nach außen. Loslassen: nach innen.\nQuadrate kehren deine Richtung um. Weiche roten Punkten aus.",
+  "practiceTouchHint": "Berühre den Bildschirm zum Starten",
+  "practiceHolding": "Gedrückt · nach außen",
+  "practiceReleased": "Losgelassen · nach innen",
+  "practiceAnywhereHelp": "Du musst weder den Punkt noch das Quadrat antippen.",
+  "practiceDoneFeedback": "Beide Quadrate gesammelt",
+  "progressLocalNote": "Auf diesem Gerät gespeichert.",
+  "newBestAnnouncement": "Neuer persönlicher Rekord: {score}",
+  "@newBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "personalBestAnnouncement": "Persönlicher Rekord: {score}",
+  "@personalBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "newDailyBestAnnouncement": "Neuer Tagesrekord: {score}",
+  "@newDailyBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyBestAnnouncement": "Tagesrekord: {score}",
+  "@dailyBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "cancel": "Abbrechen",
+  "saveBackup": "Spielstand sichern",
+  "exportSave": "Spielstand exportieren",
+  "importSave": "Spielstand importieren",
+  "restorePreviousSave": "Vorherigen Spielstand wiederherstellen",
+  "backupExplanation": "Sichere eine Datei, die du auf einem anderen Gerät wiederherstellen kannst. Online-Profile und ausstehende Uploads sind nicht enthalten.",
+  "backupExported": "Spielstand exportiert.",
+  "backupImported": "Spielstand wiederhergestellt.",
+  "backupFailed": "Die Sicherung ist fehlgeschlagen. Dein aktueller Spielstand wurde behalten.",
+  "backupInvalid": "Diese Datei ist kein unterstützter Atomic-Orbital-Spielstand.",
+  "backupPreviewTitle": "Diesen Spielstand wiederherstellen?",
+  "backupReplaceWarning": "Dies ersetzt deinen Fortschritt und deine Einstellungen. Den vorherigen Spielstand kannst du danach wiederherstellen.",
+  "backupConfirm": "Spielstand ersetzen",
+  "backupCurrent": "Aktueller Spielstand",
+  "backupIncoming": "Ausgewählter Spielstand",
+  "backupStoredItems": "Gespeicherte Welten",
+  "backupStars": "Gespeicherte Sterne",
+  "backupRecoveryFailed": "Ein ersetzter Spielstand konnte nicht wiederhergestellt werden. Deine Sicherungen bleiben erhalten. Starte die App neu, bevor du weitere Änderungen vornimmst.",
+  "dailyChallenge": "Tägliche Herausforderung",
+  "dailyIntro": "Jeden Tag eine neue Herausforderung im Normal-Modus. Spiele die heutige Herausforderung beliebig oft. Dein Tagesrekord bleibt von deinen anderen Rekorden getrennt.",
+  "dailyReset": "Nächste Herausforderung: {time} (Ortszeit)",
+  "@dailyReset": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyDate": "{date} · UTC",
+  "@dailyDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyBest": "Tagesrekord",
+  "dailyLocalNote": "Auf diesem Gerät gespeichert. Das Datum der Herausforderung stammt von deiner Geräteuhr.",
+  "dailySaveFailed": "Das Tagesergebnis konnte nicht gespeichert werden. Versuche es vor dem Schließen erneut.",
+  "runDuration": "Zeit: {duration}",
+  "@runDuration": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyShareMessage": "Ich habe {score} Punkte in der täglichen Herausforderung von Atomic Orbital am {date} (UTC) erreicht.",
+  "@dailyShareMessage": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "worldCollection": "Weltenauswahl",
+  "collectionProgress": "{owned} von {total} freigeschaltet",
+  "@collectionProgress": {
+    "placeholders": {
+      "owned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyUnreadable": "Gespeicherte Tagesergebnisse konnten nicht gelesen werden. Der ursprüngliche Spielstand bleibt erhalten. Stelle in den Einstellungen eine Sicherung wieder her.",
+  "dailyEndRunHelp": "Wenn du jetzt gehst, wird kein Tagesergebnis gespeichert. Beende den Lauf, um es festzuhalten."
+}

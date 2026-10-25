@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-23T18:00:52.517Z",
+  "method": "Headless installed Google Chrome against production Astro static build; third-party requests blocked",
+  "checks": [
+    {
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "title": "Atomic Orbital — Delete Your Data",
+      "heading": "Atomic Orbital — Delete Your Data",
+      "horizontalOverflow": false,
+      "articleOverflow": false,
+      "links": [
+        {
+          "text": "Privacy policy",
+          "href": "/atomic-orbital/privacy"
+        },
+        {
+          "text": "Support",
+          "href": "/atomic-orbital/support"
+        },
+        {
+          "text": "Delete data",
+          "href": "/atomic-orbital/delete-data"
+        }
+      ],
+      "headings": [
+        "1. Clear local data first",
+        "2. Delete Google Play Games data for Atomic Orbital",
+        "What is retained, and for how long?",
+        "iPhone and iPad",
+        "Need help?"
+      ],
+      "text": "Privacy policy\nSupport\nDelete data\nAtomic Orbital — Delete Your Data\n\nLast updated: 23 October 2026\n\nAtomic Orbital has no developer-operated account or game-data server. You can remove local game records on your device and, on Android, delete the game's data held by Google Play Games separately. You do not need to delete your Google account.\n\n1. Clear local data first\nClose Atomic Orbital and keep it closed until you finish the steps below.\nOn Android, open Settings → Apps → Atomic Orbital → Storage & cache → Clear storage and confirm. Device manufacturers may use slightly different labels, such as “Clear data.”\nIf you play on other devices, clear their Atomic Orbital data too before reconnecting them to Play Games.\n\nThis removes local personal bests, completed-game counts, total points, play time, preferences and pending or archived Play Games updates. Local progress cannot be recovered through the game. A system backup may restore old records later; restored records or another device's saved progress can be uploaded again when Play Games reconnects.\n\nClear local data before deleting Google-held game data. Disconnecting Play Games in the app only stops future uploads while disconnected. It does not delete local records, the pending upload queue or data already held by Google.\n\n2. Delete Google Play Games data for Atomic Orbital\n\nAfter clearing the local data, use the Google account connected to Play Games:\n\nOpen your Play Games profile in a browser.\nChoose Your Data → Delete Play Games Account & Data.\nUnder Delete individual game data, find Atomic Orbital and choose Delete.\n\nYou can also use the Play Store app: Profile icon → Settings → General → Play Games Profile → Privacy & Settings → Your Data → Delete profile & game data, then find Atomic Orbital under Delete individual game data and tap Delete. Follow Google's current deletion instructions if labels change.\n\nThis removes the game's Play Games records associated with that account, including game progress, achievements and leaderboard scores. Google's separate Play History is not deleted by this action; Google's instructions explain its own controls.\n\nWhat is retained, and for how long?\n\nLocal game records remain until you clear or remove them; the developer does not retain a server copy. Google manages deletion and any retention of Google-held records under its privacy policy and retention policy, including any backup or legal/security retention. Atomic Orbital cannot set a separate deletion deadline for those records.\n\niPhone and iPad\n\nGame records are local, with no Play Games or developer-operated cloud account. Deleting the app removes its local data; offloading it keeps app data. A system backup may restore progress later.\n\nNeed help?\n\nFor deletion or privacy questions, contact Marvin März at marvin.maerz@gmail.com and identify Atomic Orbital and your platform. Do not send passwords or authentication codes. Support correspondence you choose to send is separate from the game's local and Google-held records."
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Atomic Orbital — Delete Your Data",
+      "heading": "Atomic Orbital — Delete Your Data",
+      "horizontalOverflow": false,
+      "articleOverflow": false,
+      "links": [
+        {
+          "text": "Privacy policy",
+          "href": "/atomic-orbital/privacy"
+        },
+        {
+          "text": "Support",
+          "href": "/atomic-orbital/support"
+        },
+        {
+          "text": "Delete data",
+          "href": "/atomic-orbital/delete-data"
+        }
+      ],
+      "headings": [
+        "1. Clear local data first",
+        "2. Delete Google Play Games data for Atomic Orbital",
+        "What is retained, and for how long?",
+        "iPhone and iPad",
+        "Need help?"
+      ],
+      "text": "Privacy policy\nSupport\nDelete data\nAtomic Orbital — Delete Your Data\n\nLast updated: 23 October 2026\n\nAtomic Orbital has no developer-operated account or game-data server. You can remove local game records on your device and, on Android, delete the game's data held by Google Play Games separately. You do not need to delete your Google account.\n\n1. Clear local data first\nClose Atomic Orbital and keep it closed until you finish the steps below.\nOn Android, open Settings → Apps → Atomic Orbital → Storage & cache → Clear storage and confirm. Device manufacturers may use slightly different labels, such as “Clear data.”\nIf you play on other devices, clear their Atomic Orbital data too before reconnecting them to Play Games.\n\nThis removes local personal bests, completed-game counts, total points, play time, preferences and pending or archived Play Games updates. Local progress cannot be recovered through the game. A system backup may restore old records later; restored records or another device's saved progress can be uploaded again when Play Games reconnects.\n\nClear local data before deleting Google-held game data. Disconnecting Play Games in the app only stops future uploads while disconnected. It does not delete local records, the pending upload queue or data already held by Google.\n\n2. Delete Google Play Games data for Atomic Orbital\n\nAfter clearing the local data, use the Google account connected to Play Games:\n\nOpen your Play Games profile in a browser.\nChoose Your Data → Delete Play Games Account & Data.\nUnder Delete individual game data, find Atomic Orbital and choose Delete.\n\nYou can also use the Play Store app: Profile icon → Settings → General → Play Games Profile → Privacy & Settings → Your Data → Delete profile & game data, then find Atomic Orbital under Delete individual game data and tap Delete. Follow Google's current deletion instructions if labels change.\n\nThis removes the game's Play Games records associated with that account, including game progress, achievements and leaderboard scores. Google's separate Play History is not deleted by this action; Google's instructions explain its own controls.\n\nWhat is retained, and for how long?\n\nLocal game records remain until you clear or remove them; the developer does not retain a server copy. Google manages deletion and any retention of Google-held records under its privacy policy and retention policy, including any backup or legal/security retention. Atomic Orbital cannot set a separate deletion deadline for those records.\n\niPhone and iPad\n\nGame records are local, with no Play Games or developer-operated cloud account. Deleting the app removes its local data; offloading it keeps app data. A system backup may restore progress later.\n\nNeed help?\n\nFor deletion or privacy questions, contact Marvin März at marvin.maerz@gmail.com and identify Atomic Orbital and your platform. Do not send passwords or authentication codes. Support correspondence you choose to send is separate from the game's local and Google-held records."
+    },
+    {
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "Atomic Orbital — Delete Your Data",
+      "heading": "Atomic Orbital — Delete Your Data",
+      "horizontalOverflow": false,
+      "articleOverflow": false,
+      "links": [
+        {
+          "text": "Privacy policy",
+          "href": "/atomic-orbital/privacy"
+        },
+        {
+          "text": "Support",
+          "href": "/atomic-orbital/support"
+        },
+        {
+          "text": "Delete data",
+          "href": "/atomic-orbital/delete-data"
+        }
+      ],
+      "headings": [
+        "1. Clear local data first",
+        "2. Delete Google Play Games data for Atomic Orbital",
+        "What is retained, and for how long?",
+        "iPhone and iPad",
+        "Need help?"
+      ],
+      "text": "Privacy policy\nSupport\nDelete data\nAtomic Orbital — Delete Your Data\n\nLast updated: 23 October 2026\n\nAtomic Orbital has no developer-operated account or game-data server. You can remove local game records on your device and, on Android, delete the game's data held by Google Play Games separately. You do not need to delete your Google account.\n\n1. Clear local data first\nClose Atomic Orbital and keep it closed until you finish the steps below.\nOn Android, open Settings → Apps → Atomic Orbital → Storage & cache → Clear storage and confirm. Device manufacturers may use slightly different labels, such as “Clear data.”\nIf you play on other devices, clear their Atomic Orbital data too before reconnecting them to Play Games.\n\nThis removes local personal bests, completed-game counts, total points, play time, preferences and pending or archived Play Games updates. Local progress cannot be recovered through the game. A system backup may restore old records later; restored records or another device's saved progress can be uploaded again when Play Games reconnects.\n\nClear local data before deleting Google-held game data. Disconnecting Play Games in the app only stops future uploads while disconnected. It does not delete local records, the pending upload queue or data already held by Google.\n\n2. Delete Google Play Games data for Atomic Orbital\n\nAfter clearing the local data, use the Google account connected to Play Games:\n\nOpen your Play Games profile in a browser.\nChoose Your Data → Delete Play Games Account & Data.\nUnder Delete individual game data, find Atomic Orbital and choose Delete.\n\nYou can also use the Play Store app: Profile icon → Settings → General → Play Games Profile → Privacy & Settings → Your Data → Delete profile & game data, then find Atomic Orbital under Delete individual game data and tap Delete. Follow Google's current deletion instructions if labels change.\n\nThis removes the game's Play Games records associated with that account, including game progress, achievements and leaderboard scores. Google's separate Play History is not deleted by this action; Google's instructions explain its own controls.\n\nWhat is retained, and for how long?\n\nLocal game records remain until you clear or remove them; the developer does not retain a server copy. Google manages deletion and any retention of Google-held records under its privacy policy and retention policy, including any backup or legal/security retention. Atomic Orbital cannot set a separate deletion deadline for those records.\n\niPhone and iPad\n\nGame records are local, with no Play Games or developer-operated cloud account. Deleting the app removes its local data; offloading it keeps app data. A system backup may restore progress later.\n\nNeed help?\n\nFor deletion or privacy questions, contact Marvin März at marvin.maerz@gmail.com and identify Atomic Orbital and your platform. Do not send passwords or authentication codes. Support correspondence you choose to send is separate from the game's local and Google-held records."
+    },
+    {
+      "page": "privacy",
+      "width": 320,
+      "status": 200,
+      "horizontalOverflow": false,
+      "deleteLink": "Delete data"
+    },
+    {
+      "page": "support",
+      "width": 320,
+      "status": 200,
+      "horizontalOverflow": false,
+      "deleteLink": "Delete data"
+    }
+  ]
+}

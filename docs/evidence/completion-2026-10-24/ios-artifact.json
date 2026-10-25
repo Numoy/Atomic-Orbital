@@ -1,0 +1,16 @@
+{
+  "version": "2.3.0",
+  "build": "43",
+  "bundleId": "de.numpy.orbital.atomic-orbital",
+  "deviceFamilies": [
+    1,
+    2
+  ],
+  "gameCenter": true,
+  "usesNonExemptEncryption": false,
+  "debuggable": false,
+  "signature": "codesign deep/strict passed",
+  "file": "build/releases/2.3.0+43/ios/atomic_orbital.ipa",
+  "bytes": 26322565,
+  "sha256": "2a78952d74d5c529632504d500b9c1f2027190db5108da692bebf27054d18060"
+}

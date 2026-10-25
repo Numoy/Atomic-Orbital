@@ -1,0 +1,113 @@
+Atomic Orbital — independent final rendering measurements, 2026-10-21
+
+Reference: original released APK 41 / version 2.1.6.
+APK SHA256: de2eab0ee467a81a4f3cdb7da1955cd5c3784630836c113861bf14ca859d9824.
+Viewport: 1080 x 1920, DPR 2.625, 63-pixel status/navigation insets.
+Both apps used the same SwiftShader backend. Bounds below are inclusive physical pixels.
+The six paired repository PNGs were SHA256-checked against their final capture files.
+
+FINAL MENU
+Original: docs/parity/evidence/original-menu-1080x1920.png
+Flutter:  docs/parity/evidence/flutter-menu-1080x1920.png
+
+Label       Bounds in both apps       Ink-mask IoU   Mask differences   RGB differences/max
+NORMAL      [114,125,430,182]          0.998940       8 pixels           1757 pixels / 7 levels
+HARDCORE    [611,125,1013,181]         0.999333       6 pixels           2280 pixels / 6 levels
+START       [273,1505,808,1639]        0.999648       8 pixels           2651 pixels / 5 levels
+
+Position, glyph advances, width and height match. No earlier one-pixel offset remains.
+Solid glyph interiors match RGB exactly: 2966 NORMAL, 3651 HARDCORE and 14183 START
+pixels after a 2-pixel erosion. Residual RGB differences occur at antialiasing edges;
+full menu PNG byte identity is not claimed. Scores, video phase, status icons and
+sign-in icon state are excluded from this comparison.
+
+Menu mask crops/thresholds:
+NORMAL (80,110,460,205): every RGB channel >180.
+HARDCORE (580,110,1040,205): every RGB channel <40.
+START (240,1470,840,1660): R>130, G>170, B>170.
+
+FINAL READY STATE
+Original: docs/parity/evidence/original-ready-1080x1920.png
+Flutter:  docs/parity/evidence/flutter-ready-1080x1920.png
+
+Score 0: identical bounds [508,939,567,1036]. Black-ink mask has 2474 original /
+2478 Flutter pixels: 4 boundary differences, IoU 0.998386.
+TOUCH TO START: identical bounds [316,1690,796,1734]. Intensity-normalized grayscale
+mask IoU 0.996094, with 26 boundary differences. The original pulse is very dark;
+pulse phase and RGB565 quantization affect thresholded edge pixels.
+Atom: identical white bounds [405,856,674,1125]. White threshold >240 yields
+IoU 0.997447, with 138 boundary/score-edge differences. Complete circle raster
+pixels are not byte-identical.
+
+Exact sampled colors in both apps:
+  status at (20,20): RGB (2,48,67)
+  full health at (200,80): RGB (74,174,82)
+  dashed orbit at (540,505): RGB (140,138,140)
+Exact full-color bands at x540 in both apps:
+  selected orbit y638–641; outer dashed orbit y503–506;
+  inner dashed orbit y773–776; player solid-white interior y1313–1370.
+Random energy position, status icons and pulse brightness are excluded from layout parity.
+
+FINAL HARDCORE DEATH
+Original: docs/parity/evidence/original-hardcore-gameover-1080x1920.png
+Flutter:  docs/parity/evidence/flutter-hardcore-gameover-1080x1920.png
+
+GAME OVER: bounds [113,142,972,256]; 31944 bright-ink pixels in both.
+The ENTIRE isolated title RGB crop (80,130,1000,270) is byte-identical: zero
+RGB differences, not merely equal bounds or a matching thresholded mask.
+
+Identical absolute bounds and ink masks (IoU 1.0):
+  RATE          [207,916,282,939]       539 pixels
+  HOME          [790,916,881,939]       735 pixels
+  MUTED         [388,915,496,940]      1063 pixels
+  SCORE         [391,1283,492,1306]     739 pixels
+  NO ADS        [582,1283,696,1306]     776 pixels
+  SHARE         [784,1283,886,1306]     774 pixels
+  Score: prefix [400,405,611,461]      3187 pixels
+  Highscore: prefix [434,523,613,559]  1338 pixels
+
+ACHIEVEMENTS also has identical bounds [167,1279,319,1293]. The translucent panel
+covers a white orbit in one run and black background in the other, so a simple
+brightness mask is inappropriate. A cyan-delta mask B-G>=4 isolates its foreground
+independently of the achromatic underlay: 866 pixels, zero mask differences, IoU 1.0.
+Examples of brightness-only differences are uniformly +102 in R/G/B, confirming
+the white underlay rather than a glyph shift. HP background at (200,80) is black
+in both. Variable score digits and gameplay positions are excluded.
+
+Death masks use G>120 and B>120, except the title (R>130,G>170,B>170) and the
+background-independent ACHIEVEMENTS mask above. Measurements use Pillow/NumPy.
+
+NATIVE OVERLAY STABILITY / PREVIEW ARTIFACT
+Decoded RGB crops for NORMAL, HARDCORE, START and the normal score are byte-identical
+across these exploratory captures (12 baseline-versus-return comparisons):
+  /tmp/atomic-hwui-menu.png
+  /tmp/atomic-hwui-after-signin.png
+  /tmp/atomic-recovery-achievements.png
+  /tmp/atomic-recovery-home.png
+All four files are native RGBA PNGs. Alpha minimum=maximum=255 across each entire
+screenshot, including all 7544 NORMAL bright pixels. Labels are present and fully
+opaque in the source files. Intermittently blank labels in image previews therefore
+do not establish an app defect; hidden transparent RGB is excluded as well.
+
+SOURCE SUPPORT
+Recovered original resources/res/layout/activity_menu.xml specifies mode labels at
+30dp (lines 15,24), the weighted header row (line 13), 25dp centered score cells
+(lines 45–52), and a centered wrap-content START TextView at 70sp (lines 86–94).
+Recovered mainmenu/MenuActivity.java:38 extends plain android.app.Activity.
+Android SDK36 TextView.java:4363–4366 reads XML textSize via getDimensionPixelSize.
+Original target26 compatibility uses advance-based widths, not API35 bounds widths.
+
+A separate temporary read-only target26 probe inflated unchanged original menu XML
+under AppTheme at 1080x1794, density2.625, fontScale1.0. It made no game/PGS call.
+START: textSize184px, width/advance548px, full height258px including top padding13px,
+baseline208px, bounds Rect(7,-133,544,2), layout origin(266,1367).
+Mode Buttons: textSize79px, weight500, width540px, height177px, baseline119px.
+All Paint flags1283; subpixel=false, linear=false, elegant=false,
+useBoundsForWidth=false, letterSpacing0, textScaleX1.
+The probe was detached; actual HWUI output is assessed by the final paired captures.
+Its manifest omitted supportsRtl=true, so its resolved score-cell alignment was not
+used as evidence; the original XML defines that centering.
+
+Scope: these measurements establish the stated geometry/color matches and the
+bounded raster differences on the accepted emulator. They do not establish complete
+PNG byte identity or physical touchscreen/speaker latency.

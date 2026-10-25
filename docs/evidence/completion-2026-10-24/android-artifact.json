@@ -1,0 +1,10 @@
+{
+  "version": "2.3.0",
+  "build": 43,
+  "package": "de.numpy.orbital.orbital4",
+  "file": "build/releases/2.3.0+43/android/atomic-orbital-2.3.0-43.aab",
+  "bytes": 55046368,
+  "sha256": "f73a80d21dcde65d131cc0bb28741a9d2ef75007bc8d69ede43138cf8208cd6f",
+  "signature": "jarsigner verify passed",
+  "upload": "Not attempted; Console confirms replacement upload key valid 25 October 2026 at 19:14."
+}

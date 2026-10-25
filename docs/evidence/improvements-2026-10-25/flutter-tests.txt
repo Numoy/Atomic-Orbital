@@ -1,0 +1,400 @@
+00:00 +0: loading /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart
+00:00 +0: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +1: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +2: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +3: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +4: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +5: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +6: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +7: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +8: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +9: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +10: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +11: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +12: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +13: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +14: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +15: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +16: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +17: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +18: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +19: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +20: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +21: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +22: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +23: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +24: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +25: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +26: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +27: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +28: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +29: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +30: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +31: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +32: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +33: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +34: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +35: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +36: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +37: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:00 +38: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +39: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +40: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +41: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +42: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +43: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +44: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +45: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +46: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +47: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +48: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +49: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +50: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +51: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +52: /Users/maerz/Projects/Atomic-Orbital/test/play_games_widget_test.dart: Play Games menu signs in, dispatches mode boards and respects disconnect
+00:01 +53: /Users/maerz/Projects/Atomic-Orbital/test/save_backup_widget_test.dart: import previews replacement, cancel preserves save, confirmation can restore the previous save
+00:01 +54: /Users/maerz/Projects/Atomic-Orbital/test/save_backup_widget_test.dart: import previews replacement, cancel preserves save, confirmation can restore the previous save
+00:01 +55: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:01 +56: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +57: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +58: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +59: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +60: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +61: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +62: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Enter
+00:02 +63: /Users/maerz/Projects/Atomic-Orbital/test/audio_service_test.dart: TargetPlatform.android uses supported audio formats and respects mute
+00:02 +64: /Users/maerz/Projects/Atomic-Orbital/test/cosmetics_service_test.dart: fresh wallets grant 100 once and preserve existing scores and stats
+00:02 +65: /Users/maerz/Projects/Atomic-Orbital/test/cosmetics_service_test.dart: fresh wallets grant 100 once and preserve existing scores and stats
+00:02 +66: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +67: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +68: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +69: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +70: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +71: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +72: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +73: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +74: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +75: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +76: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +77: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused Skip activates with Space
+00:02 +78: /Users/maerz/Projects/Atomic-Orbital/test/cosmetics_service_test.dart: bad saved wallets fail closed without replacing data or blocking play
+00:02 +79: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:02 +80: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:02 +81: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:02 +82: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:02 +83: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:02 +84: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: focused completion activates with Space
+00:03 +85: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: multiple held keys release on Tab focus transfer
+00:03 +86: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: touching the lesson restores keyboard control after Tab
+00:03 +87: /Users/maerz/Projects/Atomic-Orbital/test/practice_keyboard_test.dart: resizing cancels a hold without completing the lesson
+00:03 +88: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: (setUpAll)
+00:03 +88: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +89: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +90: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +91: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +92: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +93: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +94: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +95: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +96: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +97: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +98: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +99: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:03 +100: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +101: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +102: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +103: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +104: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +105: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +106: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +107: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +108: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: production app opens the world shop with the saved theme
+00:04 +109: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +110: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +111: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +112: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +113: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +114: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +115: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +116: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +117: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +118: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +119: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +120: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +121: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +122: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +123: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +124: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +125: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +126: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +127: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +128: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +129: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +130: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +131: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +132: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +133: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +134: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +135: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +136: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +137: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +138: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: adaptive mode selection starts the same canonical game world
+00:04 +139: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +140: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +141: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +142: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +143: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +144: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +145: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +146: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +147: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +148: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +149: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +150: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +151: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +152: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +153: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +154: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +155: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +156: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +157: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +158: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +159: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +160: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +161: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +162: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +163: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +164: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +165: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +166: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +167: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +168: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +169: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +170: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +171: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +172: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +173: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +174: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +175: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +176: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +177: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +178: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +179: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: every themed world starts immediately with scores above the character
+00:04 +180: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +181: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +182: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +183: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +184: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +185: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +186: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +187: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +188: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +189: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +190: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +191: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +192: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +193: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +194: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +195: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +196: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +197: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +198: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +199: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +200: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +201: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:04 +202: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +203: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +204: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +205: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +206: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +207: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +208: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +209: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: ready and manually paused runs stay paused through interruptions
+00:05 +210: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: collect feedback uses the pickup location and banks only once
+00:05 +211: /Users/maerz/Projects/Atomic-Orbital/test/widget_test.dart: Escape, P and Android back pause without discarding the run
+00:05 +212: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +213: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +214: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +215: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +216: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +217: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +218: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +219: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +220: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +221: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +222: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +223: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +224: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +225: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +226: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +227: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +228: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +229: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +230: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +231: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +232: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +233: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +234: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +235: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +236: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +237: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +238: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +239: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +240: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +241: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +242: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +243: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +244: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +245: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +246: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:05 +247: /Users/maerz/Projects/Atomic-Orbital/test/themed_game_screen_test.dart: feedback preserves Classic and respects reduced motion without engine writes
+00:06 +248: /Users/maerz/Projects/Atomic-Orbital/test/device_scaling_test.dart: released Android reference: adaptive menus and fixed gameplay world
+00:06 +249: /Users/maerz/Projects/Atomic-Orbital/test/daily_challenge_widget_test.dart: daily menu starts Normal, records separately and replays the seed
+00:06 +250: /Users/maerz/Projects/Atomic-Orbital/test/daily_challenge_widget_test.dart: daily menu starts Normal, records separately and replays the seed
+00:06 +251: /Users/maerz/Projects/Atomic-Orbital/test/daily_challenge_widget_test.dart: daily menu starts Normal, records separately and replays the seed
+00:06 +252: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:06 +253: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:06 +254: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +255: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +256: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +257: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +258: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +259: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +260: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +261: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: themed results keep the score above the artwork at large text
+00:07 +262: /Users/maerz/Projects/Atomic-Orbital/test/daily_challenge_widget_test.dart: importing from a paused daily run returns home with the restored best
+00:07 +263: /Users/maerz/Projects/Atomic-Orbital/test/daily_challenge_widget_test.dart: importing from a paused daily run returns home with the restored best
+00:07 +264: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:07 +265: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +266: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +267: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +268: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +269: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +270: /Users/maerz/Projects/Atomic-Orbital/test/game_center_widget_test.dart: Game Center disconnect keeps offline play without Android toast
+00:08 +271: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +272: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +273: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +274: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +275: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +276: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +277: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +278: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +279: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +280: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:08 +280: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: native failure is explicit and prevents repeated failed requests
+Original Android text rendering failed: Bitmap limit exceeded
+00:08 +281: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: practice requires both controls and two real reversing pickups
+00:09 +282: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: default design hides cosmetics and preserves the saved wallet
+00:09 +283: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: default design hides cosmetics and preserves the saved wallet
+00:09 +284: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: default design hides cosmetics and preserves the saved wallet
+00:09 +285: /Users/maerz/Projects/Atomic-Orbital/test/device_scaling_test.dart: equal hold/release time has identical results on every device
+00:09 +286: /Users/maerz/Projects/Atomic-Orbital/test/device_scaling_test.dart: equal hold/release time has identical results on every device
+00:09 +287: /Users/maerz/Projects/Atomic-Orbital/test/device_scaling_test.dart: equal hold/release time has identical results on every device
+00:09 +288: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +289: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +290: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +291: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +292: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +293: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +294: /Users/maerz/Projects/Atomic-Orbital/test/original_text_test.dart: warmup contains only canonical gameplay Canvas strings
+00:09 +295: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop previews locked worlds, buys once, equips and persists
+00:09 +296: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:09 +297: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:09 +298: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:09 +299: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:09 +300: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:09 +301: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:10 +302: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:10 +303: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:10 +304: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:10 +305: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: an early release can be retried and mixed inputs stay held
+00:10 +306: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: iPhone cutout, text 2.0: both menu modes fit
+00:10 +307: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: browsing and equipping keep the shop anchored at 1.0 scale
+00:10 +308: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: browsing and equipping keep the shop anchored at 1.0 scale
+00:10 +309: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: browsing and equipping keep the shop anchored at 1.0 scale
+00:10 +310: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: finishing practice returns first Play to the real ready screen
+00:10 +311: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: finishing practice returns first Play to the real ready screen
+00:10 +312: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: finishing practice returns first Play to the real ready screen
+00:10 +313: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: finishing practice returns first Play to the real ready screen
+00:11 +314: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: wide phone, text 2.0: both result modes fit
+00:11 +315: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: Stars field guide belongs to the game and preserves the wallet
+00:11 +316: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: Stars field guide belongs to the game and preserves the wallet
+00:11 +317: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: four by three tablet, text 1.0: both menu modes fit
+00:11 +318: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +319: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +320: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +321: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +322: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +323: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +324: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en practice can be completed at 200% on a narrow phone
+00:11 +325: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: earned pickups survive End run and can buy a playable world
+00:11 +326: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: earned pickups survive End run and can buy a playable world
+00:11 +327: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:11 +328: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:11 +329: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:11 +330: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:11 +331: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:11 +332: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:12 +333: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:12 +334: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:12 +335: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: de practice can be completed at 200% on a narrow phone
+00:12 +336: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: rapid shop taps during a save retry open one route
+00:12 +337: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: rapid shop taps during a save retry open one route
+00:12 +338: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: rapid shop taps during a save retry open one route
+00:12 +339: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: rapid shop taps during a save retry open one route
+00:12 +340: /Users/maerz/Projects/Atomic-Orbital/test/completion_ui_test.dart: en new screens fit Size(768.0, 1024.0) with large text
+00:12 +341: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: large tablet, text 2.0: both result modes fit
+00:12 +342: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(256.0, 568.0) at 1.0 text scale
+00:12 +343: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(256.0, 568.0) at 1.0 text scale
+00:12 +344: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 1.0: both menu modes fit
+00:12 +345: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 1.0: both menu modes fit
+00:12 +346: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(256.0, 568.0) at 2.0 text scale
+00:12 +347: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(256.0, 568.0) at 2.0 text scale
+00:12 +348: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 1.0: both result modes fit
+00:12 +349: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(256.0, 568.0) at 3.2 text scale
+00:12 +350: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 2.0: both menu modes fit
+00:12 +351: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 2.0: both menu modes fit
+00:12 +352: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(393.0, 852.0) at 2.0 text scale
+00:12 +353: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 2.0: both result modes fit
+00:12 +354: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape tablet, text 2.0: both result modes fit
+00:12 +355: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(852.0, 393.0) at 1.0 text scale
+00:12 +356: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 1.0: both menu modes fit
+00:12 +357: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 1.0: both menu modes fit
+00:12 +358: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(852.0, 393.0) at 3.2 text scale
+00:12 +359: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 1.0: both result modes fit
+00:12 +360: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: shop fits Size(1024.0, 768.0) at 1.0 text scale
+00:13 +361: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 2.0: both menu modes fit
+00:13 +362: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 2.0: both menu modes fit
+00:13 +363: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 2.0: both menu modes fit
+00:13 +364: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: German collection fits Size(393.0, 852.0) at 1.0 scale
+00:13 +365: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: landscape cutout, text 2.0: both result modes fit
+00:13 +366: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: German collection fits Size(256.0, 568.0) at 3.2 scale
+00:13 +367: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: narrow split screen, text 1.0: both menu modes fit
+00:13 +368: /Users/maerz/Projects/Atomic-Orbital/test/skin_shop_test.dart: world browsing supports arrows, Tab and selected semantics
+00:13 +369: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: narrow split screen, text 1.0: both result modes fit
+00:13 +370: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: narrow split screen, text 1.0: both result modes fit
+00:13 +371: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: narrow split screen, text 2.0: both menu modes fit
+00:13 +372: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: narrow split screen, text 2.0: both result modes fit
+00:13 +373: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: square split screen, text 1.0: both menu modes fit
+00:13 +374: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: square split screen, text 1.0: both result modes fit
+00:13 +375: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: square split screen, text 2.0: both menu modes fit
+00:13 +376: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: square split screen, text 2.0: both result modes fit
+00:13 +377: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: short split screen, text 1.0: both menu modes fit
+00:14 +378: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: short split screen, text 1.0: both result modes fit
+00:14 +379: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: short split screen, text 2.0: both menu modes fit
+00:14 +380: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: short split screen, text 2.0: both result modes fit
+00:14 +381: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: default phone shows both modes and PLAY without scrolling
+00:14 +382: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: default phone and landscape results keep actions visible
+00:14 +383: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: equal result and best scores do not claim a new record
+00:14 +384: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: home keeps two destinations and puts secondary actions in Menu
+00:14 +385: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: en scene menus scroll with very large text
+00:14 +386: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: de scene menus scroll with very large text
+00:14 +387: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: record results announce the best with large text in both modes
+00:14 +388: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: help teaches the rules without starting a game
+00:14 +389: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: menu selection, sound and enabled service callbacks work
+00:15 +390: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: result replay, home, sound and enabled services work
+00:15 +391: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: unavailable service controls are absent
+00:15 +392: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: reduced motion freezes decoration and can change at runtime
+00:15 +393: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: arena animation crosses its loop without a visible jump
+00:15 +394: /Users/maerz/Projects/Atomic-Orbital/test/menu_scene_test.dart: (tearDownAll)
+00:15 +394: All tests passed!

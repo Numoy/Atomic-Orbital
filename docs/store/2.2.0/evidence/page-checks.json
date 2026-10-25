@@ -1,0 +1,62 @@
+[
+  {
+    "route": "privacy",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "status": 200,
+    "title": "Atomic Orbital — Privacy Policy",
+    "h1": "Atomic Orbital — Privacy Policy",
+    "overflow": false,
+    "links": [
+      "/atomic-orbital/privacy",
+      "/atomic-orbital/support"
+    ]
+  },
+  {
+    "route": "support",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "status": 200,
+    "title": "Atomic Orbital — Support",
+    "h1": "Atomic Orbital — Support",
+    "overflow": false,
+    "links": [
+      "/atomic-orbital/privacy",
+      "/atomic-orbital/support"
+    ]
+  },
+  {
+    "route": "privacy",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "title": "Atomic Orbital — Privacy Policy",
+    "h1": "Atomic Orbital — Privacy Policy",
+    "overflow": false,
+    "links": [
+      "/atomic-orbital/privacy",
+      "/atomic-orbital/support"
+    ]
+  },
+  {
+    "route": "support",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "title": "Atomic Orbital — Support",
+    "h1": "Atomic Orbital — Support",
+    "overflow": false,
+    "links": [
+      "/atomic-orbital/privacy",
+      "/atomic-orbital/support"
+    ]
+  }
+]

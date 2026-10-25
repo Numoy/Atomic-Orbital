@@ -1,0 +1,9 @@
+{
+  "sourceSha256": {
+    "lib/game/game_engine.dart": "53df2f763efe2bf19a6df89c8a4de5b813df0d864ccdd45034a83b6fdae7d689",
+    "lib/models/components.dart": "bf82ef097ed7e3f57d5b197dea34bd14087f53e5ebf20e6b919a417bab30d5f8",
+    "lib/models/vector2d.dart": "58a99d94eec67f62d03f8c0abb32818224a080dfe06fdd9bb42b1a3b620eda64",
+    "lib/models/entity.dart": "8e3fac929f8ffcdd5adaadfcf026214331d23bf4dfcc60e62da67ec7778b9fc8"
+  },
+  "verifiedUnchanged": true
+}

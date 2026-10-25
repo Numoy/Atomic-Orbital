@@ -1,0 +1,20 @@
+{
+  "commit": "90a2d00",
+  "checks": [
+    {
+      "page": "privacy",
+      "status": 200,
+      "updatedCopy": true
+    },
+    {
+      "page": "support",
+      "status": 200,
+      "updatedCopy": true
+    },
+    {
+      "page": "delete-data",
+      "status": 200,
+      "updatedCopy": true
+    }
+  ]
+}

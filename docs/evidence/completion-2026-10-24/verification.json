@@ -1,0 +1,11 @@
+{
+  "checkedOn": "2026-10-24",
+  "flutterTests": 304,
+  "flutterAnalysis": "No issues found",
+  "androidMigrationUnitTests": 9,
+  "androidMigrationFailures": 0,
+  "storeRenderChecks": 51,
+  "completionRenderExports": 3,
+  "deviceSmoke": "iPhone/iPad simulators install and launch; physical acceptance pending",
+  "sourceChangesAfterManifest": []
+}

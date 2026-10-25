@@ -1,0 +1,540 @@
+{
+  "detailId": "3548e539-c1d6-4fc4-a6ea-967a8a4d2eb6",
+  "achievements": [
+    {
+      "id": "normal20",
+      "resourceId": "22be8c6b-28dc-411f-a0a2-d68d8fb33c6b",
+      "versionId": "e87c4ca2-d821-4499-9862-6fdae2de8549",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "9c870498-ec2e-4689-a267-140a8d128b25",
+          "imageId": "a20faa43-521a-4fc2-a1b4-54ce3c60d916"
+        },
+        {
+          "locale": "de-DE",
+          "id": "9331b5f9-f404-4f82-afb7-733e56fcfa07",
+          "imageId": "be6b2ffe-49fa-456b-82a9-2078c8b14ba0"
+        }
+      ]
+    },
+    {
+      "id": "normal35",
+      "resourceId": "97671ce2-d955-45fe-a954-68d1bff3c551",
+      "versionId": "8c8cfec1-db37-4228-aae0-9f252cce7c07",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "7c36e2bb-39b6-405b-bc4f-7624471e2f2a",
+          "imageId": "0d7eea5e-853a-4817-93ba-50e9c069fec3"
+        },
+        {
+          "locale": "de-DE",
+          "id": "a564e861-13e7-47f2-a847-e96045389eb7",
+          "imageId": "8c540488-5aa1-4f6d-b5da-688d7114a533"
+        }
+      ]
+    },
+    {
+      "id": "normal50",
+      "resourceId": "84a136a7-5efe-49d9-a8aa-2792dac71e9d",
+      "versionId": "45a3c956-cf09-4b96-84b0-d094cc266b92",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "eb477877-97bc-46cf-9a0e-66337b2c8047",
+          "imageId": "aa4fe1ab-0621-4059-8df1-d7b71d0bc33e"
+        },
+        {
+          "locale": "de-DE",
+          "id": "e17263c9-6743-4a15-a849-dae0aec05e11",
+          "imageId": "1e21f52e-eb73-4197-b00e-a5b9d7fe09c3"
+        }
+      ]
+    },
+    {
+      "id": "hardcore20",
+      "resourceId": "b78755bb-b923-4ea0-a6b2-e4ec739b31ad",
+      "versionId": "132d1622-f796-4a64-a00c-cd2ab92302e5",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "9dd9a04e-4101-485c-aed2-72c3b463edef",
+          "imageId": "5987489d-d5a9-4359-90b5-5ef1a6a55088"
+        },
+        {
+          "locale": "de-DE",
+          "id": "cb4bd4f2-04be-437d-bcf0-0fed5f08336d",
+          "imageId": "2abdaf7f-846d-4134-b815-d6baebe9520e"
+        }
+      ]
+    },
+    {
+      "id": "hardcore35",
+      "resourceId": "2495273a-ed7c-4528-aa55-b6afefe52d03",
+      "versionId": "626a6b11-e169-4d36-bf20-29c57fbe3437",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "09031c9f-2771-4a8e-a887-ee79aa5d3c92",
+          "imageId": "b72d76ef-5024-4e1e-91db-a308cabfedcd"
+        },
+        {
+          "locale": "de-DE",
+          "id": "c13b7a60-c253-4509-adea-5e252fa919a6",
+          "imageId": "6b7a1022-7060-4619-afc7-fa6d59a9687e"
+        }
+      ]
+    },
+    {
+      "id": "hardcore50",
+      "resourceId": "79caca59-c008-4f22-947b-94505db6300d",
+      "versionId": "4c85e099-9608-46f7-b69a-2afe7a095d5d",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "5495a2e1-c8ff-4ddb-be88-1db13ca5bb3e",
+          "imageId": "ecd509b2-974a-4cd5-a8e1-5faa6b26b321"
+        },
+        {
+          "locale": "de-DE",
+          "id": "02ceb021-395e-4151-9607-3ca665ed7f3a",
+          "imageId": "426e71cd-d050-480e-9757-32fbbc5b959e"
+        }
+      ]
+    },
+    {
+      "id": "points500",
+      "resourceId": "7e19f4b1-e31f-4510-b3c2-5b5843b23274",
+      "versionId": "df62d5b5-f405-4cdf-bef2-2423d43665f1",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "92d45f17-2744-45c5-a57e-337e5209cfb2",
+          "imageId": "f914292a-0312-4328-a7f5-bb40d2a4e2c1"
+        },
+        {
+          "locale": "de-DE",
+          "id": "894d86ea-2317-46b5-acce-f7185572e729",
+          "imageId": "9d800348-e630-45de-8986-350c99228d4f"
+        }
+      ]
+    },
+    {
+      "id": "points1000",
+      "resourceId": "fd859336-1f61-4a3b-ab96-051d1f27eedc",
+      "versionId": "9b9b202d-6e57-49e3-a040-a8872c5cdefe",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "0892f1f6-c33c-4d46-9ef2-b63377f18d8b",
+          "imageId": "527ee96b-b750-4569-9951-e875f99cbb40"
+        },
+        {
+          "locale": "de-DE",
+          "id": "3405371c-a3d7-4e57-b82b-9597d960e6ce",
+          "imageId": "f6ef1f6e-f186-43e6-a6f3-cb935b3fe591"
+        }
+      ]
+    },
+    {
+      "id": "points10000",
+      "resourceId": "c1894e31-e65b-4e72-9da2-3d4e3d19d5c6",
+      "versionId": "5b9c472b-a297-4c67-a65f-f584bfa88bb8",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "5997eb1e-2a78-49c8-ae91-4340d9870f77",
+          "imageId": "2a4b4480-5a59-46e7-bb2a-cd36cfe865ba"
+        },
+        {
+          "locale": "de-DE",
+          "id": "1a999cd6-feb6-423a-b524-09fe7c5cfa37",
+          "imageId": "860d366d-7d9d-4c84-ac76-a55a83261f8c"
+        }
+      ]
+    },
+    {
+      "id": "games50",
+      "resourceId": "be43c60e-be50-4af1-8f40-af0dad3e3b64",
+      "versionId": "117ecd16-4e94-40b9-8a00-e30527d705be",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "54b69985-5ee1-4896-b6da-872bf6490d42",
+          "imageId": "ccd30b2f-71bd-42d0-bdfb-deb2cc7328fb"
+        },
+        {
+          "locale": "de-DE",
+          "id": "276cc734-c2ea-48bc-aa3c-e44526435f6f",
+          "imageId": "26c594b5-30c5-43a9-a329-9dc224769170"
+        }
+      ]
+    },
+    {
+      "id": "games150",
+      "resourceId": "2303fcd0-116f-4da0-8189-5c506bddbbaa",
+      "versionId": "536a0752-c7d9-4e2b-8136-03290eeba065",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "67a10de2-446b-4bc2-a09f-49ab22eb0a89",
+          "imageId": "330f0b28-e765-49ce-9afd-b87e00f2c215"
+        },
+        {
+          "locale": "de-DE",
+          "id": "1ce558fc-ae60-4faf-accd-5f44a78fb2fc",
+          "imageId": "9996523a-a941-42bc-a871-0908af011c7e"
+        }
+      ]
+    },
+    {
+      "id": "games500",
+      "resourceId": "2398126c-8c9c-4577-94ce-7a1cca3d7b65",
+      "versionId": "7cb4225e-37f4-43b4-a2a5-5ad7d6fca2f7",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "a8df7a72-d96c-45b9-930f-f486e08fb66e",
+          "imageId": "44db9530-8261-443d-b5be-4858a5e4e566"
+        },
+        {
+          "locale": "de-DE",
+          "id": "51d9b994-ead8-4b38-94b1-22e8d1e91363",
+          "imageId": "d4ee5886-faa9-4b9c-9eb8-48e18b0b78ba"
+        }
+      ]
+    },
+    {
+      "id": "firstContact",
+      "resourceId": "8aae01dd-aeb1-416f-8157-076c1f632c72",
+      "versionId": "16401fed-4222-41cc-8029-8747b1e9ca41",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "fce300fd-6f04-4a4b-b9d0-eb642fac7df0",
+          "imageId": "c082c943-0584-4c10-997b-05e90ae4fcd2"
+        },
+        {
+          "locale": "de-DE",
+          "id": "b7cbd746-3740-4bfe-825f-b0d4f51ca836",
+          "imageId": "b1f4c690-64fc-40db-baa8-31ea1004323d"
+        }
+      ]
+    },
+    {
+      "id": "findingOrbit",
+      "resourceId": "41e5c773-20c4-41d5-ba36-decb29cb9302",
+      "versionId": "4567ebae-9a80-423d-8826-af00609ca40a",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "fd5259b4-0f41-48f3-9613-558e42bc9c53",
+          "imageId": "85668772-e50f-4fc3-951e-8d3d295eecb3"
+        },
+        {
+          "locale": "de-DE",
+          "id": "c4374df7-c3e4-4ed4-81df-f8c5c6f9835c",
+          "imageId": "7921fb2e-4d81-4036-b588-6e6b06d3fe96"
+        }
+      ]
+    },
+    {
+      "id": "hardcoreCadet",
+      "resourceId": "84428fc3-42f0-430e-8017-93bd430d104b",
+      "versionId": "82dedeee-4830-45eb-9ea9-809830555d05",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "5eae8338-c879-4649-ba03-1c188d52456d",
+          "imageId": "dabbf7ab-6b19-4c46-9f26-1055ac59b1a4"
+        },
+        {
+          "locale": "de-DE",
+          "id": "26d65afa-0433-4a24-84dd-20ac5a2ef9dc",
+          "imageId": "e7dead1c-19fa-4bd3-aebe-0cbfb20394c0"
+        }
+      ]
+    },
+    {
+      "id": "steadyHands",
+      "resourceId": "9812a4a4-2018-4c44-9f1d-5baf4513b29d",
+      "versionId": "f33df8c4-803e-4425-b8a5-5fc69cbfc239",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "60ed5258-7670-4baa-b529-ad837b833fba",
+          "imageId": "8478063c-a039-457a-8185-fe0878357490"
+        },
+        {
+          "locale": "de-DE",
+          "id": "2c5dfb4c-9bab-4192-b877-049ca4c963f6",
+          "imageId": "fb1fbb28-70a9-4335-b6d4-c77ca2f4846b"
+        }
+      ]
+    },
+    {
+      "id": "newHorizons",
+      "resourceId": "23556a12-9603-43f3-be23-b2fc34ae7bbf",
+      "versionId": "9551ebb5-1f10-4f4f-a0f2-a5e1ba1578a5",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "df49587b-2fd8-45d4-a41b-b7cbb23657f1",
+          "imageId": "52487502-37d7-4c81-b981-91f92e729733"
+        },
+        {
+          "locale": "de-DE",
+          "id": "99904053-25cb-4ce0-95c6-8321f88d4d25",
+          "imageId": "f6c6fa1e-3291-4d6e-88a5-818a45300083"
+        }
+      ],
+      "showBeforeEarned": false
+    },
+    {
+      "id": "worldTour",
+      "resourceId": "77288702-276f-4d8b-8f0e-27be649380b5",
+      "versionId": "9f35541c-4721-4757-9c9a-22d990a56c7c",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "locale": "en-US",
+          "id": "e8f4c540-875d-43b9-9290-b2ba1b8a03ba",
+          "imageId": "263c1e48-4396-466a-a849-89e52335989c"
+        },
+        {
+          "locale": "de-DE",
+          "id": "a5e64e11-80cb-4ce1-9eca-a300ea332665",
+          "imageId": "ce438534-7d46-4949-adc4-bd858820aa1f"
+        }
+      ],
+      "showBeforeEarned": false
+    }
+  ],
+  "boards": [
+    {
+      "vendorIdentifier": "ao.normal",
+      "resourceId": "309af3f1-3317-4ba7-aee9-9f4c5d152344",
+      "versionId": "e2b77936-e99f-4afa-8343-b15fd1688f8e",
+      "state": "PREPARE_FOR_SUBMISSION"
+    },
+    {
+      "vendorIdentifier": "ao.hardcore",
+      "resourceId": "83bd5a3a-1ab5-4c45-88f9-4047b7864b80",
+      "versionId": "c12e53da-4377-440a-bc20-4072e7733f15",
+      "state": "PREPARE_FOR_SUBMISSION"
+    },
+    {
+      "vendorIdentifier": "ao.games",
+      "resourceId": "c95052bf-201c-43cd-918b-34d4a2256a22",
+      "versionId": "6997379d-c8cd-43ba-84b0-95c1686d16ea",
+      "state": "PREPARE_FOR_SUBMISSION"
+    }
+  ],
+  "gameCenterAppVersion": {
+    "id": "e7915640-7c92-42fd-a2fa-7f4bdf7e9a40",
+    "enabled": true
+  },
+  "verifiedOn": "2026-10-24",
+  "images": [
+    {
+      "id": "be6b2ffe-49fa-456b-82a9-2078c8b14ba0",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "a20faa43-521a-4fc2-a1b4-54ce3c60d916",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "8c540488-5aa1-4f6d-b5da-688d7114a533",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "0d7eea5e-853a-4817-93ba-50e9c069fec3",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "1e21f52e-eb73-4197-b00e-a5b9d7fe09c3",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "aa4fe1ab-0621-4059-8df1-d7b71d0bc33e",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "2abdaf7f-846d-4134-b815-d6baebe9520e",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "5987489d-d5a9-4359-90b5-5ef1a6a55088",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "6b7a1022-7060-4619-afc7-fa6d59a9687e",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "b72d76ef-5024-4e1e-91db-a308cabfedcd",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "426e71cd-d050-480e-9757-32fbbc5b959e",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "ecd509b2-974a-4cd5-a8e1-5faa6b26b321",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "9d800348-e630-45de-8986-350c99228d4f",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "f914292a-0312-4328-a7f5-bb40d2a4e2c1",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "f6ef1f6e-f186-43e6-a6f3-cb935b3fe591",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "527ee96b-b750-4569-9951-e875f99cbb40",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "860d366d-7d9d-4c84-ac76-a55a83261f8c",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "2a4b4480-5a59-46e7-bb2a-cd36cfe865ba",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "26c594b5-30c5-43a9-a329-9dc224769170",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "ccd30b2f-71bd-42d0-bdfb-deb2cc7328fb",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "9996523a-a941-42bc-a871-0908af011c7e",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "330f0b28-e765-49ce-9afd-b87e00f2c215",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "d4ee5886-faa9-4b9c-9eb8-48e18b0b78ba",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "44db9530-8261-443d-b5be-4858a5e4e566",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "b1f4c690-64fc-40db-baa8-31ea1004323d",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "c082c943-0584-4c10-997b-05e90ae4fcd2",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "7921fb2e-4d81-4036-b588-6e6b06d3fe96",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "85668772-e50f-4fc3-951e-8d3d295eecb3",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "e7dead1c-19fa-4bd3-aebe-0cbfb20394c0",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "dabbf7ab-6b19-4c46-9f26-1055ac59b1a4",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "fb1fbb28-70a9-4335-b6d4-c77ca2f4846b",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "8478063c-a039-457a-8185-fe0878357490",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "f6c6fa1e-3291-4d6e-88a5-818a45300083",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "52487502-37d7-4c81-b981-91f92e729733",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "ce438534-7d46-4949-adc4-bd858820aa1f",
+      "state": "COMPLETE",
+      "errors": []
+    },
+    {
+      "id": "263c1e48-4396-466a-a849-89e52335989c",
+      "state": "COMPLETE",
+      "errors": []
+    }
+  ],
+  "currentBuildVisibleAchievements": 16,
+  "deferredWorldAchievements": 2
+}

@@ -1,0 +1,40 @@
+Live Play Games verification, 2026-10-21, comparison Android profile build.
+
+Original project239790895284; restricted debug comparison credential.
+Signed-in tester account selected by the owner in the emulator.
+
+1. A normal startup-zero request was rejected by the original board's minimum1.
+2. After published-bound validation and queue repair, legitimate stored local
+   Normal8 / Hardcore4 / completed-games12 updates received submitScoreImmediate
+   SDK success responses. Persisted play_games_pending became[].
+3. Native UI independently displayed original Normal61 / Hardcore36 and9/12
+   existing achievements. Lower comparison scores did not overwrite those PBs.
+4. An isolated idempotent unlock request for already-earned Total of500Points
+   (CgkItOGapf0GEAIQEA, UI earned Feb19,2018) was added to the comparison app's
+   empty local queue without changing any scores/statistics. A normal app
+   sign-in flushed it through unlockImmediate; persisted queue again became[].
+   No new achievement or fabricated score was granted.
+
+The service removes events only after the native immediate SDK callback reports
+success; Dart regression tests verify failure/cancellation retain the events.
+The instrumentation-only PGS probe could not authenticate under its distinct
+caller and was removed. The successful unlock check used the actual app process.
+
+5. After moving permitted SDK initialization to Application.onCreate, cold start
+   authenticated automatically (red-slash controller), without a sign-in tap.
+6. Tapping disconnect persisted flutter.play_games_disconnected=true. After
+   force-stop/relaunch, the controller had0 red-slash pixels and remained
+   disconnected. Explicit reconnect restored false and an empty update queue.
+7. The screenshot preview sometimes omitted graphics. All four inspected PNGs
+   were actually fully opaque (alpha255) with byte-identical static text/icon
+   crops before/after sign-in, achievements return and Home/resume. The trial
+   surface/cache recovery code was removed; it was not an Android app defect.
+
+8. The final installed profile APK completed a real Hardcore run: local Normal8,
+   Hardcore4, completed-games13. The queue became[] after acknowledgment.
+   SCORE opened native Hardcore Highscore; its screenshot is the final proof.
+   GAME OVER, first action row and bottom action-row RGBA crops were byte-identical
+   before/after the native board. Native NO ADS showed “The app is already ad-free”.
+
+Final APK SHA-256:
+26b10053624525a01fc8f8842ded0c87400d53e79f1a1bf20d765e256354d293

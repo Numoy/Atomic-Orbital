@@ -10,6 +10,7 @@
 .history
 .svn/
 .swiftpm/
+.playwright-mcp/
 migrate_working_dir/
 
 # IntelliJ related
@@ -43,3 +44,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Store-console captures contain account and review-contact details.
+/docs/evidence/release-2026-10-22/
+/docs/evidence/release-2026-10-23/

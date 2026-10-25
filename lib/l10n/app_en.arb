@@ -1,0 +1,425 @@
+{
+  "@@locale": "en",
+  "play": "PLAY",
+  "tryAgain": "TRY AGAIN",
+  "home": "HOME",
+  "menu": "Menu",
+  "normal": "Normal",
+  "hardcore": "Hardcore",
+  "howToPlay": "How to play",
+  "howToPlayTitle": "HOW TO PLAY",
+  "share": "Share",
+  "shareScore": "Share score",
+  "shareGame": "Share Atomic Orbital",
+  "trophies": "Trophies",
+  "achievements": "Achievements",
+  "scores": "Scores",
+  "leaderboard": "Leaderboard",
+  "signIn": "Sign in",
+  "playGames": "Play Games",
+  "disconnect": "Disconnect Play Games",
+  "rate": "Rate",
+  "controls": "Hold to move out · Release to move in",
+  "oneHit": "One hit. Game over.",
+  "regenerates": "Health regenerates.",
+  "worldShop": "World shop",
+  "gameOver": "GAME OVER",
+  "pickupsCollected": "PICKUPS COLLECTED",
+  "newBest": "NEW BEST!",
+  "personalBest": "Personal best",
+  "paused": "PAUSED",
+  "resume": "RESUME",
+  "soundOff": "Sound off",
+  "soundOn": "Sound on",
+  "enableSound": "Enable sound",
+  "muteSound": "Mute sound",
+  "endRun": "End run",
+  "endRunLabel": "End run and return to menu",
+  "gotIt": "GOT IT",
+  "holdRelease": "Hold out, release in",
+  "holdHelp": "Hold in the arena or hold Space/Enter to move outward. Release to move inward.",
+  "collectPickups": "Collect pickups",
+  "collectHelp": "Each pickup scores one point and reverses your direction.",
+  "avoidHazards": "Avoid red hazards",
+  "hazardHelp": "Normal mode regenerates health. Hardcore ends on the first hit.",
+  "takeBreak": "Take a break",
+  "pauseHelp": "Use the pause button, Escape/P or Android Back. Resume when you’re ready.",
+  "pauseGame": "Pause game",
+  "touchToStart": "TOUCH TO START",
+  "holdLabel": "Hold to move outward; release to move inward.",
+  "readyLabel": "Touch or press Space to start. Hold to move outward; release to move inward.",
+  "progress": "Progress",
+  "statistics": "Statistics",
+  "settings": "Settings",
+  "nextGoal": "Next goal",
+  "unlocked": "Unlocked",
+  "locked": "Locked",
+  "allComplete": "All achievements earned",
+  "completedRuns": "Completed runs",
+  "totalPoints": "Points in completed runs",
+  "playTime": "Recorded playtime",
+  "worldsOwned": "Worlds owned",
+  "normalBest": "Normal best",
+  "hardcoreBest": "Hardcore best",
+  "localProgress": "Progress is saved on this device. Uninstalling or clearing app data can remove it.",
+  "music": "Music",
+  "effects": "Sound effects",
+  "haptics": "Vibration",
+  "language": "Language",
+  "systemLanguage": "System language",
+  "privacy": "Privacy policy",
+  "support": "Support",
+  "deleteData": "Data deletion instructions",
+  "version": "Version",
+  "retry": "Retry",
+  "savePending": "Saving progress…",
+  "saveFailed": "Progress could not be saved. Retry before closing the game.",
+  "saveUnreadable": "Saved progress could not be read. The original save is preserved. You can restore a backup in Settings.",
+  "connection": "Connection",
+  "offline": "Playing offline",
+  "connected": "Connected",
+  "retrySync": "Retry sync",
+  "platformTrophies": "Online achievements",
+  "practice": "Practice controls",
+  "skip": "Skip",
+  "next": "Next",
+  "practiceTitle": "Practice",
+  "practiceHold": "Hold anywhere",
+  "practiceRelease": "Now let go",
+  "practiceDone": "You're ready",
+  "startPlaying": "Start playing",
+  "hardcoreIntro": "One hit ends the run.",
+  "notAvailable": "This action is unavailable on this device.",
+  "signInCancelled": "Google Play Games sign-in did not complete. You can keep playing offline.",
+  "actionFailed": "Unable to open this action. Please try again.",
+  "textFailed": "Game text could not be prepared.",
+  "returnMenu": "Return to menu",
+  "hangar": "Hangar",
+  "stars": "Stars",
+  "fieldGuide": "About Stars",
+  "fieldGuideTitle": "FIELD GUIDE",
+  "fluxTagline": "A good orbit pays off.",
+  "backHangar": "BACK TO HANGAR",
+  "fluxEarnTitle": "1 pickup = 1 Star",
+  "fluxEarnHelp": "Collect in either mode. Your Stars are saved as you play.",
+  "fluxSpendTitle": "New world. Same challenge.",
+  "fluxSpendHelp": "Spend Stars on worlds in the hangar. Every world keeps the same rules.",
+  "fluxSaveTitle": "Yours to keep",
+  "fluxSaveHelp": "Start with 100 Stars. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.",
+  "equipped": "Equipped",
+  "owned": "Owned",
+  "useWorld": "Use world",
+  "unlock": "Unlock",
+  "collectMore": "Collect more Stars to unlock this world.",
+  "walletFailed": "Could not save this change. Your Stars have not been spent. Please retry.",
+  "fluxFailed": "Stars could not be saved. Please retry before closing the game.",
+  "saving": "Saving…",
+  "unavailable": "Unavailable",
+  "previousWorld": "Previous world",
+  "nextWorld": "Next world",
+  "bestLabel": "BEST  {score}",
+  "@bestLabel": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "scoreLabel": "Score {score}",
+  "@scoreLabel": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "worldShopBalance": "World shop · {balance} Stars",
+  "@worldShopBalance": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      }
+    }
+  },
+  "earnedFlux": "{amount, plural, =1{+1 Star saved} other{+{amount} Stars saved}}",
+  "@earnedFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "pendingFlux": "{amount, plural, =1{+1 Star · save pending} other{+{amount} Stars · save pending}}",
+  "@pendingFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "progressCount": "{current} / {target}",
+  "@progressCount": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "unlockedCount": "{count} of {total} unlocked",
+  "@unlockedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "syncPending": "{count} updates waiting to sync",
+  "@syncPending": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unlockPrice": "Unlock · {price} Stars",
+  "@unlockPrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "moreFlux": "{amount, plural, =1{1 more Star to unlock} other{{amount} more Stars to unlock}}",
+  "@moreFlux": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "oneTimePrice": "{price} Stars · one-time unlock",
+  "@oneTimePrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "fluxBalance": "{balance, plural, =1{1 Star} other{{balance} Stars}}",
+  "@fluxBalance": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      }
+    }
+  },
+  "fluxProgress": "{balance} of {price} Stars",
+  "@fluxProgress": {
+    "placeholders": {
+      "balance": {
+        "type": "int"
+      },
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursMinutes": "{hours} h {minutes} min",
+  "@hoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementEarned": "Achievement: {title}",
+  "@achievementEarned": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "shareMessage": "{score, plural, one{I got 1 point in Atomic Orbital. Can you do better?} other{I got {score} points in Atomic Orbital. Can you do better?}}",
+  "@shareMessage": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementTitle": "{id, select, normal20{20 Points Normal} normal35{35 Points Normal} normal50{50 Points Normal} hardcore20{20 Points Hardcore} hardcore35{35 Points Hardcore} hardcore50{50 Points Hardcore} points500{Total of 500 Points} points1000{Total of 1000 Points} points10000{Total of 10000 Points} games50{50 Games} games150{150 Games} games500{500 Games} firstContact{First Contact} findingOrbit{Finding Orbit} hardcoreCadet{Hardcore Cadet} steadyHands{Steady Hands} newHorizons{New Horizons} worldTour{World Tour} other{Achievement}}",
+  "@achievementTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "achievementDescription": "{id, select, normal20{Reach 20 points in a completed Normal run.} normal35{Reach 35 points in a completed Normal run.} normal50{Reach 50 points in a completed Normal run.} hardcore20{Reach 20 points in a completed Hardcore run.} hardcore35{Reach 35 points in a completed Hardcore run.} hardcore50{Reach 50 points in a completed Hardcore run.} points500{Collect 500 points across completed runs.} points1000{Collect 1000 points across completed runs.} points10000{Collect 10000 points across completed runs.} games50{Complete 50 runs.} games150{Complete 150 runs.} games500{Complete 500 runs.} firstContact{Collect your first pickup in a real run.} findingOrbit{Reach 5 points in Normal.} hardcoreCadet{Reach 5 points in Hardcore.} steadyHands{Reach 10 Normal points before taking any hit.} newHorizons{Unlock your first themed world.} worldTour{Reach 5 points in Classic, Cow Abduction and Deep Blue.} other{Achievement}}",
+  "@achievementDescription": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldName": "{id, select, classic{Classic} cow_abduction{Cow Abduction} deep_blue{Deep Blue} spider_web{Web Escape} dragon_hoard{Dragon’s Hoard} sunflower{Pollen Patrol} frost_bite{Frost Bite} haunted_harvest{Haunted Harvest} junkyard_dash{Junkyard Dash} volcano_hop{Volcano Hop} cheese_chase{Cheese Chase} jungle_jam{Jungle Jam} other{World}}",
+  "@worldName": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldDescription": "{id, select, classic{The original atomic arena.} cow_abduction{Fly the MOO-1. Beam up cows. Dodge Earth’s defenses.} deep_blue{Pilot the Bathyscout. Collect treasure chests. Dodge the kraken’s ink.} spider_web{Be a tiny fly. Snatch sugar cubes. Slip past the spider’s webs.} dragon_hoard{Guard your little knight. Gather gems. Dodge dragon fire.} sunflower{Fly a busy bee. Gather pollen. Dodge the sunflower’s seeds.} frost_bite{Guide a penguin. Catch fish. Dodge the snow monster’s ice.} haunted_harvest{Float a little ghost. Collect candy. Dodge the pumpkin’s bats.} junkyard_dash{Pilot a repair drone. Collect bolts. Dodge the robot’s sparks.} volcano_hop{Fly a pterosaur. Rescue eggs. Dodge flying lava.} cheese_chase{Scurry as a mouse. Snatch cheese. Dodge the cat’s yarn.} jungle_jam{Fly a toucan. Gather bananas. Dodge the monkey’s coconuts.} other{Choose your next world.}}",
+  "@worldDescription": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "walletUnavailable": "Wallet unavailable",
+  "equippedReady": "Equipped · ready for launch",
+  "worldReady": "World unlocked · ready to equip",
+  "you": "YOU",
+  "holdToStart": "HOLD TO START",
+  "health": "HEALTH",
+  "oneHitLabel": "ONE HIT",
+  "profileChanged": "Your game-service profile changed. Updates are kept for the original profile; switch back to sync them.",
+  "syncFailed": "Sync could not complete. Your local records are kept.",
+  "rangeWarning": "The published leaderboard cannot accept this score. Your local record is saved.",
+  "nativeSignInCancelled": "Sign-in did not complete. You can keep playing offline.",
+  "disconnectService": "Disconnect {service}",
+  "@disconnectService": {
+    "placeholders": {
+      "service": {
+        "type": "String"
+      }
+    }
+  },
+  "endRunHelp": "Leaving now keeps achievements earned during play. Records and run statistics update at Game Over.",
+  "practiceHoldHelp": "Move the white dot out. Keep holding until it reaches the square.",
+  "practiceReleaseHelp": "Each square reverses your direction. Let go to move in and collect the next one.",
+  "practiceDoneHelp": "Hold to move out. Release to move in.\nSquares reverse your direction. Avoid the red dots.",
+  "practiceTouchHint": "Touch anywhere to begin",
+  "practiceHolding": "Holding · moving out",
+  "practiceReleased": "Released · moving in",
+  "practiceAnywhereHelp": "You don't need to tap the dot or the square.",
+  "practiceDoneFeedback": "Both squares collected",
+  "progressLocalNote": "Saved on this device.",
+  "newBestAnnouncement": "New personal best: {score}",
+  "@newBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "personalBestAnnouncement": "Personal best: {score}",
+  "@personalBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "newDailyBestAnnouncement": "New daily best: {score}",
+  "@newDailyBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyBestAnnouncement": "Daily best: {score}",
+  "@dailyBestAnnouncement": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "saveBackup": "Save backup",
+  "exportSave": "Export save",
+  "importSave": "Import save",
+  "restorePreviousSave": "Restore previous save",
+  "backupExplanation": "Save a file you can restore on another device. Online profiles and pending uploads are not included.",
+  "backupExported": "Save exported.",
+  "backupImported": "Save restored.",
+  "backupFailed": "The backup action failed. Your current save has been kept.",
+  "backupInvalid": "This file is not a supported Atomic Orbital save.",
+  "backupPreviewTitle": "Restore this save?",
+  "backupReplaceWarning": "This replaces your progress and settings. You can restore the previous save afterward.",
+  "backupConfirm": "Replace save",
+  "backupCurrent": "Current save",
+  "backupIncoming": "Selected save",
+  "backupStoredItems": "Stored worlds",
+  "backupStars": "Stored Stars",
+  "backupRecoveryFailed": "A save replacement could not be recovered. Your saved copies are preserved. Restart the app before making more changes.",
+  "dailyChallenge": "Daily challenge",
+  "dailyIntro": "A new Normal challenge every day. Replay today’s challenge as often as you like. Your daily best stays separate from your other records.",
+  "dailyReset": "Next challenge: {time} (local time)",
+  "@dailyReset": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyDate": "{date} · UTC",
+  "@dailyDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyBest": "Daily best",
+  "dailyLocalNote": "Saved on this device. The challenge date comes from your device clock.",
+  "dailySaveFailed": "The daily result could not be saved. Retry before closing the game.",
+  "runDuration": "Time: {duration}",
+  "@runDuration": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyShareMessage": "I scored {score} in Atomic Orbital’s daily challenge for {date} (UTC).",
+  "@dailyShareMessage": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "worldCollection": "World collection",
+  "collectionProgress": "{owned} of {total} unlocked",
+  "@collectionProgress": {
+    "placeholders": {
+      "owned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyUnreadable": "Saved daily results could not be read. The original save is preserved. Restore a backup in Settings.",
+  "dailyEndRunHelp": "Leaving now will not save a daily result. Finish the run to record it."
+}

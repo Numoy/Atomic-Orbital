@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/arcade_background</item>
+        <item name="android:colorBackground">@color/arcade_background</item>
+        <item name="android:windowSplashScreenBackground">@color/arcade_background</item>
+    </style>
+</resources>

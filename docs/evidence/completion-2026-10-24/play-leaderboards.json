@@ -1,0 +1,31 @@
+{
+  "checkedOn": "2026-10-24",
+  "historicalBoards": {
+    "normal": {
+      "id": "CgkItOGapf0GEAIQAQ",
+      "maximum": 200,
+      "state": "Published"
+    },
+    "hardcore": {
+      "id": "CgkItOGapf0GEAIQAg",
+      "maximum": 100,
+      "state": "Published"
+    }
+  },
+  "replacementBoards": {
+    "normal": {
+      "id": "CgkItOGapf0GEAIQGg",
+      "minimum": 1,
+      "maximumConfigured": false,
+      "state": "Draft"
+    },
+    "hardcore": {
+      "id": "CgkItOGapf0GEAIQGw",
+      "minimum": 1,
+      "maximumConfigured": false,
+      "state": "Draft"
+    }
+  },
+  "published": false,
+  "historicalRecordsDeleted": false
+}

@@ -1,0 +1,44 @@
+{
+  "version": "2.3.0",
+  "prepared_on": "2026-10-25",
+  "status": "Local build-44 candidate copy; not uploaded or published. Device and newcomer acceptance remains pending.",
+  "google_play": {
+    "en-US": {
+      "name": "Atomic Orbital",
+      "short_description": "Hold. Release. Find your orbit. A precise arcade challenge in two modes.",
+      "full_description": "One finger. A changing orbit. One more try.\n\nHold to move outward. Release to move inward. Collect energy and dodge incoming red hazards. Every pickup reverses your direction, and new orbits open as your score grows.\n\nNORMAL\nHealth regenerates. Recover from a hit and find your rhythm.\n\nHARDCORE\nOne hit ends the run. Make every move count.\n\nLearn with a short, skippable practice arena, then chase your best with quick restarts. Track 18 achievements and your completed-run statistics, including while offline.\n\n• Optional daily challenge with separate local records\n• Export and restore a save file from Settings\n• English and German interface\n• Separate personal bests for both modes\n• Music and effects controls, plus optional haptics\n• Portrait and landscape layouts for phones and tablets\n• Share your score through the device share menu\n• No ads or in-app purchases\n\nProgress and settings are stored on this installation. Online achievements and leaderboards do not back up the local save.\n\nConnect Google Play Games for online achievements and Normal/Hardcore leaderboards, or keep playing without signing in.",
+      "release_notes": "Daily challenges with separate local records, save export/import with a preview and previous-save recovery, run time on results, and improved keyboard controls, audio recovery and German accessibility."
+    },
+    "de-DE": {
+      "name": "Atomic Orbital",
+      "short_description": "Halten. Loslassen. Im Orbit bleiben. Zwei Modi, ein klarer Arcade-Rhythmus.",
+      "full_description": "Ein Finger. Ein wechselnder Orbit. Noch ein Versuch.\n\nHalte den Bildschirm gedrückt, um dich nach außen zu bewegen. Lass los, um nach innen zu wechseln. Sammle Energie und weiche roten Hindernissen aus. Mit jedem Energiepunkt kehrt sich deine Richtung um. Steigt dein Punktestand, kommen neue Orbits hinzu.\n\nNORMAL\nDeine Gesundheit regeneriert sich. Erhole dich nach einem Treffer und finde deinen Rhythmus.\n\nHARDCORE\nEin Treffer beendet den Lauf. Jede Bewegung zählt.\n\nLerne die Steuerung in einer kurzen, überspringbaren Übungsarena. Starte danach direkt neu und verbessere deinen Bestwert. Verfolge 18 Erfolge und deine Statistiken abgeschlossener Läufe – auch offline.\n\n• Optionale tägliche Herausforderung mit eigenen lokalen Rekorden\n• Spielstand in den Einstellungen als Datei sichern und wiederherstellen\n• Deutsche und englische Spieloberfläche\n• Getrennte persönliche Bestwerte für beide Modi\n• Musik und Effekte separat einstellbar, optionale Haptik\n• Hoch- und Querformat für Smartphones und Tablets\n• Teile deinen Punktestand über das Teilen-Menü\n• Keine Werbung und keine In-App-Käufe\n\nFortschritt und Einstellungen werden auf dieser Installation gespeichert. Online-Erfolge und Bestenlisten sichern den lokalen Spielstand nicht.\n\nVerbinde Google Play Games für Online-Erfolge und Bestenlisten für Normal und Hardcore, oder spiele ohne Anmeldung weiter.",
+      "release_notes": "Tägliche Herausforderungen mit eigenen lokalen Rekorden, Spielstand-Export und -Import mit Vorschau und vorheriger Sicherung, Laufzeit im Ergebnis sowie verbesserte Tastatursteuerung, Audio-Wiederherstellung und deutsche Bedienungshilfen."
+    }
+  },
+  "app_store": {
+    "en-US": {
+      "name": "Atomic Orbital",
+      "subtitle": "Hold. Release. Stay in orbit.",
+      "promotional_text": "Hold to move out. Release to move in. Collect energy, dodge photons, and chase your best in Normal or Hardcore.",
+      "description": "One finger. A changing orbit. One more try.\n\nHold to move outward. Release to move inward. Collect energy and dodge incoming red hazards. Every pickup reverses your direction, and new orbits open as your score grows.\n\nNORMAL\nHealth regenerates. Recover from a hit and find your rhythm.\n\nHARDCORE\nOne hit ends the run. Make every move count.\n\nLearn with a short, skippable practice arena, then chase your best with quick restarts. Track 18 achievements and your completed-run statistics, including while offline.\n\n• Optional daily challenge with separate local records\n• Export and restore a save file from Settings\n• English and German interface\n• Separate personal bests for both modes\n• Music and effects controls, plus optional haptics\n• Portrait and landscape layouts for phones and tablets\n• Share your score through the device share menu\n• No ads or in-app purchases\n\nProgress and settings are stored on this installation. Online achievements and leaderboards do not back up the local save.\n\nConnect Game Center for online achievements and Normal/Hardcore leaderboards, or keep playing without signing in.",
+      "keywords": "arcade,reflex,timing,precision,one touch,survival,high score,minimal,challenge",
+      "whats_new": "Daily challenges with separate local records, save export/import with a preview and previous-save recovery, run time on results, and improved keyboard controls, audio recovery and German accessibility."
+    },
+    "de-DE": {
+      "name": "Atomic Orbital",
+      "subtitle": "Dein Rhythmus im Orbit",
+      "promotional_text": "Halte zum Ausweichen nach außen, lass los für den Weg nach innen. Sammle Energie und jage deinen Bestwert in Normal oder Hardcore.",
+      "description": "Ein Finger. Ein wechselnder Orbit. Noch ein Versuch.\n\nHalte den Bildschirm gedrückt, um dich nach außen zu bewegen. Lass los, um nach innen zu wechseln. Sammle Energie und weiche roten Hindernissen aus. Mit jedem Energiepunkt kehrt sich deine Richtung um. Steigt dein Punktestand, kommen neue Orbits hinzu.\n\nNORMAL\nDeine Gesundheit regeneriert sich. Erhole dich nach einem Treffer und finde deinen Rhythmus.\n\nHARDCORE\nEin Treffer beendet den Lauf. Jede Bewegung zählt.\n\nLerne die Steuerung in einer kurzen, überspringbaren Übungsarena. Starte danach direkt neu und verbessere deinen Bestwert. Verfolge 18 Erfolge und deine Statistiken abgeschlossener Läufe – auch offline.\n\n• Optionale tägliche Herausforderung mit eigenen lokalen Rekorden\n• Spielstand in den Einstellungen als Datei sichern und wiederherstellen\n• Deutsche und englische Spieloberfläche\n• Getrennte persönliche Bestwerte für beide Modi\n• Musik und Effekte separat einstellbar, optionale Haptik\n• Hoch- und Querformat für Smartphones und Tablets\n• Teile deinen Punktestand über das Teilen-Menü\n• Keine Werbung und keine In-App-Käufe\n\nFortschritt und Einstellungen werden auf dieser Installation gespeichert. Online-Erfolge und Bestenlisten sichern den lokalen Spielstand nicht.\n\nVerbinde Game Center für Online-Erfolge und Bestenlisten für Normal und Hardcore, oder spiele ohne Anmeldung weiter.",
+      "keywords": "arcade,reflexe,reaktion,timing,geschick,ein finger,highscore,ausweichen,minimalistisch",
+      "whats_new": "Tägliche Herausforderungen mit eigenen lokalen Rekorden, Spielstand-Export und -Import mit Vorschau und vorheriger Sicherung, Laufzeit im Ergebnis sowie verbesserte Tastatursteuerung, Audio-Wiederherstellung und deutsche Bedienungshilfen."
+    }
+  },
+  "urls": {
+    "privacy_policy": "https://marvinmaerz.com/atomic-orbital/privacy/",
+    "support": "https://marvinmaerz.com/atomic-orbital/support/",
+    "marketing_candidate": "https://marvinmaerz.com",
+    "existing_policy_candidate": "https://marvinmaerz.com/data-protection",
+    "public_contact_email": "marvin.maerz@gmail.com"
+  }
+}

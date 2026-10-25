@@ -1,0 +1,299 @@
+{
+  "status": "30 replacements COMPLETE; prior screenshots removed; order verified",
+  "sets": [
+    {
+      "locale": "en-US",
+      "setId": "f9b188af-b787-45d6-99fb-68ecbc43bb73",
+      "displayType": "APP_IPAD_PRO_3GEN_129",
+      "oldIds": [
+        "1a400019-6db2-834c-8009-3292d5aff868",
+        "8c400019-6db2-834c-8000-028833cb51ba",
+        "bd400019-6db2-834c-800b-a0ce3ea26d99",
+        "11800019-6db2-834c-8004-77a0be059b7f",
+        "de000019-6db2-834c-8007-d3eb9cef164b"
+      ],
+      "images": [
+        {
+          "id": "87000019-6db2-834c-8030-51cad7021156",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-ipad-13/01-normal.png",
+          "checksum": "50b9eee51dacf91f8ef6ecf4ccaba7a0",
+          "state": "COMPLETE",
+          "serverChecksum": "50b9eee51dacf91f8ef6ecf4ccaba7a0"
+        },
+        {
+          "id": "e9c00019-6db2-834c-8034-f75fa4e8cf8a",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-ipad-13/02-hardcore.png",
+          "checksum": "bf55bb04bb26a605b3fde95b01daa2a8",
+          "state": "COMPLETE",
+          "serverChecksum": "bf55bb04bb26a605b3fde95b01daa2a8"
+        },
+        {
+          "id": "cb800019-6db2-834c-801e-902b69753780",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-ipad-13/03-progress.png",
+          "checksum": "066079fd3100c87b0af6f8098018d729",
+          "state": "COMPLETE",
+          "serverChecksum": "066079fd3100c87b0af6f8098018d729"
+        },
+        {
+          "id": "b8c00019-6db2-834c-8002-357bba8b1de1",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-ipad-13/04-menu.png",
+          "checksum": "45a398d60162c6589cb4e3240a5b4ec0",
+          "state": "COMPLETE",
+          "serverChecksum": "45a398d60162c6589cb4e3240a5b4ec0"
+        },
+        {
+          "id": "e5c00019-6db2-834c-801d-2567b593195c",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-ipad-13/05-results.png",
+          "checksum": "d1a6def28fbe33f84206252b34ddc1ff",
+          "state": "COMPLETE",
+          "serverChecksum": "d1a6def28fbe33f84206252b34ddc1ff"
+        }
+      ]
+    },
+    {
+      "locale": "en-US",
+      "setId": "3243a6d9-cc62-4b6f-832c-5178190a9994",
+      "displayType": "APP_IPHONE_61",
+      "oldIds": [
+        "b5c00019-6db2-834c-8029-5afa79aae221",
+        "98000019-6db2-834c-802a-86ec7ba43623",
+        "5dc00019-6db2-834c-803f-d779815c549e",
+        "18000019-6db2-834c-803e-6661df7d9a48",
+        "6e800019-6db2-834c-8003-83d9ed535fda"
+      ],
+      "images": [
+        {
+          "id": "30800019-6db2-834c-8025-3730815f2b14",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-medium/01-normal.png",
+          "checksum": "a4b70ce927059437f0521ff7f98135c1",
+          "state": "COMPLETE",
+          "serverChecksum": "a4b70ce927059437f0521ff7f98135c1"
+        },
+        {
+          "id": "69c00019-6db2-834c-8024-b6185488570e",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-medium/02-hardcore.png",
+          "checksum": "52543e1e585441076da00eb78a115d32",
+          "state": "COMPLETE",
+          "serverChecksum": "52543e1e585441076da00eb78a115d32"
+        },
+        {
+          "id": "2d800019-6db2-834c-800e-a0b67b871fe6",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-medium/03-progress.png",
+          "checksum": "10933abcac3482044266825f33656447",
+          "state": "COMPLETE",
+          "serverChecksum": "10933abcac3482044266825f33656447"
+        },
+        {
+          "id": "6a400019-6db2-834c-802f-f8e32933a0c7",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-medium/04-menu.png",
+          "checksum": "5992c6a42a2d7e16d9fd44b56504f6dd",
+          "state": "COMPLETE",
+          "serverChecksum": "5992c6a42a2d7e16d9fd44b56504f6dd"
+        },
+        {
+          "id": "77c00019-6db2-834c-8038-89033766e9f4",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-medium/05-results.png",
+          "checksum": "e0890d8baa1b4f8403cdc498256fcdc9",
+          "state": "COMPLETE",
+          "serverChecksum": "e0890d8baa1b4f8403cdc498256fcdc9"
+        }
+      ]
+    },
+    {
+      "locale": "en-US",
+      "setId": "ec8e5519-f8fc-4132-b582-ff194cd38a56",
+      "displayType": "APP_IPHONE_67",
+      "oldIds": [
+        "6c800019-6db2-834c-8020-9de02d6723f7",
+        "a0400019-6db2-834c-8023-e44a88729e03",
+        "76400019-6db2-834c-8001-607ae89d9ec1",
+        "95800019-6db2-834c-803e-9c56cc972da1",
+        "7d400019-6db2-834c-8027-9267903b4ff4"
+      ],
+      "images": [
+        {
+          "id": "fd800019-6db2-834c-801e-8cee1ded8c9a",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-large/01-normal.png",
+          "checksum": "d1021c7a07caad43502a65a2e1033af1",
+          "state": "COMPLETE",
+          "serverChecksum": "d1021c7a07caad43502a65a2e1033af1"
+        },
+        {
+          "id": "78000019-6db2-834c-803b-8bc7a5de27d4",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-large/02-hardcore.png",
+          "checksum": "32167a5d5ecc03ddd2f96722276c9f6f",
+          "state": "COMPLETE",
+          "serverChecksum": "32167a5d5ecc03ddd2f96722276c9f6f"
+        },
+        {
+          "id": "a2c00019-6db2-834c-8006-19de037ad0bf",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-large/03-progress.png",
+          "checksum": "2c3ce8abd84409496506f3d75ca8bf68",
+          "state": "COMPLETE",
+          "serverChecksum": "2c3ce8abd84409496506f3d75ca8bf68"
+        },
+        {
+          "id": "f2400019-6db2-834c-803a-d8c598480813",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-large/04-menu.png",
+          "checksum": "b8a2e012baf0d779751880a7baeaee9e",
+          "state": "COMPLETE",
+          "serverChecksum": "b8a2e012baf0d779751880a7baeaee9e"
+        },
+        {
+          "id": "c5400019-6db2-834c-8015-00037098537f",
+          "file": "store-assets/2.3.0/screenshots/en/app-store-iphone-large/05-results.png",
+          "checksum": "0f798b7f96849b90f22ea2c6e921dd1a",
+          "state": "COMPLETE",
+          "serverChecksum": "0f798b7f96849b90f22ea2c6e921dd1a"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "setId": "39b0d909-fc15-47a3-a1f4-cb13e52d2754",
+      "displayType": "APP_IPHONE_67",
+      "oldIds": [
+        "46c00019-6db2-834c-8027-738e6c659cd8",
+        "b6c00019-6db2-834c-8036-44f499d71a95",
+        "b5000019-6db2-834c-800e-f4074cdd191c",
+        "39800019-6db2-834c-8015-7b3dc8230211",
+        "93c00019-6db2-834c-803a-c4447205d274"
+      ],
+      "images": [
+        {
+          "id": "27800019-6db2-834c-8000-20460e29bd09",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-large/01-normal.png",
+          "checksum": "aa28ab40aeb172e6fed2fa73c3e871fb",
+          "state": "COMPLETE",
+          "serverChecksum": "aa28ab40aeb172e6fed2fa73c3e871fb"
+        },
+        {
+          "id": "27800019-6db2-834c-801e-0d5a389909de",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-large/02-hardcore.png",
+          "checksum": "2c53abb5e3f630d1c94cb8fc3a3d863f",
+          "state": "COMPLETE",
+          "serverChecksum": "2c53abb5e3f630d1c94cb8fc3a3d863f"
+        },
+        {
+          "id": "39400019-6db2-834c-803c-73d94c546411",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-large/03-progress.png",
+          "checksum": "beb6a9b1c6ba0d9287cfc154a29a036f",
+          "state": "COMPLETE",
+          "serverChecksum": "beb6a9b1c6ba0d9287cfc154a29a036f"
+        },
+        {
+          "id": "0b400019-6db2-834c-802b-9909ddeac323",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-large/04-menu.png",
+          "checksum": "cea174461d58839b2faac64637e7d1d5",
+          "state": "COMPLETE",
+          "serverChecksum": "cea174461d58839b2faac64637e7d1d5"
+        },
+        {
+          "id": "0c000019-6db2-834c-8019-bfecd7151602",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-large/05-results.png",
+          "checksum": "cea5d099110bc74d6310b68c267761aa",
+          "state": "COMPLETE",
+          "serverChecksum": "cea5d099110bc74d6310b68c267761aa"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "setId": "6be9ae53-1334-4d6e-815a-0d8ba0c4846f",
+      "displayType": "APP_IPAD_PRO_3GEN_129",
+      "oldIds": [
+        "0e000019-6db2-834c-8039-7159e293e925",
+        "9dc00019-6db2-834c-8025-d00d5e3fc1dd",
+        "d6400019-6db2-834c-8027-5320ef94c08e",
+        "05800019-6db2-834c-8019-0c48a4e50725",
+        "72000019-6db2-834c-8012-9c70060d8749"
+      ],
+      "images": [
+        {
+          "id": "77800019-6db2-834c-8012-d496008150ad",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-ipad-13/01-normal.png",
+          "checksum": "aac76923c98dd57e51ed4982b33b47eb",
+          "state": "COMPLETE",
+          "serverChecksum": "aac76923c98dd57e51ed4982b33b47eb"
+        },
+        {
+          "id": "6bc00019-6db2-834c-8035-847a5cd2da27",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-ipad-13/02-hardcore.png",
+          "checksum": "54c1455aa67c469ed43f599b4a6a424a",
+          "state": "COMPLETE",
+          "serverChecksum": "54c1455aa67c469ed43f599b4a6a424a"
+        },
+        {
+          "id": "59800019-6db2-834c-8015-09846697adde",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-ipad-13/03-progress.png",
+          "checksum": "86780a5a533f48a40cd741dd9d9ca0b2",
+          "state": "COMPLETE",
+          "serverChecksum": "86780a5a533f48a40cd741dd9d9ca0b2"
+        },
+        {
+          "id": "ff400019-6db2-834c-8022-b3e1c339aedb",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-ipad-13/04-menu.png",
+          "checksum": "5dd452de9661944b65208da0d680c970",
+          "state": "COMPLETE",
+          "serverChecksum": "5dd452de9661944b65208da0d680c970"
+        },
+        {
+          "id": "b7c00019-6db2-834c-800c-9ce4d9a1bcb6",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-ipad-13/05-results.png",
+          "checksum": "13480659fa45b943a41941069e13edc8",
+          "state": "COMPLETE",
+          "serverChecksum": "13480659fa45b943a41941069e13edc8"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "setId": "d2e03dbc-8c4d-4a4a-a193-e3957957bc46",
+      "displayType": "APP_IPHONE_61",
+      "oldIds": [
+        "3d800019-6db2-834c-8004-25bb1bb6d59c",
+        "3cc00019-6db2-834c-800e-7b192b7855c5",
+        "8dc00019-6db2-834c-8013-26bfb21e4e89",
+        "39400019-6db2-834c-8032-9c392ad4245e",
+        "b3c00019-6db2-834c-8037-2c1a0a5380c0"
+      ],
+      "images": [
+        {
+          "id": "50c00019-6db2-834c-802e-ec4ced899edf",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-medium/01-normal.png",
+          "checksum": "f5986ca89444ca7c29f92928a570987b",
+          "state": "COMPLETE",
+          "serverChecksum": "f5986ca89444ca7c29f92928a570987b"
+        },
+        {
+          "id": "72800019-6db2-834c-8037-014a159c23f6",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-medium/02-hardcore.png",
+          "checksum": "cb74a0098fda3d1ed6bc1889c3ee0e47",
+          "state": "COMPLETE",
+          "serverChecksum": "cb74a0098fda3d1ed6bc1889c3ee0e47"
+        },
+        {
+          "id": "fec00019-6db2-834c-8010-bf53344e4176",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-medium/03-progress.png",
+          "checksum": "f67e71bed0383b78a28e2c0b6fd2ead8",
+          "state": "COMPLETE",
+          "serverChecksum": "f67e71bed0383b78a28e2c0b6fd2ead8"
+        },
+        {
+          "id": "29400019-6db2-834c-803a-10d8d710ed45",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-medium/04-menu.png",
+          "checksum": "8f1e247bba4bf346ed650eb069d8c85c",
+          "state": "COMPLETE",
+          "serverChecksum": "8f1e247bba4bf346ed650eb069d8c85c"
+        },
+        {
+          "id": "9ec00019-6db2-834c-8020-6090f5f77c3c",
+          "file": "store-assets/2.3.0/screenshots/de/app-store-iphone-medium/05-results.png",
+          "checksum": "cfc9f5d0c5ba3912c807c9cf448fe7e2",
+          "state": "COMPLETE",
+          "serverChecksum": "cfc9f5d0c5ba3912c807c9cf448fe7e2"
+        }
+      ]
+    }
+  ]
+}

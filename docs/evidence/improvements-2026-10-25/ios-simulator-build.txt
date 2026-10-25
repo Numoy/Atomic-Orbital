@@ -1,0 +1,11 @@
+Building de.numpy.orbital.atomic-orbital for simulator (ios)...
+All plugins found for ios are Swift Packages, but your project still has CocoaPods integration. To remove CocoaPods integration, complete the following steps:
+  * In the ios/ directory run "pod deintegrate"
+  * Also in the ios/ directory, delete the Podfile
+  * Remove the include to "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" in your ios/Flutter/Debug.xcconfig
+  * Remove the include to "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" in your ios/Flutter/Release.xcconfig
+
+Removing CocoaPods integration will improve the project's build time.
+Running Xcode build...
+Xcode build done.                                           11.8s
+✓ Built build/ios/iphonesimulator/Runner.app

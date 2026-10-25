@@ -1,0 +1,14 @@
+{
+  "package": "de.numpy.orbital.atomic_orbital",
+  "launchCompleted": true,
+  "launch": [
+    "Starting: Intent { cmp=de.numpy.orbital.atomic_orbital/.MainActivity }",
+    "Status: ok",
+    "LaunchState: COLD",
+    "Activity: de.numpy.orbital.atomic_orbital/.MainActivity",
+    "TotalTime: 3707",
+    "WaitTime: 3759",
+    "Complete"
+  ],
+  "observedFatalOrTextErrors": []
+}

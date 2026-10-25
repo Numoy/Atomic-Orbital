@@ -1,0 +1,15 @@
+{
+  "package": "de.numpy.orbital.atomic_orbital",
+  "sha256": "16d9c3af84088d2f83b1e61c89182619ddc612c9daf78d48e90c54b6d7d574c0",
+  "preferencesBefore": {
+    "flutter.hardcore_high_score": "4",
+    "flutter.games_played": "13",
+    "flutter.high_score": "8"
+  },
+  "preferencesAfter": {
+    "flutter.hardcore_high_score": "4",
+    "flutter.games_played": "13",
+    "flutter.high_score": "8"
+  },
+  "installedArtifactMatches": true
+}

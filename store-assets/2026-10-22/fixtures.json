@@ -1,0 +1,30 @@
+{
+  "normal": {
+    "seed": 1,
+    "frames": 411,
+    "hardcore": false,
+    "score": 8,
+    "input": "Hold/release steers toward the current energy orbit; production controllers and collisions are unchanged."
+  },
+  "normal-later": {
+    "seed": 1,
+    "frames": 738,
+    "hardcore": false,
+    "score": 14,
+    "input": "Hold/release steers toward the current energy orbit; production controllers and collisions are unchanged."
+  },
+  "hardcore": {
+    "seed": 1,
+    "frames": 411,
+    "hardcore": true,
+    "score": 8,
+    "input": "Hold/release steers toward the current energy orbit; production controllers and collisions are unchanged."
+  },
+  "result": {
+    "seed": 1,
+    "frames": 1622,
+    "hardcore": false,
+    "score": 32,
+    "input": "Hold/release steers toward the current energy orbit; production controllers and collisions are unchanged."
+  }
+}

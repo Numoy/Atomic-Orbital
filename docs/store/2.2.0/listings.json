@@ -1,0 +1,52 @@
+{
+  "version": "2.2.0",
+  "prepared_on": "2026-10-22",
+  "status": "Prepared copy; not evidence of a published release.",
+  "google_play": {
+    "en-US": {
+      "name": "Atomic Orbital",
+      "short_description": "Hold. Release. Find your orbit. A precise arcade challenge in two modes.",
+      "full_description": "One finger. A changing orbit. One more try.\n\nHold to move outward. Release to move inward. Collect energy and dodge incoming photons. Every pickup reverses your direction, and new orbits open up as your score grows.\n\nNORMAL\nHealth regenerates. Recover from a hit and find your rhythm.\n\nHARDCORE\nOne hit ends the run. Make every move count.\n\nA clean arcade look, responsive controls and quick restarts keep the focus on the next move. Play on phones and tablets, in portrait or landscape, with the same playfield and rules on every screen.\n\n• Two modes with separate personal bests\n• Core gameplay works offline\n• Music and sound effects you can mute\n• Share your score through your device's share menu\n• No ads or in-app purchases\n\nON ANDROID\nConnect to Google Play Games for achievements and separate Normal and Hardcore leaderboards. Playing without signing in is supported.",
+      "release_notes": "Fresh arcade visuals and menus, layouts for phones and tablets in portrait or landscape, and the original hold-and-release controls. Includes Normal and Hardcore modes, Google Play Games achievements and leaderboards, and migration of your existing Android scores and settings."
+    },
+    "de-DE": {
+      "name": "Atomic Orbital",
+      "short_description": "Halten. Loslassen. Im Orbit bleiben. Zwei Modi, ein klarer Arcade-Rhythmus.",
+      "full_description": "Ein Finger. Ein wechselnder Orbit. Noch ein Versuch.\n\nHalte den Bildschirm gedrückt, um dich nach außen zu bewegen. Lass los, um nach innen zu wechseln. Sammle Energie und weiche ankommenden Photonen aus. Mit jedem eingesammelten Energiepunkt kehrt sich deine Richtung um. Steigt dein Punktestand, kommen neue Orbits hinzu.\n\nNORMAL\nDeine Gesundheit regeneriert sich. Erhole dich nach einem Treffer und finde deinen Rhythmus.\n\nHARDCORE\nEin Treffer beendet den Lauf. Jede Bewegung zählt.\n\nKlare Arcade-Grafik, direkte Steuerung und schnelle Neustarts lassen dich auf die nächste Bewegung konzentrieren. Spiele auf Smartphones und Tablets im Hoch- oder Querformat. Spielfeld und Regeln bleiben auf jedem Bildschirm gleich.\n\n• Zwei Modi mit getrennten persönlichen Bestwerten\n• Auch offline spielbar\n• Musik und Soundeffekte lassen sich stummschalten\n• Teile deinen Punktestand über das Teilen-Menü deines Geräts\n• Keine Werbung und keine In-App-Käufe\n\nAUF ANDROID\nVerbinde Google Play Games für Erfolge und getrennte Bestenlisten für Normal und Hardcore. Du kannst auch ohne Anmeldung spielen.\n\nSpieloberfläche auf Englisch.",
+      "release_notes": "Neue Arcade-Grafik und Menüs, Layouts für Smartphones und Tablets im Hoch- und Querformat sowie die ursprüngliche Halten-und-Loslassen-Steuerung. Mit Normal- und Hardcore-Modus, Erfolgen und Bestenlisten über Google Play Games. Vorhandene Android-Bestwerte und Einstellungen werden übernommen."
+    }
+  },
+  "app_store": {
+    "en-US": {
+      "name": "Atomic Orbital",
+      "subtitle": "Hold. Release. Stay in orbit.",
+      "promotional_text": "Hold to move out. Release to move in. Collect energy, dodge photons, and chase your best in Normal or Hardcore.",
+      "description": "One finger. A changing orbit. One more try.\n\nHold to move outward. Release to move inward. Collect energy and dodge incoming photons. Every pickup reverses your direction, and new orbits open up as your score grows.\n\nNORMAL\nHealth regenerates. Recover from a hit and find your rhythm.\n\nHARDCORE\nOne hit ends the run. Make every move count.\n\nA clean arcade look, responsive controls and quick restarts keep the focus on the next move. Play on phones and tablets, in portrait or landscape, with the same playfield and rules on every screen.\n\n• Two modes with separate personal bests\n• Core gameplay works offline\n• Music and sound effects you can mute\n• Share your score through your device's share menu\n• No ads or in-app purchases\n\nON IPHONE AND IPAD\nPlay offline, with separate personal bests saved on your device. No account is required.",
+      "keywords": "arcade,reflex,timing,precision,one touch,survival,high score,minimal,challenge",
+      "whats_new": "Atomic Orbital comes to iPhone and iPad with Normal and Hardcore modes, local personal bests, sound controls, score sharing, and layouts for portrait and landscape."
+    },
+    "de-DE": {
+      "name": "Atomic Orbital",
+      "subtitle": "Dein Rhythmus im Orbit",
+      "promotional_text": "Halte zum Ausweichen nach außen, lass los für den Weg nach innen. Sammle Energie und jage deinen Bestwert in Normal oder Hardcore.",
+      "description": "Ein Finger. Ein wechselnder Orbit. Noch ein Versuch.\n\nHalte den Bildschirm gedrückt, um dich nach außen zu bewegen. Lass los, um nach innen zu wechseln. Sammle Energie und weiche ankommenden Photonen aus. Mit jedem eingesammelten Energiepunkt kehrt sich deine Richtung um. Steigt dein Punktestand, kommen neue Orbits hinzu.\n\nNORMAL\nDeine Gesundheit regeneriert sich. Erhole dich nach einem Treffer und finde deinen Rhythmus.\n\nHARDCORE\nEin Treffer beendet den Lauf. Jede Bewegung zählt.\n\nKlare Arcade-Grafik, direkte Steuerung und schnelle Neustarts lassen dich auf die nächste Bewegung konzentrieren. Spiele auf Smartphones und Tablets im Hoch- oder Querformat. Spielfeld und Regeln bleiben auf jedem Bildschirm gleich.\n\n• Zwei Modi mit getrennten persönlichen Bestwerten\n• Auch offline spielbar\n• Musik und Soundeffekte lassen sich stummschalten\n• Teile deinen Punktestand über das Teilen-Menü deines Geräts\n• Keine Werbung und keine In-App-Käufe\n\nAUF IPHONE UND IPAD\nSpiele offline und speichere deine persönlichen Bestwerte für beide Modi auf deinem Gerät. Ein Konto ist nicht nötig.\n\nSpieloberfläche auf Englisch.",
+      "keywords": "arcade,reflexe,reaktion,timing,geschick,ein finger,highscore,ausweichen,minimalistisch",
+      "whats_new": "Atomic Orbital für iPhone und iPad: Normal- und Hardcore-Modus, lokale Bestwerte, Sound-Steuerung, Teilen des Punktestands und Layouts für Hoch- und Querformat."
+    }
+  },
+  "urls": {
+    "privacy_policy": "https://marvinmaerz.com/atomic-orbital/privacy/",
+    "support": "https://marvinmaerz.com/atomic-orbital/support/",
+    "marketing_candidate": "https://marvinmaerz.com",
+    "existing_policy_candidate": "https://marvinmaerz.com/data-protection",
+    "public_contact_email": "marvin.maerz@gmail.com"
+  },
+  "application_notes": [
+    "Google Play and Apple locales: en-US and de-DE.",
+    "App Store What's New may not apply to an initial release; retain for an editable version field only.",
+    "Android copy includes Play Games. Apple copy describes offline play and device-local bests; absent online features are documented only in the audit.",
+    "German store text is not a claim of German in-game localization; current interface is English.",
+    "App-specific privacy/support pages were published and verified on 2026-10-23; store-save evidence is recorded separately.",
+    "Suggested Apple category: Games; subcategories Action and Casual. No Kids Category claim."
+  ]
+}

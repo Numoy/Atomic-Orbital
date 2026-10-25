@@ -1,0 +1,21 @@
+{
+  "package": "de.numpy.orbital.orbital4",
+  "version": "2.2.0",
+  "versionCode": 42,
+  "installedApkSha256": "f0d6e18b2c4d0e18d6b36109612744ea28a290356f1fb41c6ae6608c7a6ef4ad",
+  "installedCertificateSha1": "7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34",
+  "registeredProductionCertificateSha1": "1F:10:EA:59:62:98:04:99:9F:78:EE:20:A4:DE:78:19:CE:D3:15:8E",
+  "nativeError": "DEVELOPER_ERROR: package name and certificate fingerprint do not match",
+  "credentialChangeApplied": true,
+  "localOAuthClientId": "239790895284-97p1kqrdhji69aaqjm0m6u1o9r8vm2kn.apps.googleusercontent.com",
+  "localOAuthClientCreated": true,
+  "playGamesCredentialLinked": false,
+  "ownerApprovedLocalCredential": true,
+  "additionalPlayGamesCredentialNeeded": false,
+  "ownerConfirmedPhoneSignInWorks": true,
+  "ownerConfirmation": "yes works now",
+  "appReinstalled": false,
+  "temporaryGamesLoggingRestored": true,
+  "feedbackFixInstalled": false,
+  "flutterTestsPassed": 197
+}

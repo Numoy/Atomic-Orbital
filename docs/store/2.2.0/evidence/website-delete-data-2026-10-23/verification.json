@@ -1,0 +1,100 @@
+{
+  "verifiedAt": "2026-10-23T18:03:04.847590+00:00",
+  "repository": "Numoy/marvinmaerz",
+  "branch": "main",
+  "commit": "7b9f61da1bfca5afe1e9563acdab9372e56341a6",
+  "commitHasSshSignature": true,
+  "deployment": "Existing Netlify production auto-publish from main",
+  "commitFiles": [
+    "src/pages/atomic-orbital/delete-data.astro",
+    "src/pages/atomic-orbital/privacy.astro",
+    "src/pages/atomic-orbital/support.astro"
+  ],
+  "sourceSha256": {
+    "src/pages/atomic-orbital/delete-data.astro": "273bc43095193049562a5aba3c2b19ff98fabda3ce2eddbd9f0a7d8361649496",
+    "src/pages/atomic-orbital/privacy.astro": "3152a7d33619f87b45a06ccc555558500e1e2b05698fd00eef77619bff51bc23",
+    "src/pages/atomic-orbital/support.astro": "1eb7e34eda795a1b1b0ca035979e9b92350bd69c36b6b223bf8dc48b98a0dae4"
+  },
+  "checks": [
+    {
+      "url": "https://marvinmaerz.com/atomic-orbital/delete-data/",
+      "finalUrl": "https://marvinmaerz.com/atomic-orbital/delete-data/",
+      "status": 200,
+      "headers": {
+        "server": "Netlify",
+        "date": "Fri, 23 Oct 2026 18:03:04 GMT",
+        "etag": "\"bf26f0b6548cce82a8e05df93db2a271-ssl\"",
+        "content-type": "text/html; charset=UTF-8",
+        "x-nf-request-id": "01M5MYWG47DE13BAA80W6W6SPN"
+      },
+      "sha256": "057ff4bbbf0165aa37fc3c4f8174c54cfd6f19c020b2c8cda025116bdbd1dc53",
+      "articleMatchesProductionBuild": true,
+      "articleLinksMatchProductionBuild": true,
+      "articleTextSha256": "ea2b642d1e28402f62667ea1194dc72d0ec53e1a863743e93e205671227f263c",
+      "articleLinks": [
+        "/atomic-orbital/privacy",
+        "/atomic-orbital/support",
+        "/atomic-orbital/delete-data",
+        "https://play.google.com/games/profile",
+        "https://support.google.com/googleplay/answer/9130646?hl=en",
+        "https://policies.google.com/privacy",
+        "https://policies.google.com/technologies/retention?hl=en",
+        "mailto:marvin.maerz@gmail.com"
+      ]
+    },
+    {
+      "url": "https://marvinmaerz.com/atomic-orbital/privacy/",
+      "finalUrl": "https://marvinmaerz.com/atomic-orbital/privacy/",
+      "status": 200,
+      "headers": {
+        "server": "Netlify",
+        "date": "Fri, 23 Oct 2026 18:03:04 GMT",
+        "etag": "\"96c74e2972d5aba0ae16c3c12e25174a-ssl\"",
+        "content-type": "text/html; charset=UTF-8",
+        "x-nf-request-id": "01M5MYWGGDGC6Y8ZNWD5RZEQ93"
+      },
+      "sha256": "04fa2f885aa9276a653ab2833ffe398a895bb2b4767144f23e76ab909f8023a4",
+      "articleMatchesProductionBuild": true,
+      "articleLinksMatchProductionBuild": true,
+      "articleTextSha256": "1b09cbdfb50a73be7b8503235fdd3364ebd8f9459de67334cd87cc0acf1d37e1",
+      "articleLinks": [
+        "/atomic-orbital/privacy",
+        "/atomic-orbital/support",
+        "/atomic-orbital/delete-data",
+        "mailto:marvin.maerz@gmail.com",
+        "https://developer.android.com/games/pgs/data-collection",
+        "https://policies.google.com/privacy",
+        "mailto:marvin.maerz@gmail.com",
+        "/data-protection"
+      ]
+    },
+    {
+      "url": "https://marvinmaerz.com/atomic-orbital/support/",
+      "finalUrl": "https://marvinmaerz.com/atomic-orbital/support/",
+      "status": 200,
+      "headers": {
+        "server": "Netlify",
+        "date": "Fri, 23 Oct 2026 18:03:04 GMT",
+        "etag": "\"cffc88dc45359ebe583e77367305c319-ssl\"",
+        "content-type": "text/html; charset=UTF-8",
+        "x-nf-request-id": "01M5MYWGPH66SS3XYSDTRRZDYR"
+      },
+      "sha256": "4b380850e57862087edf3594f5e268d90b2b7bdeaf0ec5083fd5f7227f22d0c4",
+      "articleMatchesProductionBuild": true,
+      "articleLinksMatchProductionBuild": true,
+      "articleTextSha256": "f98a008b61754aa62379df7c9b6380cd30fbbb020ecd169822c93ca390625ccc",
+      "articleLinks": [
+        "/atomic-orbital/privacy",
+        "/atomic-orbital/support",
+        "/atomic-orbital/delete-data",
+        "mailto:marvin.maerz@gmail.com",
+        "/atomic-orbital/privacy"
+      ]
+    }
+  ],
+  "primarySources": [
+    "https://support.google.com/googleplay/answer/9130646?hl=en",
+    "https://policies.google.com/technologies/retention?hl=en"
+  ],
+  "localRenderEvidence": "local-render.json"
+}

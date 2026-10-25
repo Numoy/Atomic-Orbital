@@ -1,0 +1,16 @@
+{
+  "package": "de.numpy.orbital.atomic_orbital",
+  "sha256": "536833760123305c3dc5208aaf3f1dccc5d7e621114e8a6dfd6950cf8335c542",
+  "sizeBytes": 36880215,
+  "preferencesBefore": {
+    "flutter.hardcore_high_score": "4",
+    "flutter.games_played": "13",
+    "flutter.high_score": "8"
+  },
+  "preferencesAfter": {
+    "flutter.hardcore_high_score": "4",
+    "flutter.games_played": "13",
+    "flutter.high_score": "8"
+  },
+  "installedArtifactMatches": true
+}

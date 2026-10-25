@@ -1,0 +1,28 @@
+{
+  "checkedOn": "2026-10-24",
+  "projectId": "239790895284",
+  "originalAchievements": 12,
+  "newAchievements": {
+    "firstContact": "CgkItOGapf0GEAIQFw",
+    "findingOrbit": "CgkItOGapf0GEAIQFA",
+    "hardcoreCadet": "CgkItOGapf0GEAIQFQ",
+    "steadyHands": "CgkItOGapf0GEAIQGQ",
+    "newHorizons": "CgkItOGapf0GEAIQGA",
+    "worldTour": "CgkItOGapf0GEAIQFg"
+  },
+  "newState": "Draft \u2014 Ready to publish to everyone",
+  "locales": [
+    "en-US",
+    "de-DE"
+  ],
+  "newPoints": 75,
+  "totalPoints": 285,
+  "importPackage": "store-assets/2.3.0/play-achievements-import.zip",
+  "published": false,
+  "currentBuildVisibleAchievements": 16,
+  "hiddenDeferred": {
+    "newHorizons": "Hidden",
+    "worldTour": "Hidden"
+  },
+  "hiddenVerifiedOn": "2026-10-24"
+}

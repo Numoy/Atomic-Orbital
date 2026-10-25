@@ -1,0 +1,418 @@
+[
+  {
+    "file": "screenshots/en/google-play-phone/01-normal.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 295409,
+    "sha256": "add967d09f0c91e91dba501a85336308d6471826cea36018aad0431bc318dfd5"
+  },
+  {
+    "file": "screenshots/en/google-play-phone/02-hardcore.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 326694,
+    "sha256": "2925424be514a6f50ffc12e4e5786fe8698519bd691bd486c92b01113ac7f57e"
+  },
+  {
+    "file": "screenshots/en/google-play-phone/03-progress.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 102567,
+    "sha256": "644945a79f268c0bb50101b1e2d89d0debb0862351e32eeb982e83ccefee3081"
+  },
+  {
+    "file": "screenshots/en/google-play-phone/04-menu.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 187115,
+    "sha256": "6f69d91160f0168660e9b7bd72e81c5b14d49248add17e755c4770c97e602e82"
+  },
+  {
+    "file": "screenshots/en/google-play-phone/05-results.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 162683,
+    "sha256": "f5d67ca874945992258993343a3d8b5f5307e4591dfed8748d979a3c3c64ba5a"
+  },
+  {
+    "file": "screenshots/en/google-play-tablet/01-normal.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 157397,
+    "sha256": "b8aae313197b2b499ef00b0ddab1e15b68669224485c179654d7faa12a6afcfd"
+  },
+  {
+    "file": "screenshots/en/google-play-tablet/02-hardcore.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 173794,
+    "sha256": "8047978c49a6356e0208ba7f16739582e7c0aca0458663b3fa7c4e16914ad49f"
+  },
+  {
+    "file": "screenshots/en/google-play-tablet/03-progress.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 67249,
+    "sha256": "bbc847896df0e919c2189e5ea0a7416855a79ed44cabe17285e94ffb40b0d2d8"
+  },
+  {
+    "file": "screenshots/en/google-play-tablet/04-menu.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 146231,
+    "sha256": "211668d43aa7891ce9fe59b6e9972ade25272ca0b0a38cc70c568a623eb3af7d"
+  },
+  {
+    "file": "screenshots/en/google-play-tablet/05-results.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 133329,
+    "sha256": "51c9482bf428b671d57b90aa74a6d2ddc2cab9383c9674d1be00cbb7d1abdf1a"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-medium/01-normal.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 335275,
+    "sha256": "b4fd56ca44960ba596f3f1e17aef1a83a36cf4de3ec752de976840b5dbeab85a"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-medium/02-hardcore.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 368889,
+    "sha256": "b34cca1e8b4d545feb22f2605c36da6798f698855364b434c70dd709b8277657"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-medium/03-progress.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 132961,
+    "sha256": "7d525ecfdd42061afd22ed4e34d2bc55456cd40a632018f9af8c77a862c36c6f"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-medium/04-menu.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 243167,
+    "sha256": "dc20ca27dba00bb53cab2c5b530fd1102258375c6d4421c3d5fb1fd789623ea6"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-medium/05-results.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 221322,
+    "sha256": "6cc35435090eb8feb4fafe2f9b3514d24b3016c5cb0ab241441688a9d72fe8b6"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-large/01-normal.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 395945,
+    "sha256": "e2df3db212e09b38a58985a9db62547b16ce93a27850d5dae404f7a0b111f330"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-large/02-hardcore.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 427634,
+    "sha256": "e4fdec4fc2dd63cde5dac71098e2517be948b2f97de2667300a1217d6477a376"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-large/03-progress.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 158687,
+    "sha256": "70cfd9a57030383b49ac97d5f974dba0137732c745145dff9e5d76b88fea4579"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-large/04-menu.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 271147,
+    "sha256": "617ee92fd94550b51ee4b31956ab58d9f8d1861d27ebb37de25283b9c793fb64"
+  },
+  {
+    "file": "screenshots/en/app-store-iphone-large/05-results.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 245150,
+    "sha256": "1ab64668da9255fe1117f77f09c4cc9275d36aa7bf9940b0e7741cbd86a7e253"
+  },
+  {
+    "file": "screenshots/en/app-store-ipad-13/01-normal.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 444830,
+    "sha256": "379039516f767433b8dbe8a2760eac60c40fddc5bb64afaf952a0c9f73cdf845"
+  },
+  {
+    "file": "screenshots/en/app-store-ipad-13/02-hardcore.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 512107,
+    "sha256": "4e5fb3e508a345b22a694cb3f7048652f8b4f255ac2d1442b2bd37bee40d7e0c"
+  },
+  {
+    "file": "screenshots/en/app-store-ipad-13/03-progress.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 143596,
+    "sha256": "af069f0dc6893d42bdc7a9d077b0fb7b48ec4279e0c6b42d16342d80e77ffb28"
+  },
+  {
+    "file": "screenshots/en/app-store-ipad-13/04-menu.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 275530,
+    "sha256": "d1674522940687430bca178c84b2baa0eb128083d4a3a023adb3ca971d40ae20"
+  },
+  {
+    "file": "screenshots/en/app-store-ipad-13/05-results.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 241271,
+    "sha256": "a9b9e3b6b855e4307966aac443e39ad6dabb6be5cfda576d368f972a1b10297b"
+  },
+  {
+    "file": "screenshots/de/google-play-phone/01-normal.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 296517,
+    "sha256": "85bda6b52cc2ed8c6dbf13425741321aafb8c5a16ddd4ffaf9cfbea6f6cecde7"
+  },
+  {
+    "file": "screenshots/de/google-play-phone/02-hardcore.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 327060,
+    "sha256": "8195a29d6e508e5d918f13e2294d46ec4affcde3b067db2ab7c81bb642546bcd"
+  },
+  {
+    "file": "screenshots/de/google-play-phone/03-progress.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 114687,
+    "sha256": "7a286a54c77f12af2b05f01b3b29a84476ec42c517f007853b6183572399f1a3"
+  },
+  {
+    "file": "screenshots/de/google-play-phone/04-menu.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 190235,
+    "sha256": "93a6e0e14fdab3dacb8b360aabaaf554d7a679b039c8979900622770a403cb1c"
+  },
+  {
+    "file": "screenshots/de/google-play-phone/05-results.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "bytes": 166586,
+    "sha256": "40c2a68aea190aae02312f2968dc4451e7c05e7f750ff2bc4570a45ccdb7a632"
+  },
+  {
+    "file": "screenshots/de/google-play-tablet/01-normal.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 158450,
+    "sha256": "d7ef212fc0a280f619ac644f7ad23211255561f890fc647d4906181c8806a49f"
+  },
+  {
+    "file": "screenshots/de/google-play-tablet/02-hardcore.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 173960,
+    "sha256": "2bba92480a6d969d74b6a7e657734246dc5ab71db86af49c4e84a3bcc4d74f73"
+  },
+  {
+    "file": "screenshots/de/google-play-tablet/03-progress.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 72002,
+    "sha256": "efeb51533a481ebecf03dd4ae3dcceb8548bf227a7b8c810360b9bb383a1d5c8"
+  },
+  {
+    "file": "screenshots/de/google-play-tablet/04-menu.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 151224,
+    "sha256": "ea400a19610f2f00c0a806acede4a28dfc4527d9db72db0ab3c7bf51b31debdf"
+  },
+  {
+    "file": "screenshots/de/google-play-tablet/05-results.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "bytes": 137350,
+    "sha256": "a661ebed6897abd1f023ccb5ec1599cd1db14755ca58c0e858846ef2bdcafa93"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-medium/01-normal.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 337118,
+    "sha256": "db10f66cf44d3d9739ccc0957213be747a4de59c51650fd033279c1d05295a6f"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-medium/02-hardcore.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 369308,
+    "sha256": "0bb045766cf0aaad5f43070f0283c2620a214f70401a782d18a5485e8e18dd93"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-medium/03-progress.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 142549,
+    "sha256": "b90d3f90fa336de4e822c8ac4988794805f1a33ed5db4fb0b369de05da0b6480"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-medium/04-menu.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 245482,
+    "sha256": "9bcb696984886a7f3b635d2d81da72aabb8cabbed89581ccec4af2bacb8e2cba"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-medium/05-results.png",
+    "width": 1179,
+    "height": 2556,
+    "mode": "RGB",
+    "bytes": 223261,
+    "sha256": "a28db97a8accc327d3cee7bb515774334f5e82c7307bf0e8781081456a96b3f9"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-large/01-normal.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 397756,
+    "sha256": "8197238b6922389d6872dd146e6d2a32942ca150b5b5d2afd5c3a07ee2f72bcb"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-large/02-hardcore.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 427919,
+    "sha256": "d7d03eee641fc04a8bd10554511f215323991f3c47f3d574e68a4042b1dc4d44"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-large/03-progress.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 170404,
+    "sha256": "6a726c934cefa1424acf3246838bffa66833f82ab7773a94cd0ddd8c01886cf8"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-large/04-menu.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 273126,
+    "sha256": "66a39fe3eecd7e86ab75d471afa57ba7366aeb6d2d68852ca3a8fc5eb9174043"
+  },
+  {
+    "file": "screenshots/de/app-store-iphone-large/05-results.png",
+    "width": 1320,
+    "height": 2868,
+    "mode": "RGB",
+    "bytes": 246946,
+    "sha256": "cfbc73a4508ce4e0a4d3888d1d19423600f938ba832e19d64a319d4cef018117"
+  },
+  {
+    "file": "screenshots/de/app-store-ipad-13/01-normal.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 446699,
+    "sha256": "290feb7f61bf46d170c58bd9627bf9c0222d9299d4bd536132f956bf61b03d58"
+  },
+  {
+    "file": "screenshots/de/app-store-ipad-13/02-hardcore.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 512683,
+    "sha256": "98c734ab354d4ecd8c0377f890cb4501a2a259af313600888a1af6407451cd6b"
+  },
+  {
+    "file": "screenshots/de/app-store-ipad-13/03-progress.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 154869,
+    "sha256": "a62ece979b1cd0febbe327a812ba57574bbbc40575618de162d381b283819e04"
+  },
+  {
+    "file": "screenshots/de/app-store-ipad-13/04-menu.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 279105,
+    "sha256": "349af7c531ab551337891dff6de73de507d32998c6cd2fe32dda011406ff970e"
+  },
+  {
+    "file": "screenshots/de/app-store-ipad-13/05-results.png",
+    "width": 2732,
+    "height": 2048,
+    "mode": "RGB",
+    "bytes": 243909,
+    "sha256": "661c109c025924386cd6c47f92d1530fd207f572175b3b7a82285f1b5aa6399a"
+  },
+  {
+    "file": "graphics/feature-1024x500.png",
+    "width": 1024,
+    "height": 500,
+    "mode": "RGB",
+    "bytes": 106669,
+    "sha256": "0318e69ae8b8f0b7d77ebb9f914e7b94c70f83613d3ad36c9f2f1d9df433fd2c"
+  },
+  {
+    "file": "graphics/icon-512x512.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB",
+    "bytes": 54319,
+    "sha256": "08f8c29fbb10a63cda5eee2d2123bf7191777d329a38717ae3251428f5ff0387"
+  }
+]

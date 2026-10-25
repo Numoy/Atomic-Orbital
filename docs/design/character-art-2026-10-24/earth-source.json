@@ -1,0 +1,18 @@
+{
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/693f11422f4e08d2da4566b854dda53eb7c39fb3/geojson/ne_110m_land.geojson",
+  "commit": "693f11422f4e08d2da4566b854dda53eb7c39fb3",
+  "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+  "license": "public domain",
+  "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "projection": "orthographic, longitude -20 degrees, latitude 0 degrees",
+  "simplification_tolerance": 0.012,
+  "hemisphere_longitude_bounds": [
+    -110,
+    70
+  ],
+  "maximum_input_segment_degrees": 3,
+  "minimum_projected_polygon_area": 0.0015,
+  "output_polygons": 8,
+  "output_vertices": 244,
+  "runtime": "cached Canvas Path; no runtime geography parsing or network"
+}

@@ -1,0 +1,36 @@
+{
+  "version": {
+    "type": "appStoreVersions",
+    "id": "049e3efe-80f4-4c51-8571-fc9a6b549aaf",
+    "attributes": {
+      "versionString": "2.3.0",
+      "appStoreState": "PREPARE_FOR_SUBMISSION",
+      "releaseType": "MANUAL"
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/049e3efe-80f4-4c51-8571-fc9a6b549aaf"
+    }
+  },
+  "localizations": [
+    {
+      "id": "40dce97f-722e-4246-9456-3f465beae399",
+      "description": "One finger. A changing orbit. One more try.\n\nHold to move outward. Release to move inward. Collect energy and dodge incoming red hazards. Every pickup reverses your direction, and new orbits open as your score grows.\n\nNORMAL\nHealth regenerates. Recover from a hit and find your rhythm.\n\nHARDCORE\nOne hit ends the run. Make every move count.\n\nLearn with a short, skippable practice arena, then chase your best with quick restarts. Track 16 achievements and your completed-run statistics, including while offline.\n\n• English and German interface\n• Separate personal bests for both modes\n• Music and effects controls, plus optional haptics\n• Portrait and landscape layouts for phones and tablets\n• Share your score through the device share menu\n• No ads or in-app purchases\n\nProgress and settings are stored on this installation. Online achievements and leaderboards do not back up the local save.\n\nConnect Game Center for online achievements and Normal/Hardcore leaderboards, or keep playing without signing in.",
+      "locale": "en-US",
+      "keywords": "arcade,reflex,timing,precision,one touch,survival,high score,minimal,challenge",
+      "marketingUrl": "https://marvinmaerz.com",
+      "promotionalText": "Hold to move out. Release to move in. Collect energy, dodge photons, and chase your best in Normal or Hardcore.",
+      "supportUrl": "https://marvinmaerz.com/atomic-orbital/support/",
+      "whatsNew": null
+    },
+    {
+      "id": "223c18df-c1f7-4697-b4b8-aee348b24232",
+      "description": "Ein Finger. Ein wechselnder Orbit. Noch ein Versuch.\n\nHalte den Bildschirm gedrückt, um dich nach außen zu bewegen. Lass los, um nach innen zu wechseln. Sammle Energie und weiche roten Hindernissen aus. Mit jedem Energiepunkt kehrt sich deine Richtung um. Steigt dein Punktestand, kommen neue Orbits hinzu.\n\nNORMAL\nDeine Gesundheit regeneriert sich. Erhole dich nach einem Treffer und finde deinen Rhythmus.\n\nHARDCORE\nEin Treffer beendet den Lauf. Jede Bewegung zählt.\n\nLerne die Steuerung in einer kurzen, überspringbaren Übungsarena. Starte danach direkt neu und verbessere deinen Bestwert. Verfolge 16 Erfolge und deine Statistiken abgeschlossener Läufe – auch offline.\n\n• Deutsche und englische Spieloberfläche\n• Getrennte persönliche Bestwerte für beide Modi\n• Musik und Effekte separat einstellbar, optionale Haptik\n• Hoch- und Querformat für Smartphones und Tablets\n• Teile deinen Punktestand über das Teilen-Menü\n• Keine Werbung und keine In-App-Käufe\n\nFortschritt und Einstellungen werden auf dieser Installation gespeichert. Online-Erfolge und Bestenlisten sichern den lokalen Spielstand nicht.\n\nVerbinde Game Center für Online-Erfolge und Bestenlisten für Normal und Hardcore, oder spiele ohne Anmeldung weiter.",
+      "locale": "de-DE",
+      "keywords": "arcade,reflexe,reaktion,timing,geschick,ein finger,highscore,ausweichen,minimalistisch",
+      "marketingUrl": null,
+      "promotionalText": "Halte zum Ausweichen nach außen, lass los für den Weg nach innen. Sammle Energie und jage deinen Bestwert in Normal oder Hardcore.",
+      "supportUrl": "https://marvinmaerz.com/atomic-orbital/support/",
+      "whatsNew": null
+    }
+  ]
+}

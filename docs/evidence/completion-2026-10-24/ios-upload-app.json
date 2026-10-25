@@ -1,0 +1,10 @@
+{
+  "details": {
+    "delivery-uuid": "7c0af7b3-5da2-4d5b-8312-541bb9263d5d",
+    "transferred": "26322565 bytes in 1.782 seconds (14.8MB/s, 118.190Mbps)"
+  },
+  "os-version": "Version 27.0.1 (Build 26A434)",
+  "success-message": "No errors uploading archive at 'build/releases/2.3.0+43/ios/atomic_orbital.ipa'.",
+  "tool-path": "/Applications/Xcode.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources",
+  "tool-version": "26.10.1 (171001)"
+}

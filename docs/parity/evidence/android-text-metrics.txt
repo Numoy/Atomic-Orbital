@@ -1,0 +1,22 @@
+INSTRUMENTATION_RESULT: metrics=defaultAA=true flags=1283
+defaultAA=true flags=1283 density=2.625
+ratios -1.0561523 0.2709961
+sp=8.0 px=21.0 h=29 baseline=23 top=-23 ascent=-19 descent=5 bottom=6 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=9.0 px=23.625 h=32 baseline=25 top=-25 ascent=-22 descent=6 bottom=7 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=13.0 px=34.125 h=47 baseline=37 top=-37 ascent=-32 descent=8 bottom=10 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=14.0 px=36.75 h=49 baseline=39 top=-39 ascent=-34 descent=9 bottom=10 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=15.0 px=39.375 h=53 baseline=42 top=-42 ascent=-37 descent=10 bottom=11 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=25.0 px=65.625 h=88 baseline=70 top=-70 ascent=-61 descent=16 bottom=18 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=30.0 px=78.75 h=106 baseline=84 top=-84 ascent=-73 descent=19 bottom=22 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=60.0 px=157.5 h=210 baseline=167 top=-167 ascent=-146 descent=38 bottom=43 spacing=0.0 includePad=true aa=true
+ratios -1.0561523 0.2709961
+sp=70.0 px=183.75 h=245 baseline=195 top=-195 ascent=-170 descent=45 bottom=50 spacing=0.0 includePad=true aa=true
+
+INSTRUMENTATION_CODE: 0
