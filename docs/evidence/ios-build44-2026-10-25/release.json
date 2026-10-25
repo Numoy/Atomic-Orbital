@@ -1,0 +1,19 @@
+{
+  "verifiedOn": "2026-10-25",
+  "appId": "6825911116",
+  "version": "2.3.0",
+  "build": "44",
+  "buildId": "70de585d-d3bb-4803-8428-420df0ef07ec",
+  "sourceCommit": "13f84c275adbfd2fb73b315fb7f0d594a592ad48",
+  "sha256": "0987567a8b35cea182450f246a471c8fe71ee80d7967e1f971273914273c6ef3",
+  "bytes": 25947204,
+  "processingState": "VALID",
+  "uploadedDate": "2026-10-25T06:51:34-07:00",
+  "selectedInDraft": true,
+  "appStoreVersionId": "049e3efe-80f4-4c51-8571-fc9a6b549aaf",
+  "appStoreState": "PREPARE_FOR_SUBMISSION",
+  "releaseType": "MANUAL",
+  "internalBuildState": "IN_BETA_TESTING",
+  "externalBuildState": "READY_FOR_BETA_SUBMISSION",
+  "googlePlayChanged": false
+}
