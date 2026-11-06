@@ -1,0 +1,36 @@
+{
+  "package": "de.numpy.orbital.orbital4",
+  "versionName": "2.3.0",
+  "versionCode": 47,
+  "minSdk": "24",
+  "targetSdk": "36",
+  "bytes": 56684220,
+  "sha256": "96f351198c7617c277e32bed00415c2b334de2fbaf88466f9f6dc1c6c887f827",
+  "uploadCertificateSha1": "7C:41:71:A4:A7:B3:E7:DD:14:8A:8B:F2:E5:40:9F:04:C0:96:F5:34",
+  "signatureVerified": true,
+  "flutterTestsPassed": 457,
+  "nativeTestsPassed": 9,
+  "nativeTestResultReused": true,
+  "sourceCommit": "e69ef537ca4c07a655e1777290b66aec541ae890",
+  "verifiedAtUtc": "2026-11-06T14:10:40.149650+00:00",
+  "track": "internal",
+  "releaseName": "2.3.0 (47)",
+  "consoleReleaseStatus": "Available to internal testers",
+  "consoleTrackSummary": "Active",
+  "releasedAtConsole": "6 November 2026, 23:09 JST",
+  "verificationMethod": "Signed-in Google Play Console release track and accepted bundle metadata",
+  "releaseUrl": "https://play.google.com/console/u/0/developers/8478594721887761408/app/4974176195238753496/tracks/4698416192985582344/releases/2/details",
+  "releaseNotes": [
+    {
+      "language": "en-US",
+      "text": "Unlock advanced worlds by earning achievements and Stars. Check your daily challenge streaks, best results, world records, and collection progress. Enjoy refreshed home, Progress, Settings, and hangar screens."
+    },
+    {
+      "language": "de-DE",
+      "text": "Schalte fortgeschrittene Welten mit Erfolgen und Sternen frei. Sieh dir Serien und Bestleistungen der täglichen Herausforderung, Weltrekorde und deinen Sammlungsfortschritt an. Überarbeitete Startseite, Fortschritt, Einstellungen und Hangar."
+    }
+  ],
+  "physicalDeviceTested": false,
+  "playInstallationVerified": false,
+  "iosUploaded": false
+}
