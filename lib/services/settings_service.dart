@@ -17,7 +17,7 @@ class SettingsService extends ChangeNotifier {
   static const _maxStardust = 9007199254740991;
   SharedPreferences? _prefs;
   Future<void>? _walletWrites;
-  int _stardust = 100;
+  int _stardust = 0;
   Set<String> _ownedSkins = {GameSkin.classic.id};
   GameSkin _selectedSkin = GameSkin.classic;
   String? _walletFailure;
@@ -191,7 +191,7 @@ class SettingsService extends ChangeNotifier {
     if (!hardcore && clean) _advance(AchievementMetric.clean, score);
     var worldChanged = false;
     const tourWorlds = ['classic', 'cow_abduction', 'deep_blue'];
-    if (tourWorlds.contains(skin.id) && score > (_worldBest[skin.id] ?? 0)) {
+    if (score > (_worldBest[skin.id] ?? 0)) {
       _worldBest[skin.id] = score;
       worldChanged = true;
     }
@@ -310,6 +310,17 @@ class SettingsService extends ChangeNotifier {
   GameSkin get selectedSkin => _selectedSkin;
   String? get walletFailure => _walletFailure;
   bool ownsSkin(GameSkin skin) => _ownedSkins.contains(skin.id);
+  int get ownedSkinCount => GameSkin.values.where(ownsSkin).length;
+  int worldBest(GameSkin skin) => _worldBest[skin.id] ?? 0;
+
+  bool meetsSkinRequirement(GameSkin skin) {
+    if (ownsSkin(skin)) return true;
+    final required = skin.requiredAchievement;
+    return required == null || achievementUnlocked(required);
+  }
+
+  bool canUnlockSkin(GameSkin skin) =>
+      !ownsSkin(skin) && meetsSkinRequirement(skin) && _stardust >= skin.price;
 
   void _loadWallet() {
     final raw = _savedValue(_walletKey);
@@ -411,7 +422,7 @@ class SettingsService extends ChangeNotifier {
   Future<bool> buySkin(GameSkin skin) => _queueWallet(() async {
         _checkWallet();
         if (ownsSkin(skin)) return true;
-        if (_stardust < skin.price) return false;
+        if (!meetsSkinRequirement(skin) || _stardust < skin.price) return false;
         await _saveWallet(
             _stardust - skin.price, {..._ownedSkins, skin.id}, skin);
         return true;
@@ -425,7 +436,7 @@ class SettingsService extends ChangeNotifier {
       });
 
   void _resetWallet() {
-    _stardust = 100;
+    _stardust = 0;
     _ownedSkins = {GameSkin.classic.id};
     _selectedSkin = GameSkin.classic;
     _walletFailure = null;

@@ -1,7 +1,7 @@
 name: atomic_orbital
 description: A Flutter port of the Atomic Orbital game
 publish_to: 'none'
-version: 2.3.0+44
+version: 2.3.0+47
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

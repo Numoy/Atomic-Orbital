@@ -343,6 +343,18 @@ class PlayGamesService extends ChangeNotifier {
     return true;
   }
 
+  Future<bool> showAllLeaderboards() async {
+    if (!supported || isApple) {
+      throw PlatformException(
+          code: 'unsupported_platform',
+          message: 'Google Play Games is available on Android.');
+    }
+    if (!_authenticated && !await signIn()) return false;
+    await _channel.invokeMethod<void>('showAllLeaderboards',
+        _profileId == null ? null : {'playerId': _profileId!});
+    return true;
+  }
+
   Future<void> _queueStoredHighscores() async {
     final settings = SettingsService.instance;
     _merge(PlayGamesEvent('submitScore', {
@@ -473,7 +485,8 @@ class PlayGamesService extends ChangeNotifier {
         _lastError = error.code == 'profile_changed'
             ? error.code
             : error.message ?? error.code;
-        if (error.code == 'sign_in_required' || error.code == 'profile_changed') {
+        if (error.code == 'sign_in_required' ||
+            error.code == 'profile_changed') {
           _authenticated = false;
         }
         notifyListeners();

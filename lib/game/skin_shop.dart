@@ -1,6 +1,7 @@
 import 'package:atomic_orbital/l10n/strings.dart';
 import 'package:atomic_orbital/game/game_skin.dart';
 import 'package:atomic_orbital/game/arcade_style.dart';
+import 'package:atomic_orbital/game/world_backdrop.dart';
 import 'package:atomic_orbital/services/settings_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -11,11 +12,14 @@ class SkinShop extends StatefulWidget {
   State<SkinShop> createState() => _SkinShopState();
 }
 
-class _SkinShopState extends State<SkinShop> {
+class _SkinShopState extends State<SkinShop>
+    with SingleTickerProviderStateMixin {
   bool _busy = false;
   String? _error;
   late GameSkin _preview;
   late final PageController _pages;
+  late final _motion =
+      AnimationController(vsync: this, duration: const Duration(seconds: 8));
 
   @override
   void initState() {
@@ -26,7 +30,20 @@ class _SkinShopState extends State<SkinShop> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _motion
+        ..stop()
+        ..value = 0;
+    } else if (!_motion.isAnimating) {
+      _motion.repeat();
+    }
+  }
+
+  @override
   void dispose() {
+    _motion.dispose();
     _pages.dispose();
     super.dispose();
   }
@@ -55,6 +72,11 @@ class _SkinShopState extends State<SkinShop> {
     try {
       if (settings.ownsSkin(skin)) {
         await settings.selectSkin(skin);
+      } else if (!settings.meetsSkinRequirement(skin)) {
+        if (mounted) {
+          setState(() => _error = context.l10n.requiresAchievement(
+              context.l10n.achievementTitle(skin.requiredAchievementId!)));
+        }
       } else if (!await settings.buySkin(skin)) {
         if (mounted) {
           setState(() => _error = context.l10n.collectMore);
@@ -86,7 +108,9 @@ class _SkinShopState extends State<SkinShop> {
             child: ListenableBuilder(
               listenable: settings,
               builder: (context, _) => CustomPaint(
-                painter: const SpaceStars(),
+                painter: _preview == GameSkin.classic
+                    ? const SpaceStars()
+                    : WorldBackdrop(skin: _preview, motion: _motion),
                 child: SafeArea(
                   child: Center(
                     child: ConstrainedBox(
@@ -97,13 +121,13 @@ class _SkinShopState extends State<SkinShop> {
                           child: LayoutBuilder(builder: (context, constraints) {
                             final wide = constraints.maxWidth >= 760;
                             final artHeight =
-                                (constraints.maxHeight * (wide ? .85 : .52))
-                                    .clamp(180.0, wide ? 520.0 : 400.0);
+                                (constraints.maxHeight * (wide ? .82 : .42))
+                                    .clamp(160.0, wide ? 500.0 : 320.0);
                             return SingleChildScrollView(
-                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                              padding: const EdgeInsets.fromLTRB(16, 4, 16, 20),
                               child: ConstrainedBox(
                                 constraints: BoxConstraints(
-                                    minHeight: (constraints.maxHeight - 32)
+                                    minHeight: (constraints.maxHeight - 24)
                                         .clamp(0, double.infinity)),
                                 child: wide
                                     ? Row(children: [
@@ -118,7 +142,7 @@ class _SkinShopState extends State<SkinShop> {
                                             MainAxisAlignment.center,
                                         children: [
                                           _art(artHeight),
-                                          const SizedBox(height: 8),
+                                          const SizedBox(height: 6),
                                           _details(settings),
                                         ],
                                       ),
@@ -166,6 +190,31 @@ class _SkinShopState extends State<SkinShop> {
                           fontSize: 17,
                           fontWeight: FontWeight.w600)),
                 ),
+                if (MediaQuery.sizeOf(context).width >= 360) ...[
+                  const SizedBox(width: 14),
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: ArcadePalette.panel.withValues(alpha: .85),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: ArcadePalette.edge),
+                    ),
+                    child: Row(mainAxisSize: MainAxisSize.min, children: [
+                      const Icon(Icons.public_rounded,
+                          size: 13, color: ArcadePalette.ice),
+                      const SizedBox(width: 5),
+                      Text(
+                        '${settings.ownedSkinCount}/${GameSkin.values.length}',
+                        key: const ValueKey('ownedWorldsBadge'),
+                        style: const TextStyle(
+                            color: ArcadePalette.quiet,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600),
+                      ),
+                    ]),
+                  ),
+                ],
               ]),
             ),
           ),
@@ -201,8 +250,10 @@ class _SkinShopState extends State<SkinShop> {
               child: ExcludeSemantics(
                 child: CustomPaint(
                   key: ValueKey('world-${GameSkin.values[index].id}'),
-                  painter:
-                      SkinPreview(skin: GameSkin.values[index], hero: true),
+                  painter: SkinPreview(
+                      skin: GameSkin.values[index],
+                      hero: true,
+                      motion: _motion),
                 ),
               ),
             ),
@@ -235,9 +286,11 @@ class _SkinShopState extends State<SkinShop> {
   Widget _details(SettingsService settings) {
     final owned = settings.ownsSkin(_preview);
     final equipped = settings.selectedSkin == _preview;
+    final meetsRequirement = settings.meetsSkinRequirement(_preview);
     final affordable = settings.stardust >= _preview.price;
     final available = !_busy && settings.walletFailure == null;
-    final canChoose = available && !equipped && (owned || affordable);
+    final canChoose =
+        available && !equipped && (owned || (meetsRequirement && affordable));
     final label = _busy
         ? context.l10n.saving
         : equipped
@@ -245,7 +298,37 @@ class _SkinShopState extends State<SkinShop> {
             : owned
                 ? context.l10n.useWorld
                 : context.l10n.unlockPrice(_preview.price);
+    final bestInWorld = settings.worldBest(_preview);
+    final readyBase =
+        equipped ? context.l10n.equippedReady : context.l10n.worldReady;
+    final readyText = bestInWorld > 0
+        ? '$readyBase · ${context.l10n.bestLabel(bestInWorld)}'
+        : readyBase;
+    final statusText = settings.walletFailure != null
+        ? ''
+        : owned
+            ? readyText
+            : !meetsRequirement
+                ? context.l10n.requiresAchievement(context.l10n
+                    .achievementTitle(_preview.requiredAchievementId!))
+                : !affordable
+                    ? context.l10n.moreFlux(_preview.price - settings.stardust)
+                    : '';
     return Column(children: [
+      ExcludeSemantics(
+        child: _steadyText(
+          context.l10n.worldTier('${_preview.tier}'),
+          [for (var t = 0; t <= 4; t++) context.l10n.worldTier('$t')],
+          style: TextStyle(
+            color: _preview.accent,
+            fontSize: 11,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 1.8,
+            height: 1.2,
+          ),
+        ),
+      ),
+      const SizedBox(height: 4),
       Semantics(
         header: true,
         liveRegion: true,
@@ -257,15 +340,28 @@ class _SkinShopState extends State<SkinShop> {
             textKey: const ValueKey('featuredWorld'),
             style: const TextStyle(
                 color: ArcadePalette.paper,
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
-                height: 1.25)),
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                height: 1.2)),
+      ),
+      const SizedBox(height: 4),
+      ExcludeSemantics(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 360),
+          child: _steadyText(
+            context.l10n.worldDescription(_preview.id),
+            GameSkin.values
+                .map((skin) => context.l10n.worldDescription(skin.id)),
+            style: const TextStyle(
+                color: ArcadePalette.quiet, fontSize: 12, height: 1.35),
+          ),
+        ),
       ),
       const SizedBox(height: 6),
       ExcludeSemantics(
         child: SizedBox(
           key: const ValueKey('worldPageIndicators'),
-          height: 24,
+          height: 22,
           child: Row(mainAxisSize: MainAxisSize.min, children: [
             for (final skin in GameSkin.values)
               Padding(
@@ -277,14 +373,16 @@ class _SkinShopState extends State<SkinShop> {
                     shape: BoxShape.circle,
                     color: skin == _preview
                         ? skin.accent
-                        : ArcadePalette.quiet.withValues(alpha: .35),
+                        : settings.ownsSkin(skin)
+                            ? ArcadePalette.paper.withValues(alpha: .65)
+                            : ArcadePalette.quiet.withValues(alpha: .28),
                   ),
                 ),
               ),
           ]),
         ),
       ),
-      const SizedBox(height: 20),
+      const SizedBox(height: 12),
       ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 260),
         child: Semantics(
@@ -302,7 +400,9 @@ class _SkinShopState extends State<SkinShop> {
                     ? Icons.check_rounded
                     : owned
                         ? Icons.play_arrow_rounded
-                        : Icons.lock_open_rounded,
+                        : meetsRequirement
+                            ? Icons.lock_open_rounded
+                            : Icons.lock_outline_rounded,
                 size: 18),
             label: _steadyText(label, [
               context.l10n.saving,
@@ -330,21 +430,31 @@ class _SkinShopState extends State<SkinShop> {
           ),
         ),
       ),
-      const SizedBox(height: 12),
+      const SizedBox(height: 10),
       _steadyText(
-          settings.walletFailure != null
-              ? ''
-              : !owned && !affordable
-                  ? context.l10n.moreFlux(_preview.price - settings.stardust)
-                  : '',
+          statusText,
           [
             context.l10n.walletUnavailable,
-            for (final skin in GameSkin.values)
+            context.l10n.equippedReady,
+            context.l10n.worldReady,
+            for (final skin in GameSkin.values) ...[
+              if (settings.worldBest(skin) > 0) ...[
+                '${context.l10n.equippedReady} · ${context.l10n.bestLabel(settings.worldBest(skin))}',
+                '${context.l10n.worldReady} · ${context.l10n.bestLabel(settings.worldBest(skin))}',
+              ],
               context.l10n.moreFlux(
                   (skin.price - settings.stardust).clamp(0, skin.price)),
+              if (skin.requiredAchievementId != null)
+                context.l10n.requiresAchievement(context.l10n
+                    .achievementTitle(skin.requiredAchievementId!)),
+            ],
           ],
-          style: const TextStyle(
-              color: ArcadePalette.quiet, fontSize: 12, height: 1.4)),
+          style: TextStyle(
+              color: !owned && !meetsRequirement
+                  ? ArcadePalette.gold
+                  : ArcadePalette.quiet,
+              fontSize: 12,
+              height: 1.4)),
       if (settings.walletFailure != null || _error != null) ...[
         const SizedBox(height: 8),
         Semantics(

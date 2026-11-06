@@ -58,12 +58,23 @@ void main() {
     await tester.pump();
     expect(find.text('Achievements'), findsOneWidget);
     expect(find.text('2 of 16 unlocked'), findsOneWidget);
+    expect(
+        find.text('Next goal: Hardcore Cadet (0 / 5)'), findsOneWidget);
     expect(find.text('First Contact'), findsOneWidget);
     await tester.tap(find.text('Statistics'));
     await tester.pumpAndSettle();
     expect(find.text('Completed runs'), findsOneWidget);
     expect(find.text('0 h 2 min'), findsOneWidget);
     expect(find.text('Worlds owned'), findsNothing);
+  });
+
+  testWidgets(
+      'progress screen shows world unlock rewards on achievements when enabled',
+      (tester) async {
+    await tester.pumpWidget(_app(const ProgressScreen(cosmeticsEnabled: true)));
+    await tester.pump();
+    expect(find.text('Unlock: Pollen Patrol'), findsOneWidget);
+    expect(find.text('Unlock: Haunted Harvest'), findsOneWidget);
   });
 
   testWidgets(
@@ -116,7 +127,7 @@ void main() {
     expect(find.byKey(const ValueKey('gameViewport')), findsOneWidget);
     expect(s.gamesPlayed, 0);
     expect(s.totalPoints, 0);
-    expect(s.stardust, 100);
+    expect(s.stardust, 0);
     await tester.pumpWidget(const SizedBox());
   });
 
@@ -153,7 +164,7 @@ void main() {
     expect(s.gamesPlayed, 0);
     expect(s.totalPoints, 0);
     expect(s.highScore, 0);
-    expect(s.stardust, 100);
+    expect(s.stardust, 0);
     await tester.pumpWidget(const SizedBox());
   });
 

@@ -10,6 +10,7 @@ import 'package:atomic_orbital/game/game_skin.dart';
 import 'package:atomic_orbital/game/original_text.dart';
 import 'package:atomic_orbital/game/progress_screen.dart';
 import 'package:atomic_orbital/game/skin_shop.dart';
+import 'package:atomic_orbital/game/world_backdrop.dart';
 import 'package:atomic_orbital/l10n/strings.dart';
 import 'package:atomic_orbital/models/components.dart';
 import 'package:atomic_orbital/services/settings_service.dart';
@@ -39,7 +40,9 @@ class _RejectingStore extends InMemorySharedPreferencesStore {
 }
 
 Widget _host(WidgetTester tester, Widget home,
-        {double textScale = 1, Locale locale = const Locale('en')}) =>
+        {double textScale = 1,
+        Locale locale = const Locale('en'),
+        bool reduceMotion = true}) =>
     RepaintBoundary(
       key: _capture,
       child: MaterialApp(
@@ -52,7 +55,7 @@ Widget _host(WidgetTester tester, Widget home,
         builder: (context, child) => MediaQuery(
           data: MediaQueryData.fromView(tester.view).copyWith(
               textScaler: TextScaler.linear(textScale),
-              disableAnimations: true),
+              disableAnimations: reduceMotion),
           child: child!,
         ),
         home: home,
@@ -141,6 +144,41 @@ void main() {
     await SettingsService.initialize();
   });
 
+  testWidgets('shop animates its preview and responds to reduced motion',
+      (tester) async {
+    await tester
+        .pumpWidget(_host(tester, const SkinShop(), reduceMotion: false));
+    await _preview(tester, GameSkin.deepBlue);
+    final painter = tester
+        .widget<CustomPaint>(find.byKey(const ValueKey('world-deep_blue')))
+        .painter! as SkinPreview;
+    final motion = painter.motion! as AnimationController;
+    final backdrop = tester
+        .widgetList<CustomPaint>(find.byType(CustomPaint))
+        .map((widget) => widget.painter)
+        .whereType<WorldBackdrop>()
+        .single;
+    expect(backdrop.skin, GameSkin.deepBlue);
+    expect(backdrop.motion, same(motion));
+    expect(settings.selectedSkin, GameSkin.classic);
+    final before = motion.value;
+    await tester.pump(const Duration(milliseconds: 250));
+    expect(motion.value, greaterThan(before));
+
+    await tester.pumpWidget(_host(tester, const SkinShop()));
+    expect(motion.isAnimating, isFalse);
+    expect(motion.value, 0);
+    await tester.pump(const Duration(seconds: 2));
+    expect(motion.value, 0);
+
+    await tester
+        .pumpWidget(_host(tester, const SkinShop(), reduceMotion: false));
+    await tester.pump(const Duration(seconds: 1));
+    expect(motion.isAnimating, isTrue);
+    expect(motion.value, greaterThan(0));
+    await tester.pumpWidget(const SizedBox());
+  });
+
   testWidgets('default design hides cosmetics and preserves the saved wallet',
       (tester) async {
     tester.view
@@ -148,7 +186,7 @@ void main() {
       ..devicePixelRatio = 1
       ..padding = const FakeViewPadding(top: 59, bottom: 34);
     addTearDown(tester.view.reset);
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     await settings.buySkin(GameSkin.cowAbduction);
     await settings.earnStardust(17);
     final prefs = await SharedPreferences.getInstance();
@@ -224,7 +262,7 @@ void main() {
     await tester.pumpWidget(_host(tester, const SkinShop()));
     final cow = find.byKey(const ValueKey('choose-cow_abduction'));
     expect(tester.widget<FilledButton>(cow).onPressed, isNull);
-    expect(find.text('50 more Stars to unlock'), findsOneWidget);
+    expect(find.text('250 more Stars to unlock'), findsOneWidget);
     await _preview(tester, GameSkin.deepBlue);
     expect(
         tester.widget<Text>(find.byKey(const ValueKey('featuredWorld'))).data,
@@ -232,7 +270,7 @@ void main() {
     expect(settings.selectedSkin, GameSkin.classic,
         reason: 'Browsing must not equip a world');
     await _preview(tester, GameSkin.cowAbduction);
-    await tester.runAsync(() => settings.earnStardust(50));
+    await tester.runAsync(() => settings.earnStardust(250));
     await tester.pump();
     await _tap(tester, cow);
     expect(settings.stardust, 0);
@@ -253,8 +291,59 @@ void main() {
   });
 
   testWidgets(
+      'achievement-locked worlds show requirement and unlock only after earning it',
+      (tester) async {
+    await tester
+        .runAsync(() => settings.earnStardust(GameSkin.sunflower.price));
+    await tester.pumpWidget(_host(tester, const SkinShop()));
+    await _preview(tester, GameSkin.sunflower);
+    final button = find.byKey(const ValueKey('choose-sunflower'));
+    expect(tester.widget<FilledButton>(button).onPressed, isNull);
+    expect(find.text('Requires achievement: Finding Orbit'), findsOneWidget);
+    expect(
+        tester.widget<Text>(find.byKey(const ValueKey('ownedWorldsBadge'))).data,
+        '1/12');
+    settings.recordPickup(
+        score: 5, hardcore: false, clean: true, skin: GameSkin.classic);
+    await tester.runAsync(settings.flushProgress);
+    await tester.pump();
+    expect(tester.widget<FilledButton>(button).onPressed, isNotNull);
+    await _tap(tester, button);
+    expect(settings.selectedSkin, GameSkin.sunflower);
+    expect(settings.ownsSkin(GameSkin.sunflower), isTrue);
+    expect(
+        tester.widget<Text>(find.byKey(const ValueKey('ownedWorldsBadge'))).data,
+        '2/12');
+    expect(settings.stardust, 0);
+    await _preview(tester, GameSkin.classic);
+    expect(
+        find.text('World unlocked · ready to equip · BEST  5'), findsOneWidget);
+    await tester.pumpWidget(
+        _host(tester, const ProgressScreen(cosmeticsEnabled: true)));
+    await _tap(tester, find.text('Statistics'));
+    await tester.scrollUntilVisible(
+      find.text('Pollen Patrol'),
+      200,
+      scrollable: find.byWidgetPredicate(
+          (w) => w is Scrollable && w.axisDirection == AxisDirection.down),
+    );
+    expect(find.text('BEST  5'), findsWidgets);
+    await tester.pumpWidget(const SizedBox());
+  });
+
+  testWidgets(
       'every world can be previewed, unlocked and equipped from the selector',
       (tester) async {
+    settings.recordPickup(
+        score: 20, hardcore: false, clean: true, skin: GameSkin.classic);
+    settings.recordPickup(
+        score: 20, hardcore: true, clean: true, skin: GameSkin.classic);
+    settings.completeGame(score: 1000, hardcore: false, seconds: 60);
+    settings.completeGame(score: 20, hardcore: true, seconds: 60);
+    for (var i = 0; i < 48; i++) {
+      settings.incrementGamesPlayed();
+    }
+    await tester.runAsync(settings.flushProgress);
     final totalPrice =
         GameSkin.values.fold<int>(0, (total, skin) => total + skin.price);
     await tester
@@ -290,7 +379,7 @@ void main() {
       ..physicalSize = const Size(393, 852)
       ..devicePixelRatio = 1;
     addTearDown(tester.view.reset);
-    await tester.runAsync(() => settings.earnStardust(50));
+    await tester.runAsync(() => settings.earnStardust(350));
     await tester.pumpWidget(_host(tester, const SkinShop()));
     final pager = find.byKey(const ValueKey('worldPager'));
     final ownedBefore = GameSkin.values.map(settings.ownsSkin).toList();
@@ -306,7 +395,7 @@ void main() {
           step.skin.name);
       expect(tester.widget<PageView>(pager).controller!.page,
           closeTo(step.skin.index.toDouble(), .001));
-      expect(settings.stardust, 150);
+      expect(settings.stardust, 350);
       expect(settings.selectedSkin, GameSkin.classic);
       expect(GameSkin.values.map(settings.ownsSkin).toList(), ownedBefore);
     }
@@ -351,7 +440,7 @@ void main() {
     await tester.drag(pager, const Offset(300, 0));
     await tester.pumpAndSettle();
     expectPreview(previous);
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(settings.selectedSkin, GameSkin.classic);
     expect(
         GameSkin.values.where(settings.ownsSkin).toList(), [GameSkin.classic]);
@@ -369,7 +458,7 @@ void main() {
     SharedPreferencesStorePlatform.instance = store;
     SharedPreferences.resetStatic();
     await tester.runAsync(SettingsService.initialize);
-    await tester.runAsync(() => settings.earnStardust(50));
+    await tester.runAsync(() => settings.earnStardust(250));
     final write = Completer<void>();
     store.holdWrite = write;
     addTearDown(() {
@@ -389,7 +478,7 @@ void main() {
     expect(tester.widget<PageView>(pager).controller!.page,
         closeTo(GameSkin.cowAbduction.index.toDouble(), .001));
     expect(settings.selectedSkin, GameSkin.classic);
-    expect(settings.stardust, 150);
+    expect(settings.stardust, 250);
     expect(
         tester
             .widget<FilledButton>(
@@ -441,7 +530,7 @@ void main() {
           expect(anchors(), before, reason: 'Browsing to ${skin.name}');
         }
       }
-      await tester.runAsync(() => settings.earnStardust(50));
+      await tester.runAsync(() => settings.earnStardust(250));
       await tester.pump();
       expect(anchors(), before, reason: 'Becoming affordable');
       final choose = find.byKey(const ValueKey('choose-cow_abduction'));
@@ -471,7 +560,7 @@ void main() {
     expect(find.textContaining('Stardust'), findsNothing);
     await _tap(tester, find.text('BACK TO HANGAR'));
     expect(find.text('FIELD GUIDE'), findsNothing);
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(settings.selectedSkin, GameSkin.classic);
     await tester.pumpWidget(const SizedBox());
   });
@@ -487,7 +576,7 @@ void main() {
       await _tap(tester, find.byKey(const ValueKey('shopInfo')));
       await _tap(tester, find.text('BACK TO HANGAR'));
       expect(find.text('FIELD GUIDE'), findsNothing);
-      expect(settings.stardust, 100);
+      expect(settings.stardust, 0);
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox());
     });
@@ -514,6 +603,7 @@ void main() {
 
   testWidgets('earned pickups survive End run and can buy a playable world',
       (tester) async {
+    await tester.runAsync(() => settings.earnStardust(200));
     final engine = GameEngine(random: Random(1));
     await tester.pumpWidget(_host(
         tester,
@@ -528,10 +618,10 @@ void main() {
     await tester.runAsync(() => Future<void>.delayed(Duration.zero));
     await tester.pump();
     expect(engine.score, 50);
-    expect(settings.stardust, 150);
+    expect(settings.stardust, 250);
     await _tap(tester, find.text('End run'));
     expect(engine.state, GameState.menu);
-    expect(settings.stardust, 150);
+    expect(settings.stardust, 250);
     await _tap(tester, find.byKey(const ValueKey('openShop')));
     await _tap(tester, find.byKey(const ValueKey('choose-cow_abduction')));
     expect(settings.stardust, 0);
@@ -583,15 +673,15 @@ void main() {
       await tester.runAsync(() => Future<void>.delayed(Duration.zero));
       await tester.pump();
       expect(engine.state, GameState.gameOver);
-      expect(settings.stardust, 102);
+      expect(settings.stardust, 2);
       expect(find.text('+2 Stars saved'), findsOneWidget);
       await tester.pump(const Duration(seconds: 1));
-      expect(settings.stardust, 102);
+      expect(settings.stardust, 2);
       await _tap(tester, find.byKey(const ValueKey('replayRun')));
       engine.pauseGame();
       await tester.pump();
       await _tap(tester, find.text('End run'));
-      expect(settings.stardust, 102);
+      expect(settings.stardust, 2);
       await tester.pumpWidget(const SizedBox());
     });
   }
@@ -615,7 +705,7 @@ void main() {
     await tester.pump();
     await tester.runAsync(() => Future<void>.delayed(Duration.zero));
     await tester.pump();
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(find.textContaining('Stars could not be saved'), findsOneWidget);
     engine.resumeGame();
     _collect(engine, 1);
@@ -626,10 +716,10 @@ void main() {
     expect(find.textContaining('Stars could not be saved'), findsOneWidget);
     store.reject = false;
     await _tap(tester, find.text('Retry'));
-    expect(settings.stardust, 102);
+    expect(settings.stardust, 2);
     expect(find.textContaining('Stars could not be saved'), findsNothing);
     await _tap(tester, find.text('End run'));
-    expect(settings.stardust, 102);
+    expect(settings.stardust, 2);
     await tester.pumpWidget(const SizedBox());
   });
 
@@ -670,7 +760,7 @@ void main() {
     await tester.pump(const Duration(milliseconds: 400));
     expect(find.byType(SkinShop), findsOneWidget);
     expect(find.byType(SkinShop, skipOffstage: false), findsOneWidget);
-    expect(settings.stardust, 101);
+    expect(settings.stardust, 1);
     for (var frame = 0; frame < 6; frame++) {
       await tester.pump(const Duration(milliseconds: 100));
     }
@@ -779,7 +869,7 @@ void main() {
       (tester) async {
     final semantics = tester.ensureSemantics();
     try {
-      await tester.runAsync(() => settings.earnStardust(50));
+      await tester.runAsync(() => settings.earnStardust(350));
       await tester.pumpWidget(_host(tester, const SkinShop()));
       await tester.sendKeyEvent(LogicalKeyboardKey.arrowRight);
       await tester.pump();

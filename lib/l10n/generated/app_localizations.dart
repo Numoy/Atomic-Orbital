@@ -188,6 +188,12 @@ abstract class AppLocalizations {
   /// **'Leaderboard'**
   String get leaderboard;
 
+  /// No description provided for @allLeaderboards.
+  ///
+  /// In en, this message translates to:
+  /// **'All leaderboards'**
+  String get allLeaderboards;
+
   /// No description provided for @signIn.
   ///
   /// In en, this message translates to:
@@ -719,7 +725,7 @@ abstract class AppLocalizations {
   /// No description provided for @fluxSpendHelp.
   ///
   /// In en, this message translates to:
-  /// **'Spend Stars on worlds in the hangar. Every world keeps the same rules.'**
+  /// **'Spend Stars on worlds in the hangar. Advanced worlds also require earning specific achievements.'**
   String get fluxSpendHelp;
 
   /// No description provided for @fluxSaveTitle.
@@ -731,7 +737,7 @@ abstract class AppLocalizations {
   /// No description provided for @fluxSaveHelp.
   ///
   /// In en, this message translates to:
-  /// **'Start with 100 Stars. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.'**
+  /// **'Start at 0 Stars and earn every world through play. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.'**
   String get fluxSaveHelp;
 
   /// No description provided for @equipped.
@@ -1261,6 +1267,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Leaving now will not save a daily result. Finish the run to record it.'**
   String get dailyEndRunHelp;
+
+  /// No description provided for @requiresAchievement.
+  ///
+  /// In en, this message translates to:
+  /// **'Requires achievement: {title}'**
+  String requiresAchievement(String title);
+
+  /// No description provided for @worldTier.
+  ///
+  /// In en, this message translates to:
+  /// **'{tier, select, 0{CORE} 1{TIER I · EXPLORER} 2{TIER II · CHALLENGER} 3{TIER III · VETERAN} other{TIER IV · MASTER}}'**
+  String worldTier(String tier);
 }
 
 class _AppLocalizationsDelegate

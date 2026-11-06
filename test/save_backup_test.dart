@@ -55,7 +55,7 @@ void main() {
 
   Future<String> candidate() async {
     s.completeGame(score: 35, hardcore: false, seconds: 120);
-    await s.earnStardust(200);
+    await s.earnStardust(500);
     await s.buySkin(GameSkin.deepBlue);
     s.setOption('language', 'de');
     await daily.recordResult(challenge, score: 9, seconds: 42);

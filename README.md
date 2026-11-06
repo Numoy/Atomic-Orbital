@@ -6,11 +6,11 @@ The player moves around the atom. Hold to accelerate outward, release to move in
 
 The [matching gameplay visuals](docs/game-visuals-2026-10-22.md) use the same palette, a faint reactor glow and a beveled health rail, with the original movement, collision geometry and timing preserved.
 
-Version **2.3.0 (44)** adds a playable, skippable practice introduction, **18 offline achievements**, statistics, English/German localization, separate music/effects controls, optional haptics and checked progress saving. The [October 25 improvements](docs/improvements-2026-10-25.md) add local daily challenges, save export/import with rollback and previous-save recovery, run duration on results, keyboard fixes and audio retries. The original twelve achievement conditions remain unchanged. Local progress works without a platform account; Android Play Games and iOS Game Center provide optional online competition with profile-bound pending uploads.
+Version **2.3.0 (47)** adds a playable, skippable practice introduction, **18 offline achievements**, statistics, English/German localization, separate music/effects controls, optional haptics and checked progress saving. The [October 25 improvements](docs/improvements-2026-10-25.md) add local daily challenges, save export/import with rollback and previous-save recovery, run duration on results, keyboard fixes and audio retries. The original twelve achievement conditions remain unchanged. Local progress works without a platform account; Android Play Games and iOS Game Center provide optional online competition with profile-bound pending uploads.
 
-The [October 25 world review](docs/world-review-2026-10-25.md) expands the collection to eleven themed worlds plus free Classic. Haunted Harvest, Junkyard Dash, Volcano Hop, Cheese Chase and Jungle Jam join Cow Abduction, Deep Blue, Web Escape, Dragon’s Hoard, Pollen Patrol and Frost Bite. Deep Blue collects treasure chests. A minimal swipe selector previews one world at a time, with a compact unlock/equip action. Existing balances, ownership and stable save IDs are preserved. Daily challenges and practice keep Classic; the two world achievements are visible again in ordinary Progress.
+The [October 25 world review](docs/world-review-2026-10-25.md) expands the collection to eleven themed worlds plus free Classic. Haunted Harvest, Junkyard Dash, Volcano Hop, Cheese Chase and Jungle Jam join Cow Abduction, Deep Blue, Web Escape, Dragon’s Hoard, Pollen Patrol and Frost Bite. Deep Blue collects treasure chests. The [living-worlds pass](docs/living-worlds-2026-10-25.md) adds distinct backgrounds, animated characters and themed projectiles. A minimal swipe selector previews one world at a time, with a compact unlock/equip action. Existing balances, ownership and stable save IDs are preserved. Daily challenges and practice keep Classic; the two world achievements are visible again in ordinary Progress.
 
-See the [build 44 iOS handoff](docs/releases/2.3.0-build44.md) for current build/store status, the [earlier 2.3.0 handoff](docs/releases/2.3.0-internal.md) for historical evidence and acceptance gaps, and the [follow-up roadmap](docs/roadmap-after-completion.md) for later work. No public release is implied by the source version.
+See the [build 47 handoff](docs/releases/2.3.0-build47.md) for the current Android release and the [build 46 handoff](docs/releases/2.3.0-build46.md) for the latest iOS upload. The [Android Play Games check](docs/android-play-games-access-2026-10-25.md) records the latest Pixel installation and access to original leaderboards; the [earlier 2.3.0 handoff](docs/releases/2.3.0-internal.md) covers historical evidence and acceptance gaps, and the [follow-up roadmap](docs/roadmap-after-completion.md) covers later work. No public release is implied by the source version.
 
 ## Fair scaling
 
@@ -33,7 +33,7 @@ flutter run --flavor comparison
 
 Verified with Flutter 3.47.7. Android explicitly uses Skia for the reference rendering; recheck the renderer comparison before upgrading Flutter, as described in the verification record.
 
-For Play releases, copy `android/key.properties.example` to the ignored `android/key.properties`, set the registered upload key locally, and run `flutter build appbundle --release --flavor production`. Release builds never fall back to debug signing. The current release candidate version is `2.3.0 (44)`.
+For Play releases, copy `android/key.properties.example` to the ignored `android/key.properties`, set the registered upload key locally, and run `flutter build appbundle --release --flavor production`. Release builds never fall back to debug signing. The current release candidate version is `2.3.0 (47)`.
 
 ## Verify parity
 

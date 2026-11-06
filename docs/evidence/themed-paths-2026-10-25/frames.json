@@ -1,0 +1,600 @@
+{
+  "fps": 10,
+  "source": "GamePainter with real 60 Hz engine transitions; controlled pickups; photon collisions disabled",
+  "frames": [
+    {
+      "frame": 0,
+      "score": 5,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true
+    },
+    {
+      "frame": 1,
+      "score": 5,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        472.5
+      ],
+      "playerRadius": 262.5,
+      "holding": true
+    },
+    {
+      "frame": 2,
+      "score": 5,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        459.0
+      ],
+      "playerRadius": 325.5,
+      "holding": true
+    },
+    {
+      "frame": 3,
+      "score": 5,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        445.5
+      ],
+      "playerRadius": 388.5,
+      "holding": true
+    },
+    {
+      "frame": 4,
+      "score": 5,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        432.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true
+    },
+    {
+      "frame": 5,
+      "score": 5,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        418.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 6,
+      "score": 5,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        405.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 7,
+      "score": 5,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        391.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 8,
+      "score": 5,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        378.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false
+    },
+    {
+      "frame": 9,
+      "score": 5,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        364.5
+      ],
+      "playerRadius": 419.5,
+      "holding": false
+    },
+    {
+      "frame": 10,
+      "score": 5,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false
+    },
+    {
+      "frame": 11,
+      "score": 5,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false
+    },
+    {
+      "frame": 12,
+      "score": 5,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false
+    },
+    {
+      "frame": 13,
+      "score": 5,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 14,
+      "score": 5,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 15,
+      "score": 5,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 16,
+      "score": 10,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true
+    },
+    {
+      "frame": 17,
+      "score": 10,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        346.5,
+        477.0
+      ],
+      "playerRadius": 262.5,
+      "holding": true
+    },
+    {
+      "frame": 18,
+      "score": 10,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        342.0,
+        468.0
+      ],
+      "playerRadius": 325.5,
+      "holding": true
+    },
+    {
+      "frame": 19,
+      "score": 10,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        337.5,
+        459.0
+      ],
+      "playerRadius": 388.5,
+      "holding": true
+    },
+    {
+      "frame": 20,
+      "score": 10,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        333.0,
+        450.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true
+    },
+    {
+      "frame": 21,
+      "score": 10,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        328.5,
+        441.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 22,
+      "score": 10,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        324.0,
+        432.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 23,
+      "score": 10,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        319.5,
+        423.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 24,
+      "score": 10,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        315.0,
+        414.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false
+    },
+    {
+      "frame": 25,
+      "score": 10,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        310.5,
+        405.0
+      ],
+      "playerRadius": 419.5,
+      "holding": false
+    },
+    {
+      "frame": 26,
+      "score": 10,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false
+    },
+    {
+      "frame": 27,
+      "score": 10,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false
+    },
+    {
+      "frame": 28,
+      "score": 10,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false
+    },
+    {
+      "frame": 29,
+      "score": 10,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 30,
+      "score": 10,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 31,
+      "score": 10,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 32,
+      "score": 20,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true
+    },
+    {
+      "frame": 33,
+      "score": 20,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        303.75,
+        391.5,
+        479.25
+      ],
+      "playerRadius": 262.5,
+      "holding": true
+    },
+    {
+      "frame": 34,
+      "score": 20,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        301.5,
+        387.0,
+        472.5
+      ],
+      "playerRadius": 325.5,
+      "holding": true
+    },
+    {
+      "frame": 35,
+      "score": 20,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        299.25,
+        382.5,
+        465.75
+      ],
+      "playerRadius": 388.5,
+      "holding": true
+    },
+    {
+      "frame": 36,
+      "score": 20,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        297.0,
+        378.0,
+        459.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true
+    },
+    {
+      "frame": 37,
+      "score": 20,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        294.75,
+        373.5,
+        452.25
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 38,
+      "score": 20,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        292.5,
+        369.0,
+        445.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 39,
+      "score": 20,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        290.25,
+        364.5,
+        438.75
+      ],
+      "playerRadius": 486.0,
+      "holding": true
+    },
+    {
+      "frame": 40,
+      "score": 20,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        288.0,
+        360.0,
+        432.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false
+    },
+    {
+      "frame": 41,
+      "score": 20,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        285.75,
+        355.5,
+        425.25
+      ],
+      "playerRadius": 419.5,
+      "holding": false
+    },
+    {
+      "frame": 42,
+      "score": 20,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false
+    },
+    {
+      "frame": 43,
+      "score": 20,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false
+    },
+    {
+      "frame": 44,
+      "score": 20,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false
+    },
+    {
+      "frame": 45,
+      "score": 20,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 46,
+      "score": 20,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    },
+    {
+      "frame": 47,
+      "score": 20,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false
+    }
+  ]
+}

@@ -279,4 +279,19 @@ void main() {
     expect(settings.gamesPlayed, 0);
     await tester.pumpWidget(const SizedBox());
   });
+
+  testWidgets('quick-access daily challenge button opens the daily intro dialog',
+      (tester) async {
+    final engine = GameEngine(random: Random(1));
+    await tester.pumpWidget(_app(engine));
+    final quickButton = find.byKey(const ValueKey('openDailyChallenge'));
+    expect(quickButton, findsOneWidget);
+    await tester.tap(quickButton);
+    await _transition(tester);
+    expect(find.byKey(const ValueKey('startDailyChallenge')), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('startDailyChallenge')));
+    await _transition(tester);
+    expect(engine.state, GameState.ready);
+    await tester.pumpWidget(const SizedBox());
+  });
 }

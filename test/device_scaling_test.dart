@@ -583,6 +583,7 @@ void main() {
             findsOneWidget);
       }
       expect(find.text('Share Atomic Orbital'), findsOneWidget);
+      expect(find.text('All leaderboards'), findsNothing);
       await tester.binding.handlePopRoute();
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 400));

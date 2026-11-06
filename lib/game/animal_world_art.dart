@@ -19,15 +19,27 @@ Paint _shade(Color light, Color dark) => Paint()
     colors: [light, dark],
   ).createShader(_disc);
 
-void drawCheeseCore(Canvas canvas) {
+double _eyeOpen(double time) =>
+    1 - .94 * math.pow(math.max(0.0, math.sin(time)), 20).toDouble();
+
+void drawCheeseCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
+  final eyeOpen =
+      _eyeOpen(time * math.pi / 2) * (1 - .15 * charge - .07 * fire);
+  final whiskerTwitch =
+      math.sin(time * math.pi) * .025 + .09 * charge - .11 * fire;
+  final earInset = .04 * charge + .05 * fire;
+  final earDrop = .04 * charge + .1 * fire;
   final head = Path()
     ..moveTo(-.68, -.2)
-    ..lineTo(-.65, -.72)
-    ..quadraticBezierTo(-.62, -.8, -.53, -.7)
+    ..lineTo(-.65 + earInset, -.72 + earDrop)
+    ..quadraticBezierTo(
+        -.62 + earInset, -.8 + earDrop, -.53 + earInset, -.7 + earDrop)
     ..lineTo(-.3, -.5)
     ..quadraticBezierTo(0, -.64, .3, -.5)
-    ..lineTo(.53, -.7)
-    ..quadraticBezierTo(.62, -.8, .65, -.72)
+    ..lineTo(.53 - earInset, -.7 + earDrop)
+    ..quadraticBezierTo(
+        .62 - earInset, -.8 + earDrop, .65 - earInset, -.72 + earDrop)
     ..lineTo(.68, -.2)
     ..cubicTo(.9, .18, .61, .73, 0, .76)
     ..cubicTo(-.61, .73, -.9, .18, -.68, -.2)
@@ -40,7 +52,7 @@ void drawCheeseCore(Canvas canvas) {
     canvas.drawPath(
         Path()
           ..moveTo(.4, -.42)
-          ..lineTo(.57, -.63)
+          ..lineTo(.57 - earInset, -.63 + earDrop)
           ..lineTo(.58, -.26)
           ..close(),
         _fill(const Color(0xFFC67C72)));
@@ -55,6 +67,10 @@ void drawCheeseCore(Canvas canvas) {
           ..lineTo(.6, .35)
           ..close(),
         _fill(const Color(0xFFB86B3E)));
+    canvas.save();
+    canvas.translate(0, -.09);
+    canvas.scale(1, eyeOpen);
+    canvas.translate(0, .09);
     canvas.drawOval(
         Rect.fromCenter(
             center: const Offset(.27, -.09), width: .32, height: .29),
@@ -64,6 +80,7 @@ void drawCheeseCore(Canvas canvas) {
     canvas.drawOval(const Rect.fromLTRB(.23, -.21, .28, .04), _fill(_ink));
     canvas.drawCircle(
         const Offset(.22, -.15), .03, _fill(const Color(0xFFFFF9DB)));
+    canvas.restore();
     canvas.drawPath(
         Path()
           ..moveTo(.14, -.26)
@@ -72,7 +89,9 @@ void drawCheeseCore(Canvas canvas) {
     canvas.drawOval(const Rect.fromLTRB(.02, .18, .39, .46),
         _fill(const Color(0xFFFFE8BF)));
     for (final y in [.17, .31]) {
-      canvas.drawLine(Offset(.36, y), Offset(.89, y - .04),
+      canvas.drawLine(
+          Offset(.36, y),
+          Offset(.89 - .09 * charge - .035 * fire, y - .04 + whiskerTwitch),
           _line(const Color(0xFFFFE9CB), .035));
     }
     canvas.restore();
@@ -176,30 +195,43 @@ void drawCheesePickup(Canvas canvas) {
   }
 }
 
-void drawCheeseHazard(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, .8,
-      _shade(const Color(0xFFAC4962), const Color(0xFF622F4A)));
-  final thread = _line(const Color(0xFFF7A6A5), .085);
+void drawCheeseHazard(Canvas canvas, {double time = 0}) {
+  canvas.save();
+  canvas.rotate(time * math.pi / 4);
+  canvas.drawCircle(Offset.zero, .88,
+      _shade(const Color(0xFF79C7BD), const Color(0xFF326F78)));
+  final thread = _line(const Color(0xFFD9F5DC), .105);
   for (final x in [-.34, 0.0, .34]) {
     canvas.drawPath(
         Path()
-          ..moveTo(x - .21, -.5)
-          ..quadraticBezierTo(x - .4, .01, x + .21, .52),
+          ..moveTo(x - .21, -.57)
+          ..quadraticBezierTo(x - .4, .01, x + .21, .59),
         thread);
   }
   canvas.drawPath(
       Path()
-        ..moveTo(-.71, .02)
-        ..quadraticBezierTo(.04, .39, .71, -.06)
-        ..moveTo(-.65, -.23)
-        ..quadraticBezierTo(.03, .12, .63, -.4),
+        ..moveTo(-.75, .02)
+        ..quadraticBezierTo(.04, .39, .75, -.06)
+        ..moveTo(-.68, -.28)
+        ..quadraticBezierTo(.03, .12, .63, -.48),
       thread);
+  canvas.restore();
 }
 
-void drawJungleCore(Canvas canvas) {
+void drawJungleCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
+  final eyeOpen = _eyeOpen(time * math.pi / 4) * (1 - .12 * charge);
+  final earLift =
+      math.sin(time * math.pi / 2) * .025 + .035 * charge - .065 * fire;
   for (final x in [-.69, .69]) {
-    canvas.drawCircle(Offset(x, .02), .25, _fill(const Color(0xFFA77449)));
-    canvas.drawCircle(Offset(x, .02), .16, _fill(const Color(0xFFDEAA76)));
+    canvas.drawCircle(
+        Offset(x * (1 - .04 * charge + .015 * fire), .02 + earLift),
+        .25,
+        _fill(const Color(0xFFA77449)));
+    canvas.drawCircle(
+        Offset(x * (1 - .04 * charge + .015 * fire), .02 + earLift),
+        .16,
+        _fill(const Color(0xFFDEAA76)));
   }
   canvas.drawOval(const Rect.fromLTRB(-.64, -.7, .64, .76),
       _shade(const Color(0xFFBC8A55), const Color(0xFF80563D)));
@@ -223,6 +255,10 @@ void drawJungleCore(Canvas canvas) {
     ..close();
   canvas.drawPath(
       face, _shade(const Color(0xFFF6D89E), const Color(0xFFDFAB75)));
+  canvas.save();
+  canvas.translate(0, -.1);
+  canvas.scale(1, eyeOpen);
+  canvas.translate(0, .1);
   for (final x in [-.23, .23]) {
     canvas.drawOval(
         Rect.fromCenter(center: Offset(x, -.1), width: .17, height: .24),
@@ -230,6 +266,7 @@ void drawJungleCore(Canvas canvas) {
     canvas.drawCircle(
         Offset(x - .035, -.15), .035, _fill(const Color(0xFFFFFAE2)));
   }
+  canvas.restore();
   canvas.drawOval(
       const Rect.fromLTRB(-.13, .12, .13, .26), _fill(const Color(0xFFA9714E)));
   canvas.drawPath(
@@ -249,7 +286,10 @@ void drawJungleCore(Canvas canvas) {
       _fill(const Color(0xFFFFF1CD)));
   for (final x in [-.4, .4]) {
     canvas.drawOval(
-        Rect.fromCenter(center: Offset(x, .23), width: .13, height: .08),
+        Rect.fromCenter(
+            center: Offset(x, .23),
+            width: .13 + .1 * charge + .04 * fire,
+            height: .08 + .08 * charge + .02 * fire),
         _fill(const Color(0xFFD29367)));
   }
 }
@@ -314,30 +354,41 @@ void drawJunglePickup(Canvas canvas) {
       _line(const Color(0xFF9D7941), .095));
 }
 
-void drawJungleHazard(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, .79,
-      _shade(const Color(0xFFBD875C), const Color(0xFF704A3B)));
-  for (final x in [-.33, .22]) {
+void drawJungleHazard(Canvas canvas, {double time = 0}) {
+  canvas.save();
+  canvas.rotate(-time * math.pi / 4);
+  final shell = Path()
+    ..moveTo(-.17, -.9)
+    ..cubicTo(.43, -.93, .86, -.46, .85, .08)
+    ..cubicTo(.85, .61, .43, .88, -.13, .87)
+    ..cubicTo(-.67, .86, -.9, .42, -.86, -.1)
+    ..quadraticBezierTo(-.83, -.64, -.17, -.9)
+    ..close();
+  canvas.drawPath(
+      shell, _shade(const Color(0xFFC99467), const Color(0xFF81533D)));
+  canvas.drawPath(shell, _line(const Color(0xFFD9AE7D), .04));
+  for (final x in [-.33, .28]) {
     canvas.drawPath(
         Path()
           ..moveTo(x, -.58)
           ..quadraticBezierTo(x - .22, 0, x + .08, .59),
-        _line(const Color(0xFFD9AB7B), .055));
+        _line(const Color(0xFFD9AB7B), .075));
   }
   canvas.drawPath(
       Path()
-        ..moveTo(-.11, -.73)
+        ..moveTo(-.11, -.83)
         ..lineTo(.06, -.4)
         ..lineTo(-.08, -.08)
         ..lineTo(.16, .14)
         ..lineTo(.03, .46)
-        ..lineTo(.15, .71),
-      _line(const Color(0xFFFFE5B9), .085));
+        ..lineTo(.15, .79),
+      _line(const Color(0xFFFFEAC5), .12));
   for (final eye in [
     const Offset(-.38, -.28),
     const Offset(-.19, -.37),
     const Offset(-.25, -.12),
   ]) {
-    canvas.drawCircle(eye, .07, _fill(const Color(0xFF654335)));
+    canvas.drawCircle(eye, .085, _fill(const Color(0xFF654335)));
   }
+  canvas.restore();
 }

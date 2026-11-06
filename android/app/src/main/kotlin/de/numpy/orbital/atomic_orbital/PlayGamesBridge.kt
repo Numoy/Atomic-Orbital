@@ -109,6 +109,9 @@ class PlayGamesBridge(private val activity: Activity, messenger: BinaryMessenger
                         showIntent(PlayGames.getLeaderboardsClient(activity).getLeaderboardIntent(id!!), result, "showLeaderboards")
                     }
                 }
+                "showAllLeaderboards" -> authenticated(result, call.method, call.argument<String>("playerId")) {
+                    showIntent(PlayGames.getLeaderboardsClient(activity).allLeaderboardsIntent, result, call.method)
+                }
                 "submitScore" -> {
                     val id = call.argument<String>("leaderboardId")
                     val rawScore = call.argument<Any>("score")

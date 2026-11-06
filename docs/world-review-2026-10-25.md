@@ -1,5 +1,7 @@
 # World review and five additions — 2026-10-25
 
+Follow-up: [living worlds](living-worlds-2026-10-25.md) adds themed backgrounds, animated characters and distinct projectile colors. This document records the preceding artwork pass.
+
 The owner requested another visual review of every theme and five further designs. Three agents split the new adventure artwork, new animal artwork, and shop/catalog checks. Integration covered all shared drawing paths, English/German localization, persistence and rendering.
 
 ## Current catalog

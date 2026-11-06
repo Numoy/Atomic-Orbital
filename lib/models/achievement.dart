@@ -20,6 +20,14 @@ class OrbitalAchievement {
   bool get requiresWorlds =>
       metric == AchievementMetric.worlds || metric == AchievementMetric.tour;
 
+  static OrbitalAchievement? byId(String? id) {
+    if (id == null) return null;
+    for (final a in all) {
+      if (a.id == id) return a;
+    }
+    return null;
+  }
+
   static const all = [
     OrbitalAchievement('normal20', AchievementMetric.normal, 20,
         googleId: 'CgkItOGapf0GEAIQCg'),

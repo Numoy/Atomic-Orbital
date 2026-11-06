@@ -91,6 +91,8 @@ void main() {
           PlayGamesService.hardcoreLeaderboard
         ],
       );
+      await chooseAction('All leaderboards');
+      expect(gameCalls.last.method, 'showAllLeaderboards');
 
       await chooseAction('Disconnect Play Games');
       expect(games.authenticated, isFalse);
@@ -114,7 +116,12 @@ void main() {
       await redraw();
 
       acceptSignIn = false;
-      for (final label in ['Sign in', 'Achievements', 'Leaderboard']) {
+      for (final label in [
+        'Sign in',
+        'Achievements',
+        'Leaderboard',
+        'All leaderboards'
+      ]) {
         await chooseAction(label);
         expect(games.authenticated, isFalse);
         expect(games.disconnected, isTrue);
@@ -133,7 +140,7 @@ void main() {
       expect(games.authenticated, isTrue);
       expect(games.disconnected, isFalse);
       expect(prefs.getBool('play_games_disconnected'), isFalse);
-      expect(gameCalls.where((call) => call.method == 'signIn'), hasLength(5));
+      expect(gameCalls.where((call) => call.method == 'signIn'), hasLength(6));
 
       await tester.pumpWidget(const SizedBox.shrink());
     } finally {

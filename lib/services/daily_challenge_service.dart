@@ -19,6 +19,40 @@ class DailyChallengeService extends ChangeNotifier {
   int bestFor(DailyChallenge challenge) =>
       (_pending[challenge.identity] ?? _records[challenge.identity])?.score ??
       0;
+  int? bestDurationFor(DailyChallenge challenge) =>
+      (_pending[challenge.identity] ?? _records[challenge.identity])?.seconds;
+  int get completedDaysCount => {..._records.keys, ..._pending.keys}
+      .map((id) => id.split('/').first)
+      .toSet()
+      .length;
+  int get allTimeDailyBest {
+    var best = 0;
+    for (final r in _records.values) {
+      if (r.score > best) best = r.score;
+    }
+    for (final r in _pending.values) {
+      if (r.score > best) best = r.score;
+    }
+    return best;
+  }
+
+  int streakFor(DateTime instant) {
+    final completedDays = {..._records.keys, ..._pending.keys}
+        .map((id) => id.split('/').first)
+        .toSet();
+    if (completedDays.isEmpty) return 0;
+    var cursor = DailyChallenge.forDate(instant).dateUtc;
+    if (!completedDays.contains(cursor.toIso8601String().substring(0, 10))) {
+      cursor = cursor.subtract(const Duration(days: 1));
+    }
+    var streak = 0;
+    while (completedDays.contains(cursor.toIso8601String().substring(0, 10))) {
+      streak++;
+      cursor = cursor.subtract(const Duration(days: 1));
+    }
+    return streak;
+  }
+
   Future<void> flush() => _queue(_savePending);
 
   Future<void> initialize({bool reload = false}) async {

@@ -73,13 +73,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
       final accepted = await showDialog<bool>(
           context: context,
           builder: (context) => AlertDialog(
+                backgroundColor: ArcadePalette.panel,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18),
+                  side: const BorderSide(color: ArcadePalette.edge),
+                ),
                 title: Text(l.backupPreviewTitle),
                 scrollable: true,
                 content: Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(l.backupReplaceWarning),
+                      Text(l.backupReplaceWarning,
+                          style: const TextStyle(color: ArcadePalette.quiet)),
                       for (final row in <(String, Object, Object)>[
                         (l.normalBest, s.highScore, stats['high_score']),
                         (
@@ -118,9 +124,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       ])
                         Padding(
-                            padding: const EdgeInsets.only(top: 16),
+                          padding: const EdgeInsets.only(top: 12),
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: ArcadePalette.ink.withValues(alpha: .55),
+                              borderRadius: BorderRadius.circular(10),
+                              border:
+                                  Border.all(color: ArcadePalette.edge),
+                            ),
                             child: Text(
-                                '${row.$1}\n${l.backupCurrent}: ${row.$2}\n${l.backupIncoming}: ${row.$3}')),
+                                '${row.$1}\n${l.backupCurrent}: ${row.$2}\n${l.backupIncoming}: ${row.$3}'),
+                          ),
+                        ),
                     ]),
                 actions: [
                   TextButton(
@@ -161,6 +178,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
       builder: (context, _) {
         final s = SettingsService.instance;
         final l = context.l10n;
+        final showIcons = MediaQuery.sizeOf(context).width >= 380;
+        Icon? lead(IconData icon, Color color) => showIcons
+            ? Icon(icon, color: color, semanticLabel: '')
+            : null;
         return Scaffold(
           appBar: AppBar(title: Text(l.settings)),
           body: Align(
@@ -174,12 +195,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           children: [
                             SwitchListTile(
                                 contentPadding: EdgeInsets.zero,
+                                secondary:
+                                    lead(Icons.volume_up_rounded, ArcadePalette.ice),
                                 title: Text(s.isMuted ? l.soundOff : l.soundOn),
                                 value: !s.isMuted,
                                 onChanged: (enabled) =>
                                     AudioService.instance.setMuted(!enabled)),
                             SwitchListTile(
                                 contentPadding: EdgeInsets.zero,
+                                secondary:
+                                    lead(Icons.music_note_rounded, ArcadePalette.ice),
                                 title: Text(l.music),
                                 value: s.musicEnabled,
                                 onChanged: (enabled) {
@@ -188,6 +213,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 }),
                             SwitchListTile(
                                 contentPadding: EdgeInsets.zero,
+                                secondary:
+                                    lead(Icons.auto_awesome_rounded, ArcadePalette.ice),
                                 title: Text(l.effects),
                                 value: s.effectsEnabled,
                                 onChanged: (enabled) {
@@ -198,6 +225,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 }),
                             SwitchListTile(
                                 contentPadding: EdgeInsets.zero,
+                                secondary:
+                                    lead(Icons.vibration_rounded, ArcadePalette.ice),
                                 title: Text(l.haptics),
                                 value: s.hapticsEnabled,
                                 onChanged: (enabled) {
@@ -239,12 +268,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             ListTile(
                                 key: const ValueKey('exportSave'),
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.upload_file_rounded, ArcadePalette.gold),
                                 enabled: !_backupBusy,
                                 title: Text(l.exportSave),
                                 onTap: () => _backup('export')),
                             ListTile(
                                 key: const ValueKey('importSave'),
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.download_rounded, ArcadePalette.ice),
                                 enabled: !_backupBusy,
                                 title: Text(l.importSave),
                                 onTap: () => _backup('import')),
@@ -252,6 +285,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               ListTile(
                                   key: const ValueKey('restorePreviousSave'),
                                   contentPadding: EdgeInsets.zero,
+                                  leading:
+                                      lead(Icons.history_rounded, ArcadePalette.quiet),
                                   enabled: !_backupBusy,
                                   title: Text(l.restorePreviousSave),
                                   onTap: () => _backup('previous')),
@@ -260,18 +295,26 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             const Divider(color: ArcadePalette.edge),
                             ListTile(
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.school_outlined, ArcadePalette.ice),
                                 title: Text(l.practice),
                                 onTap: widget.onPractice),
                             ListTile(
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.privacy_tip_outlined, ArcadePalette.quiet),
                                 title: Text(l.privacy),
                                 onTap: () => _open('privacy')),
                             ListTile(
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.help_outline_rounded, ArcadePalette.quiet),
                                 title: Text(l.support),
                                 onTap: () => _open('support')),
                             ListTile(
                                 contentPadding: EdgeInsets.zero,
+                                leading:
+                                    lead(Icons.delete_outline_rounded, ArcadePalette.quiet),
                                 title: Text(l.deleteData),
                                 onTap: () => _open('delete-data')),
                             const Divider(color: ArcadePalette.edge),

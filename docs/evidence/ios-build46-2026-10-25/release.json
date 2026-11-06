@@ -1,0 +1,22 @@
+{
+  "verifiedOn": "2026-10-25",
+  "appId": "6825911116",
+  "version": "2.3.0",
+  "build": "46",
+  "buildId": "1abc4858-cf4b-4b4e-9a32-945b02899180",
+  "sourceBaseCommit": "ed1d62516eb3db41d9649c3a4e372435e69d46a4",
+  "sourceIncludesUncommittedChanges": true,
+  "sourceManifestSha256": "d9ab2d78e3ce613384cf20f65f4f0cd801100da6843c227f05a6ef399d02b569",
+  "sha256": "04750eecfd51dad2927c696dd4255d35eb1f3e5ee5706cedc2300d481fb2f891",
+  "bytes": 26014699,
+  "processingState": "VALID",
+  "uploadedDate": "2026-10-25T08:50:11-07:00",
+  "selectedInDraft": true,
+  "appStoreVersionId": "049e3efe-80f4-4c51-8571-fc9a6b549aaf",
+  "appStoreState": "PREPARE_FOR_SUBMISSION",
+  "releaseType": "MANUAL",
+  "internalBuildState": "IN_BETA_TESTING",
+  "externalBuildState": "READY_FOR_BETA_SUBMISSION",
+  "googlePlayChanged": false,
+  "pixelBuild": "45 with local full-screen background fix; unchanged in this upload task"
+}

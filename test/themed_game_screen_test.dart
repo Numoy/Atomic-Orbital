@@ -194,6 +194,56 @@ void main() {
     await tester.pumpWidget(const SizedBox());
   });
 
+  test('gameplay forwards real charge and release to every themed core',
+      () async {
+    final engine = GameEngine(random: Random(7))
+      ..startGame(recordProgress: false);
+    addTearDown(engine.dispose);
+    engine.player.collision.isCollidable = false;
+    final visual = GameplayFeedback()..sync(engine);
+    engine.onTouchDown();
+    for (var frame = 0; frame < 101; frame++) {
+      engine.advanceFrame();
+      visual.sync(engine);
+    }
+    expect(visual.charge, 1);
+    Future<List<int>> core(GameSkin skin, bool reduced, bool effects) async {
+      final recorder = ui.PictureRecorder();
+      final canvas = Canvas(recorder)
+        ..translate(50 - engine.width / 6, 50 - (engine.height ~/ 2) / 3);
+      GamePainter(engine,
+              skin: skin,
+              devicePixelRatio: 3,
+              reduceMotion: reduced,
+              feedback: effects ? visual : null)
+          .paint(canvas, const Size(360, 619));
+      final picture = recorder.endRecording();
+      final image = await picture.toImage(100, 100);
+      try {
+        return (await image.toByteData())!.buffer.asUint8List();
+      } finally {
+        image.dispose();
+        picture.dispose();
+      }
+    }
+
+    for (final phase in ['charge', 'fire']) {
+      if (phase == 'fire') {
+        engine.advanceFrame();
+        visual.sync(engine);
+        expect(visual.fire, 1);
+      }
+      for (final skin in GameSkin.values.skip(1)) {
+        expect(await core(skin, false, true),
+            isNot(orderedEquals(await core(skin, false, false))),
+            reason: '${skin.id} must react to real $phase');
+        expect(await core(skin, true, true),
+            orderedEquals(await core(skin, true, false)),
+            reason: '${skin.id} must suppress $phase in reduced motion');
+      }
+    }
+  });
+
   test(
       'feedback preserves Classic and respects reduced motion without engine writes',
       () async {

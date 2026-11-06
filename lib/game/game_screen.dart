@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:atomic_orbital/game/achievement_badge.dart';
+import 'package:atomic_orbital/game/arcade_style.dart';
 import 'package:atomic_orbital/game/daily_challenge.dart';
 import 'package:atomic_orbital/game/practice_screen.dart';
 import 'package:atomic_orbital/game/progress_screen.dart';
@@ -15,6 +17,7 @@ import 'package:atomic_orbital/game/game_skin.dart';
 import 'package:atomic_orbital/game/menu_scene.dart';
 import 'package:atomic_orbital/game/original_text.dart';
 import 'package:atomic_orbital/game/skin_shop.dart';
+import 'package:atomic_orbital/game/world_backdrop.dart';
 import 'package:atomic_orbital/models/components.dart';
 import 'package:atomic_orbital/services/audio_service.dart';
 import 'package:atomic_orbital/services/daily_challenge_service.dart';
@@ -189,6 +192,11 @@ class _GameScreenState extends State<GameScreen>
         final accepted = await showDialog<bool>(
             context: context,
             builder: (context) => AlertDialog(
+                  backgroundColor: ArcadePalette.panel,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18),
+                    side: const BorderSide(color: ArcadePalette.edge),
+                  ),
                   title: Text(context.l10n.hardcore),
                   content: Text(context.l10n.hardcoreIntro),
                   actions: [
@@ -239,22 +247,77 @@ class _GameScreenState extends State<GameScreen>
       final accepted = await showDialog<bool>(
           context: context,
           builder: (context) => AlertDialog(
+                backgroundColor: ArcadePalette.panel,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18),
+                  side: const BorderSide(color: ArcadePalette.edge),
+                ),
                 scrollable: true,
-                title: Text(l.dailyChallenge),
+                title: Row(children: [
+                  const ExcludeSemantics(
+                    child: Icon(Icons.today_outlined,
+                        color: ArcadePalette.ice, size: 22),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(child: Text(l.dailyChallenge)),
+                ]),
                 content: SingleChildScrollView(
                   child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(l.dailyDate(challenge.date)),
-                        const SizedBox(height: 16),
+                        Text(l.dailyDate(challenge.date),
+                            style: const TextStyle(
+                                color: ArcadePalette.ice,
+                                fontWeight: FontWeight.w700)),
+                        const SizedBox(height: 12),
                         Text(l.dailyIntro),
                         const SizedBox(height: 16),
-                        Text(l.dailyBestAnnouncement(daily.bestFor(challenge))),
-                        Text(l.dailyReset(reset)),
-                        const SizedBox(height: 16),
-                        Text(l.dailyLocalNote),
-                        if (daily.failure != null) Text(l.dailySaveFailed),
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: ArcadePalette.ink.withValues(alpha: .55),
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: ArcadePalette.edge),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                  l.dailyBestAnnouncement(
+                                      daily.bestFor(challenge)),
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.w600)),
+                              if (daily.bestDurationFor(challenge)
+                                  case final bestSeconds?) ...[
+                                const SizedBox(height: 4),
+                                Text(
+                                    l.runDuration(
+                                        '${bestSeconds ~/ 60}:${(bestSeconds % 60).toString().padLeft(2, '0')}'),
+                                    style: const TextStyle(
+                                        color: ArcadePalette.ice,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w600)),
+                              ],
+                              const SizedBox(height: 4),
+                              Text(l.dailyReset(reset),
+                                  style: const TextStyle(
+                                      color: ArcadePalette.quiet,
+                                      fontSize: 12)),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        Text(l.dailyLocalNote,
+                            style: const TextStyle(
+                                color: ArcadePalette.quiet, fontSize: 12)),
+                        if (daily.failure != null) ...[
+                          const SizedBox(height: 8),
+                          Text(l.dailySaveFailed,
+                              style: const TextStyle(
+                                  color: GameConstants.hardcoreAccent)),
+                        ],
                       ]),
                 ),
                 actions: [
@@ -534,6 +597,7 @@ class _GameScreenState extends State<GameScreen>
       final games = PlayGamesService.instance;
       if (action == 'achievements' ||
           action == 'leaderboard' ||
+          action == 'allLeaderboards' ||
           action == 'signIn') {
         if (action == 'signIn' && games.authenticated) {
           final message = context.l10n.offline;
@@ -548,6 +612,7 @@ class _GameScreenState extends State<GameScreen>
           final completed = switch (action) {
             'achievements' => await games.showAchievements(),
             'leaderboard' => await games.showLeaderboards(hardcore: _hardcore),
+            'allLeaderboards' => await games.showAllLeaderboards(),
             _ => await games.signIn(),
           };
           if (!completed && mounted) {
@@ -587,13 +652,15 @@ class _GameScreenState extends State<GameScreen>
   Widget build(BuildContext context) {
     final menu = _engine.state == GameState.menu;
     final over = _engine.state == GameState.gameOver;
-    const statusColor = GameConstants.backgroundColor;
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: const SystemUiOverlayStyle(
-        statusBarColor: statusColor,
+        statusBarColor: Colors.transparent,
+        systemStatusBarContrastEnforced: false,
         statusBarIconBrightness: Brightness.light,
         statusBarBrightness: Brightness.dark,
-        systemNavigationBarColor: statusColor,
+        systemNavigationBarColor: Colors.transparent,
+        systemNavigationBarDividerColor: Colors.transparent,
+        systemNavigationBarContrastEnforced: false,
         systemNavigationBarIconBrightness: Brightness.light,
       ),
       child: PopScope(
@@ -602,25 +669,31 @@ class _GameScreenState extends State<GameScreen>
           if (!didPop) _back();
         },
         child: Scaffold(
-          backgroundColor: statusColor,
-          body: Stack(fit: StackFit.expand, children: [
-            Positioned(
-                top: 0,
-                left: 0,
-                right: 0,
-                height: MediaQuery.paddingOf(context).top,
-                child: const ColoredBox(color: statusColor)),
-            SafeArea(
-              child: Focus(
-                focusNode: _gameFocus,
-                autofocus: true,
-                onKeyEvent: _onKey,
-                onFocusChange: (focused) {
-                  if (!focused) _clearInput();
-                },
-                child: menu
-                    ? _menu()
-                    : Stack(fit: StackFit.expand, children: [
+          backgroundColor: GameConstants.backgroundColor,
+          body: Focus(
+            focusNode: _gameFocus,
+            autofocus: true,
+            onKeyEvent: _onKey,
+            onFocusChange: (focused) {
+              if (!focused) _clearInput();
+            },
+            child: menu
+                ? _menu()
+                : Stack(fit: StackFit.expand, children: [
+                    CustomPaint(
+                        painter: WorldBackdrop(
+                            skin: _skin,
+                            time: MediaQuery.disableAnimationsOf(context)
+                                ? 0
+                                : _engine.gameTime)),
+                    if (_engine.backgroundRed > 0)
+                      ColoredBox(
+                          color: const Color(0xFFFF1029).withValues(
+                              alpha: ((_engine.backgroundRed >> 3) * 255 / 31)
+                                      .round() /
+                                  255)),
+                    SafeArea(
+                      child: Stack(fit: StackFit.expand, children: [
                         Listener(
                           behavior: HitTestBehavior.opaque,
                           onPointerDown: (event) {
@@ -650,24 +723,24 @@ class _GameScreenState extends State<GameScreen>
                               icon: const Icon(Icons.pause_rounded),
                             ),
                           ),
-                        if (_engine.state == GameState.paused &&
-                            _textReady &&
-                            _textCache.failure == null)
-                          OrbitPause(
-                            hardcore: _engine.hardcore,
-                            challengeDate: _dailyChallenge?.date,
-                            score: _engine.score,
-                            muted: SettingsService.instance.isMuted,
-                            onResume: _resumeRun,
-                            onSettings: _openSettings,
-                            onHome: _home,
-                            onToggleSound: _toggleSound,
-                          ),
-                        if (over) _gameOver(),
                       ]),
-              ),
-            ),
-          ]),
+                    ),
+                    if (_engine.state == GameState.paused &&
+                        _textReady &&
+                        _textCache.failure == null)
+                      OrbitPause(
+                        hardcore: _engine.hardcore,
+                        challengeDate: _dailyChallenge?.date,
+                        score: _engine.score,
+                        muted: SettingsService.instance.isMuted,
+                        onResume: _resumeRun,
+                        onSettings: _openSettings,
+                        onHome: _home,
+                        onToggleSound: _toggleSound,
+                      ),
+                    if (over) _gameOver(),
+                  ]),
+          ),
         ),
       ),
     );
@@ -688,6 +761,9 @@ class _GameScreenState extends State<GameScreen>
       stardust: settings.stardust,
       onShop: widget.cosmeticsEnabled ? _openShop : null,
       onProgress: _openProgress,
+      progressDetail: widget.cosmeticsEnabled
+          ? '${settings.unlockedCount}/${OrbitalAchievement.all.length} · ${context.l10n.achievements}'
+          : null,
       onSettings: _openSettings,
       onPractice: _practice,
       onDailyChallenge: _openDailyChallenge,
@@ -700,6 +776,9 @@ class _GameScreenState extends State<GameScreen>
       onShare: () => _external('share'),
       onAchievements: games.supported ? () => _external('achievements') : null,
       onLeaderboard: games.supported ? () => _external('leaderboard') : null,
+      onAllLeaderboards: games.supported && !games.isApple
+          ? () => _external('allLeaderboards')
+          : null,
       onSignIn: games.supported ? () => _external('signIn') : null,
       onRate:
           games.supported && !games.isApple ? () => _external('rate') : null,
@@ -729,14 +808,48 @@ class _GameScreenState extends State<GameScreen>
       stardustPending: _unbankedStardust > 0,
       onShop: widget.cosmeticsEnabled && challenge == null ? _openShop : null,
       onProgress: _openProgress,
+      progressDetail: widget.cosmeticsEnabled && challenge == null
+          ? '${settings.unlockedCount}/${OrbitalAchievement.all.length} · ${context.l10n.achievements}'
+          : null,
       onSettings: _openSettings,
       status: Column(mainAxisSize: MainAxisSize.min, children: [
         _dailySaveStatus(),
         for (final id
             in challenge == null ? _earnedAchievements.take(3) : <String>[])
-          Text(
-              context.l10n.achievementEarned(context.l10n.achievementTitle(id)),
-              textAlign: TextAlign.center),
+          Padding(
+            padding: const EdgeInsets.only(top: 6),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              decoration: BoxDecoration(
+                color: ArcadePalette.gold.withValues(alpha: .10),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                    color: ArcadePalette.gold.withValues(alpha: .38)),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (OrbitalAchievement.byId(id) case final achievement?) ...[
+                    AchievementBadge(
+                        achievement: achievement, unlocked: true, size: 22),
+                    const SizedBox(width: 8),
+                  ],
+                  Flexible(
+                    child: Text(
+                      context.l10n
+                          .achievementEarned(context.l10n.achievementTitle(id)),
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        color: ArcadePalette.gold,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         const SaveStatus()
       ]),
       hardcore: _engine.hardcore,
@@ -751,6 +864,9 @@ class _GameScreenState extends State<GameScreen>
       onAchievements: games.supported ? () => _external('achievements') : null,
       onLeaderboard: games.supported && challenge == null
           ? () => _external('leaderboard')
+          : null,
+      onAllLeaderboards: games.supported && !games.isApple && challenge == null
+          ? () => _external('allLeaderboards')
           : null,
       onRate:
           games.supported && !games.isApple ? () => _external('rate') : null,
@@ -790,6 +906,7 @@ class _GameScreenState extends State<GameScreen>
                           devicePixelRatio: _ratio,
                           textCache: _textCache,
                           skin: skin,
+                          drawBackground: false,
                           feedback: _feedback,
                           strings: context.l10n,
                           reduceMotion:
@@ -809,6 +926,7 @@ class GamePainter extends CustomPainter {
       this.skin = GameSkin.classic,
       this.feedback,
       this.reduceMotion = false,
+      this.drawBackground = true,
       this.strings});
   final GameEngine gameEngine;
   final double devicePixelRatio;
@@ -816,6 +934,7 @@ class GamePainter extends CustomPainter {
   final GameSkin skin;
   final GameplayFeedback? feedback;
   final bool reduceMotion;
+  final bool drawBackground;
   final AppLocalizations? strings;
 
   @override
@@ -827,11 +946,26 @@ class GamePainter extends CustomPainter {
         : GameConstants.normalAccent;
     // Keep the original quantized hit-flash envelope and controller timing.
     final backgroundRed = ((gameEngine.backgroundRed >> 3) * 255 / 31).round();
-    canvas.drawRect(
-        Offset.zero & size,
-        Paint()
-          ..color = Color.lerp(GameConstants.backgroundColor,
-              const Color(0xFFFF1029), backgroundRed / 255)!);
+    final sceneTime = reduceMotion ? 0.0 : gameEngine.gameTime;
+    // The screen supplies one continuous backdrop around the fitted arena.
+    if (drawBackground) {
+      if (skin == GameSkin.classic) {
+        canvas.drawRect(
+            Offset.zero & size,
+            Paint()
+              ..color = Color.lerp(GameConstants.backgroundColor,
+                  const Color(0xFFFF1029), backgroundRed / 255)!);
+      } else {
+        WorldBackdrop(skin: skin, time: sceneTime).paint(canvas, size);
+        if (backgroundRed > 0) {
+          canvas.drawRect(
+              Offset.zero & size,
+              Paint()
+                ..color = const Color(0xFFFF1029)
+                    .withValues(alpha: backgroundRed / 255));
+        }
+      }
+    }
     canvas.scale(1 / devicePixelRatio);
     final center = Offset((gameEngine.width ~/ 2).toDouble(),
         (gameEngine.height ~/ 2).toDouble());
@@ -846,6 +980,20 @@ class GamePainter extends CustomPainter {
             accent.withValues(alpha: .10),
             accent.withValues(alpha: 0)
           ]).createShader(glowBounds));
+    if (skin != GameSkin.classic) {
+      // Scenery stays behind the hazards and pickups as their paths move.
+      for (final orbit in gameEngine.orbits) {
+        skin.drawOrbit(canvas, center, orbit.radius,
+            rotation: reduceMotion
+                ? 0
+                : orbit.rotation * orbit.direction * math.pi / 180,
+            time: sceneTime,
+            strokeWidth: 5);
+      }
+      skin.drawOrbit(canvas, center,
+          (gameEngine.player.logic as PlayerLogicComponent).currentRadius,
+          time: sceneTime, strokeWidth: 5, active: true);
+    }
     if (skin != GameSkin.classic && !reduceMotion) {
       _motionFeedback(canvas);
     }
@@ -857,24 +1005,25 @@ class GamePainter extends CustomPainter {
       if (skin == GameSkin.classic) {
         canvas.drawCircle(position, logic.radius, paint);
       } else {
-        skin.drawHazard(canvas, position, logic.radius);
+        skin.drawHazard(canvas, position, logic.radius, time: sceneTime);
       }
     }
-    paint
-      ..color = GameConstants.quietColor
-          .withValues(alpha: skin == GameSkin.classic ? .6 : .3)
-      ..strokeWidth = skin == GameSkin.classic ? 5 : 3
-      ..style = PaintingStyle.stroke;
-    final minRadius = (gameEngine.width ~/ 5).toDouble();
-    for (final orbit in gameEngine.orbits) {
-      final bounds = Rect.fromCircle(center: center, radius: orbit.radius);
-      for (var angle = 0; angle < 360; angle += 30) {
-        canvas.drawArc(
-            bounds,
-            (angle + orbit.rotation * orbit.direction) * math.pi / 180,
-            (30 - 6 * minRadius / orbit.radius) * math.pi / 180,
-            false,
-            paint);
+    if (skin == GameSkin.classic) {
+      paint
+        ..color = GameConstants.quietColor.withValues(alpha: .6)
+        ..strokeWidth = 5
+        ..style = PaintingStyle.stroke;
+      final minRadius = (gameEngine.width ~/ 5).toDouble();
+      for (final orbit in gameEngine.orbits) {
+        final bounds = Rect.fromCircle(center: center, radius: orbit.radius);
+        for (var angle = 0; angle < 360; angle += 30) {
+          canvas.drawArc(
+              bounds,
+              (angle + orbit.rotation * orbit.direction) * math.pi / 180,
+              (30 - 6 * minRadius / orbit.radius) * math.pi / 180,
+              false,
+              paint);
+        }
       }
     }
     paint
@@ -883,7 +1032,10 @@ class GamePainter extends CustomPainter {
     if (skin == GameSkin.classic) {
       canvas.drawCircle(center, gameEngine.atom.size.radius, paint);
     } else {
-      skin.drawCore(canvas, center, gameEngine.atom.size.radius);
+      skin.drawCore(canvas, center, gameEngine.atom.size.radius,
+          time: sceneTime,
+          charge: reduceMotion ? 0 : (feedback?.charge ?? 0),
+          fire: reduceMotion ? 0 : (feedback?.fire ?? 0));
     }
     if (skin == GameSkin.classic) {
       _text(
@@ -926,13 +1078,14 @@ class GamePainter extends CustomPainter {
       }
     }
     final player = gameEngine.player;
-    paint
-      ..color = GameConstants.atomColor
-          .withValues(alpha: skin == GameSkin.classic ? .68 : .30)
-      ..strokeWidth = skin == GameSkin.classic ? 5 : 3
-      ..style = PaintingStyle.stroke;
-    canvas.drawCircle(
-        center, (player.logic as PlayerLogicComponent).currentRadius, paint);
+    if (skin == GameSkin.classic) {
+      paint
+        ..color = GameConstants.atomColor.withValues(alpha: .68)
+        ..strokeWidth = 5
+        ..style = PaintingStyle.stroke;
+      canvas.drawCircle(
+          center, (player.logic as PlayerLogicComponent).currentRadius, paint);
+    }
     paint
       ..color = GameConstants.playerColor
       ..style = PaintingStyle.fill;
@@ -1041,14 +1194,9 @@ class GamePainter extends CustomPainter {
           .clamp(0.0, 1.0)
           .toDouble();
       final opacity = 1 - progress;
-      canvas.drawCircle(
-          collection.position,
-          40 + progress * 45,
-          Paint()
-            ..color =
-                GameConstants.normalAccent.withValues(alpha: opacity * .85)
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 4 * opacity + 1);
+      skin.drawCollection(
+          canvas, collection.position, gameEngine.energy.size.radius,
+          progress: progress);
       _sceneText(
           canvas,
           '+1',

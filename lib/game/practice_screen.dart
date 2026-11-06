@@ -209,9 +209,11 @@ class _PracticeScreenState extends State<PracticeScreen>
             _pointers.remove(e.pointer);
             _input();
           },
-          child: SafeArea(
-              child: Padding(
-            padding: const EdgeInsets.all(16),
+          child: CustomPaint(
+            painter: const SpaceStars(),
+            child: SafeArea(
+                child: Padding(
+              padding: const EdgeInsets.all(16),
             child: Column(children: [
               SizedBox(
                   width: double.infinity,
@@ -279,7 +281,7 @@ class _PracticeScreenState extends State<PracticeScreen>
                                     textAlign: TextAlign.center))))),
               ],
             ]),
-          )),
+          ))),
         ),
       ),
     );

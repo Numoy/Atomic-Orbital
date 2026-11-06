@@ -40,11 +40,21 @@ void main() {
     expect(GameSkin.byId(null), GameSkin.classic);
     expect(GameSkin.byId('removed-world'), GameSkin.classic);
     expect(GameSkin.classic.price, 0);
-    expect(GameSkin.cowAbduction.price, 150);
-    expect(GameSkin.deepBlue.price, 150);
+    expect(GameSkin.classic.tier, 0);
+    expect(GameSkin.classic.requiredAchievement, isNull);
+    expect(GameSkin.cowAbduction.price, 250);
+    expect(GameSkin.cowAbduction.requiredAchievement, isNull);
+    expect(GameSkin.deepBlue.price, 350);
+    expect(GameSkin.deepBlue.requiredAchievement, isNull);
+    expect(GameSkin.sunflower.price, 450);
+    expect(GameSkin.sunflower.requiredAchievement?.id, 'findingOrbit');
+    expect(GameSkin.dragonHoard.price, 2500);
+    expect(GameSkin.dragonHoard.tier, 4);
+    expect(GameSkin.dragonHoard.requiredAchievement?.id, 'hardcore20');
     expect(GameSkin.values.length, 12);
     for (final skin in GameSkin.values.skip(1)) {
-      expect(skin.price, 150);
+      expect(skin.price, greaterThanOrEqualTo(250));
+      expect(skin.tier, inInclusiveRange(1, 4));
     }
   });
 
@@ -267,21 +277,33 @@ void main() {
           const Size(1080, 1794),
           (canvas) => GamePainter(engine, skin: skin)
               .paint(canvas, const Size(1080, 1794)));
+      photon.position.setPosition(Vector2D(650, 928));
+      final background = await render();
+      photon.position.setPosition(Vector2D(300, 600));
       final image = await render();
       final pixels = (await image.toByteData())!;
       List<int> at(int x, int y) =>
           [for (var i = 0; i < 4; i++) pixels.getUint8((y * 1080 + x) * 4 + i)];
-      final hazard = await _image(const Size(40, 40), (canvas) {
-        skin.drawHazard(canvas, const Offset(20, 20), 15);
+      final hazard = await _image(const Size(1080, 1794), (canvas) {
+        canvas.drawImage(background, Offset.zero, Paint());
+        skin.drawHazard(canvas, const Offset(300, 600), 15,
+            time: engine.gameTime);
       });
       final hazardPixels = (await hazard.toByteData())!;
-      for (final x in [20, 33]) {
-        expect(at(280 + x, 600), [
-          for (var i = 0; i < 4; i++)
-            hazardPixels.getUint8((20 * 40 + x) * 4 + i),
-        ]);
+      for (final x in [300, 313]) {
+        for (var channel = 0; channel < 4; channel++) {
+          expect(
+              at(x, 600)[channel],
+              closeTo(
+                  hazardPixels.getUint8((600 * 1080 + x) * 4 + channel), 1));
+        }
       }
-      expect(hazardPixels.getUint8((20 * 40 + 37) * 4 + 3), 0);
+      final backgroundPixels = (await background.toByteData())!;
+      expect(at(317, 600), [
+        for (var i = 0; i < 4; i++)
+          backgroundPixels.getUint8((600 * 1080 + 317) * 4 + i),
+      ]);
+      background.dispose();
       hazard.dispose();
       final opaqueCore = at(650, 928);
       expect(

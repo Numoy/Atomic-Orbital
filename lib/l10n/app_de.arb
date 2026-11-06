@@ -15,6 +15,7 @@
   "achievements": "Erfolge",
   "scores": "Bestenlisten",
   "leaderboard": "Bestenliste",
+  "allLeaderboards": "Alle Bestenlisten",
   "signIn": "Anmelden",
   "playGames": "Play Games",
   "disconnect": "Play Games trennen",
@@ -103,9 +104,9 @@
   "fluxEarnTitle": "1 Objekt = 1 Stern",
   "fluxEarnHelp": "Sammle in beiden Modi. Deine Sterne werden während des Spielens gespeichert.",
   "fluxSpendTitle": "Neue Welten freischalten",
-  "fluxSpendHelp": "Schalte mit Sternen Welten im Hangar frei. Für jede Welt gelten dieselben Regeln.",
+  "fluxSpendHelp": "Schalte mit Sternen Welten im Hangar frei. Fortgeschrittene Welten erfordern zusätzlich bestimmte Erfolge.",
   "fluxSaveTitle": "Deine Sammlung, dein Gerät",
-  "fluxSaveHelp": "Du startest mit 100 Sternen. Guthaben und Welten werden auf diesem Gerät gespeichert; eine Deinstallation oder das Löschen der App-Daten kann sie entfernen.",
+  "fluxSaveHelp": "Du startest bei 0 Sternen und erspielst dir jede Welt. Guthaben und Welten werden auf diesem Gerät gespeichert; eine Deinstallation oder das Löschen der App-Daten kann sie entfernen.",
   "equipped": "Ausgewählt",
   "owned": "Freigeschaltet",
   "useWorld": "Welt auswählen",
@@ -421,5 +422,21 @@
     }
   },
   "dailyUnreadable": "Gespeicherte Tagesergebnisse konnten nicht gelesen werden. Der ursprüngliche Spielstand bleibt erhalten. Stelle in den Einstellungen eine Sicherung wieder her.",
-  "dailyEndRunHelp": "Wenn du jetzt gehst, wird kein Tagesergebnis gespeichert. Beende den Lauf, um es festzuhalten."
+  "dailyEndRunHelp": "Wenn du jetzt gehst, wird kein Tagesergebnis gespeichert. Beende den Lauf, um es festzuhalten.",
+  "requiresAchievement": "Erfordert Erfolg: {title}",
+  "@requiresAchievement": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "worldTier": "{tier, select, 0{BASIS} 1{STUFE I · ENTDECKER} 2{STUFE II · HERAUSFORDERER} 3{STUFE III · VETERAN} other{STUFE IV · MEISTER}}",
+  "@worldTier": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  }
 }

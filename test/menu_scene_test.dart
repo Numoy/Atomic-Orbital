@@ -92,9 +92,7 @@ Widget _host(WidgetTester tester, Widget scene,
           ),
           child: child!,
         ),
-        home: Scaffold(
-            backgroundColor: const Color(0xFF080D14),
-            body: SafeArea(child: scene)),
+        home: Scaffold(backgroundColor: const Color(0xFF080D14), body: scene),
       ),
     );
 

@@ -54,6 +54,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get leaderboard => 'Leaderboard';
 
   @override
+  String get allLeaderboards => 'All leaderboards';
+
+  @override
   String get signIn => 'Sign in';
 
   @override
@@ -329,14 +332,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fluxSpendHelp =>
-      'Spend Stars on worlds in the hangar. Every world keeps the same rules.';
+      'Spend Stars on worlds in the hangar. Advanced worlds also require earning specific achievements.';
 
   @override
   String get fluxSaveTitle => 'Yours to keep';
 
   @override
   String get fluxSaveHelp =>
-      'Start with 100 Stars. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.';
+      'Start at 0 Stars and earn every world through play. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.';
 
   @override
   String get equipped => 'Equipped';
@@ -805,4 +808,24 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dailyEndRunHelp =>
       'Leaving now will not save a daily result. Finish the run to record it.';
+
+  @override
+  String requiresAchievement(String title) {
+    return 'Requires achievement: $title';
+  }
+
+  @override
+  String worldTier(String tier) {
+    String _temp0 = intl.Intl.selectLogic(
+      tier,
+      {
+        '0': 'CORE',
+        '1': 'TIER I · EXPLORER',
+        '2': 'TIER II · CHALLENGER',
+        '3': 'TIER III · VETERAN',
+        'other': 'TIER IV · MASTER',
+      },
+    );
+    return '$_temp0';
+  }
 }

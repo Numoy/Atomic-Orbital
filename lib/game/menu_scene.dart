@@ -4,6 +4,7 @@ import 'package:atomic_orbital/l10n/strings.dart';
 import 'package:atomic_orbital/constants/game_constants.dart';
 import 'package:atomic_orbital/game/game_skin.dart';
 import 'package:atomic_orbital/game/arcade_style.dart';
+import 'package:atomic_orbital/game/world_backdrop.dart';
 import 'package:flutter/material.dart';
 
 const _ink = ArcadePalette.ink;
@@ -32,10 +33,12 @@ class OrbitMenu extends StatelessWidget {
     this.onSettings,
     this.onPractice,
     this.onDailyChallenge,
+    this.progressDetail,
     this.status,
     this.providerName,
     this.onAchievements,
     this.onLeaderboard,
+    this.onAllLeaderboards,
     this.onSignIn,
     this.onRate,
   });
@@ -56,10 +59,12 @@ class OrbitMenu extends StatelessWidget {
   final VoidCallback? onSettings;
   final VoidCallback? onPractice;
   final VoidCallback? onDailyChallenge;
+  final String? progressDetail;
   final Widget? status;
   final String? providerName;
   final VoidCallback? onAchievements;
   final VoidCallback? onLeaderboard;
+  final VoidCallback? onAllLeaderboards;
   final VoidCallback? onSignIn;
   final VoidCallback? onRate;
 
@@ -68,9 +73,20 @@ class OrbitMenu extends StatelessWidget {
     final accent = hardcore ? _coral : _ice;
     return _ArcadeScene(
       accent: accent,
+      skin: skin,
       muted: muted,
       best: hardcore ? hardcoreBest : normalBest,
       onToggleSound: onToggleSound,
+      secondaryAction: onDailyChallenge == null
+          ? null
+          : IconButton(
+              key: const ValueKey('openDailyChallenge'),
+              onPressed: onDailyChallenge,
+              tooltip: context.l10n.dailyChallenge,
+              icon: const Icon(Icons.today_outlined),
+              style: IconButton.styleFrom(
+                  foregroundColor: accent, minimumSize: const Size(48, 48)),
+            ),
       headerAction: _SceneMenu(
         key: const ValueKey('homeMenu'),
         accent: accent,
@@ -100,6 +116,12 @@ class OrbitMenu extends StatelessWidget {
               Icons.emoji_events_outlined,
               onAchievements!
             ),
+          if (gamesAvailable && onAllLeaderboards != null)
+            (
+              context.l10n.allLeaderboards,
+              Icons.format_list_numbered,
+              onAllLeaderboards!
+            ),
           if (gamesAvailable && onSignIn != null)
             (
               signedIn
@@ -119,6 +141,7 @@ class OrbitMenu extends StatelessWidget {
         stardust: stardust,
         onShop: onShop,
         onProgress: onProgress,
+        progressDetail: progressDetail,
         status: status,
       ),
       builder: (context, wide, compact, extent, motion) {
@@ -251,12 +274,14 @@ class _MenuDestinations extends StatelessWidget {
     required this.stardust,
     this.onShop,
     this.onProgress,
+    this.progressDetail,
     this.status,
   });
   final Color accent;
   final int stardust;
   final VoidCallback? onShop;
   final VoidCallback? onProgress;
+  final String? progressDetail;
   final Widget? status;
 
   @override
@@ -295,7 +320,7 @@ class _MenuDestinations extends StatelessWidget {
                   key: const ValueKey('openProgress'),
                   icon: Icons.emoji_events_outlined,
                   label: context.l10n.progress,
-                  detail: context.l10n.achievements,
+                  detail: progressDetail ?? context.l10n.achievements,
                   accent: accent,
                   onPressed: onProgress!,
                 ),
@@ -383,11 +408,13 @@ class OrbitGameOver extends StatelessWidget {
     this.stardustPending = false,
     this.onShop,
     this.onProgress,
+    this.progressDetail,
     this.onSettings,
     this.status,
     this.providerName,
     this.onAchievements,
     this.onLeaderboard,
+    this.onAllLeaderboards,
     this.onRate,
     this.seconds,
     this.challengeDate,
@@ -407,11 +434,13 @@ class OrbitGameOver extends StatelessWidget {
   final bool stardustPending;
   final VoidCallback? onShop;
   final VoidCallback? onProgress;
+  final String? progressDetail;
   final VoidCallback? onSettings;
   final Widget? status;
   final String? providerName;
   final VoidCallback? onAchievements;
   final VoidCallback? onLeaderboard;
+  final VoidCallback? onAllLeaderboards;
   final VoidCallback? onRate;
   final int? seconds;
   final String? challengeDate;
@@ -421,6 +450,7 @@ class OrbitGameOver extends StatelessWidget {
     final accent = hardcore ? _coral : _ice;
     return _ArcadeScene(
       accent: accent,
+      skin: skin,
       muted: muted,
       best: best,
       onToggleSound: onToggleSound,
@@ -443,6 +473,12 @@ class OrbitGameOver extends StatelessWidget {
               Icons.emoji_events_outlined,
               onAchievements!
             ),
+          if (onAllLeaderboards != null)
+            (
+              context.l10n.allLeaderboards,
+              Icons.format_list_numbered,
+              onAllLeaderboards!
+            ),
           if (onRate != null)
             (context.l10n.rate, Icons.star_outline_rounded, onRate!),
         ],
@@ -452,6 +488,7 @@ class OrbitGameOver extends StatelessWidget {
         stardust: stardust,
         onShop: onShop,
         onProgress: onProgress,
+        progressDetail: progressDetail,
         status: status,
       ),
       builder: (context, wide, compact, extent, motion) {
@@ -636,7 +673,8 @@ class OrbitPause extends StatelessWidget {
         child: FocusScope(
           child: ColoredBox(
             color: _ink.withValues(alpha: .94),
-            child: Center(
+            child: SafeArea(
+                child: Center(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.all(24),
                 child: ConstrainedBox(
@@ -693,7 +731,7 @@ class OrbitPause extends StatelessWidget {
                   ]),
                 ),
               ),
-            ),
+            )),
           ),
         ),
       );
@@ -774,18 +812,22 @@ Future<void> _showHowToPlay(BuildContext context, Color accent) =>
 class _ArcadeScene extends StatefulWidget {
   const _ArcadeScene({
     required this.accent,
+    required this.skin,
     required this.muted,
     required this.best,
     required this.onToggleSound,
     required this.footer,
     required this.builder,
+    this.secondaryAction,
     this.headerAction,
   });
   final Color accent;
+  final GameSkin skin;
   final bool muted;
   final int best;
   final VoidCallback onToggleSound;
   final Widget footer;
+  final Widget? secondaryAction;
   final Widget? headerAction;
   final Widget Function(BuildContext, bool, bool, double, Animation<double>)
       builder;
@@ -825,8 +867,11 @@ class _ArcadeSceneState extends State<_ArcadeScene>
         child: Material(
           color: _ink,
           child: CustomPaint(
-            painter: const SpaceStars(),
-            child: LayoutBuilder(builder: (context, constraints) {
+            painter: widget.skin == GameSkin.classic
+                ? const SpaceStars()
+                : WorldBackdrop(skin: widget.skin, motion: _motion),
+            child:
+                SafeArea(child: LayoutBuilder(builder: (context, constraints) {
               final wide = constraints.maxWidth >= 640;
               final compact = wide && constraints.maxHeight < 480;
               final inset = compact ? 12.0 : (wide ? 28.0 : 16.0);
@@ -854,7 +899,7 @@ class _ArcadeSceneState extends State<_ArcadeScene>
                                 Icon(Icons.emoji_events_outlined,
                                     color: widget.accent, size: 20),
                                 const SizedBox(width: 8),
-                                Expanded(
+                                  Expanded(
                                   child: Text(
                                       context.l10n.bestLabel(widget.best),
                                       style: const TextStyle(
@@ -865,6 +910,9 @@ class _ArcadeSceneState extends State<_ArcadeScene>
                                           letterSpacing: 1.2,
                                           height: 1.4)),
                                 ),
+                                if (widget.secondaryAction != null &&
+                                    constraints.maxWidth >= 340)
+                                  widget.secondaryAction!,
                                 IconButton(
                                   onPressed: widget.onToggleSound,
                                   tooltip: widget.muted
@@ -893,7 +941,7 @@ class _ArcadeSceneState extends State<_ArcadeScene>
                   ),
                 ),
               );
-            }),
+            })),
           ),
         ),
       );
@@ -1169,19 +1217,36 @@ class _ArenaPainter extends CustomPainter {
       ..color = _paper.withValues(alpha: .30)
       ..strokeWidth = 1.1;
     for (final r in [width * .20, width * .44]) {
-      for (var i = 0; i < 8; i++) {
-        canvas.drawArc(Rect.fromCircle(center: Offset.zero, radius: r),
-            i * math.pi / 4 + .055 + t * .125, math.pi / 4 - .11, false, paint);
+      if (skin == GameSkin.classic) {
+        for (var i = 0; i < 8; i++) {
+          canvas.drawArc(
+              Rect.fromCircle(center: Offset.zero, radius: r),
+              i * math.pi / 4 + .055 + t * .125,
+              math.pi / 4 - .11,
+              false,
+              paint);
+        }
+      } else {
+        skin.drawOrbit(canvas, Offset.zero, r,
+            rotation: math.sin(t) * .04,
+            time: motion.value * 8,
+            strokeWidth: 1.1);
       }
     }
     final orbit = width * (.32 + .065 * math.sin(t * 2));
     paint
       ..color = _paper.withValues(alpha: .68)
       ..strokeWidth = 1.4;
-    canvas.drawCircle(Offset.zero, orbit, paint);
+    if (skin == GameSkin.classic) {
+      canvas.drawCircle(Offset.zero, orbit, paint);
+    } else {
+      skin.drawOrbit(canvas, Offset.zero, orbit,
+          time: motion.value * 8, strokeWidth: 1.4, active: true);
+    }
     final playerAngle = t * 2 - math.pi / 2;
     paint
-      ..color = accent.withValues(alpha: .65)
+      ..color = (skin == GameSkin.classic ? accent : skin.accent)
+          .withValues(alpha: .65)
       ..strokeWidth = 3
       ..strokeCap = StrokeCap.round;
     canvas.drawArc(Rect.fromCircle(center: Offset.zero, radius: orbit),
@@ -1199,13 +1264,17 @@ class _ArenaPainter extends CustomPainter {
         final angle = t + 1.1 + i * 2.25;
         final radius = width * (.27 + .10 * math.sin(t + i));
         final at = Offset(math.cos(angle), math.sin(angle)) * radius;
-        canvas.drawCircle(at, width * .032,
-            Paint()..color = GameConstants.photonColor.withValues(alpha: .14));
+        canvas.drawCircle(
+            at,
+            width * .032,
+            Paint()
+              ..color = skin.hazardColor
+                  .withValues(alpha: skin == GameSkin.classic ? .14 : .10));
         if (skin == GameSkin.classic) {
           canvas.drawCircle(
               at, width * .014, Paint()..color = GameConstants.photonColor);
         } else {
-          skin.drawHazard(canvas, at, width * .02);
+          skin.drawHazard(canvas, at, width * .02, time: motion.value * 8);
         }
       }
       canvas.save();
@@ -1230,7 +1299,8 @@ class _ArenaPainter extends CustomPainter {
       canvas.drawCircle(
           Offset.zero, width * (result ? .225 : .125), Paint()..color = _paper);
     } else {
-      skin.drawCore(canvas, Offset.zero, width * (result ? .225 : .18));
+      skin.drawCore(canvas, Offset.zero, width * (result ? .225 : .18),
+          time: motion.value * 8);
     }
     if (!result && skin == GameSkin.classic) {
       paint

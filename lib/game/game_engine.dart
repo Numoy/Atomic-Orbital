@@ -73,6 +73,8 @@ class GameEngine {
   int get score => _score;
   double get health => _health;
   double get gameTime => _gameTime;
+  // Cosmetic reactions share the existing projectile release clock.
+  int get photonCycleFrame => _photonTimer;
   int get fps => _fps;
   int get width => _width;
   int get height => _height;

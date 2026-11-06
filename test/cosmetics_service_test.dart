@@ -62,9 +62,21 @@ void main() {
     await restart();
   });
 
-  test('fresh wallets grant 100 once and preserve existing scores and stats',
+  void unlockAllAchievements() {
+    settings.recordPickup(
+        score: 20, hardcore: false, clean: true, skin: GameSkin.classic);
+    settings.recordPickup(
+        score: 20, hardcore: true, clean: true, skin: GameSkin.classic);
+    settings.completeGame(score: 1000, hardcore: false, seconds: 60);
+    settings.completeGame(score: 20, hardcore: true, seconds: 60);
+    for (var i = 0; i < 48; i++) {
+      settings.incrementGamesPlayed();
+    }
+  }
+
+  test('fresh wallets start at 0 and preserve existing scores and stats',
       () async {
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(settings.selectedSkin, GameSkin.classic);
     expect(settings.ownsSkin(GameSkin.classic), isTrue);
     expect(settings.ownsSkin(GameSkin.cowAbduction), isFalse);
@@ -75,7 +87,7 @@ void main() {
     settings.addTotalPoints(1000);
     settings.setMuted(false);
 
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     expect(await settings.buySkin(GameSkin.cowAbduction), isTrue);
     expect(settings.stardust, 0);
     expect(settings.selectedSkin, GameSkin.cowAbduction);
@@ -96,6 +108,14 @@ void main() {
       in GameSkin.values.where((skin) => skin != GameSkin.classic)) {
     test('${skin.id} unlocks once and stays equipped after restart', () async {
       await settings.earnStardust(skin.price - settings.stardust);
+      if (skin.requiredAchievement != null) {
+        expect(settings.meetsSkinRequirement(skin), isFalse);
+        expect(await settings.buySkin(skin), isFalse);
+        expect(settings.stardust, skin.price);
+        unlockAllAchievements();
+        await settings.flushProgress();
+        expect(settings.meetsSkinRequirement(skin), isTrue);
+      }
       expect(await settings.buySkin(skin), isTrue);
       expect(settings.stardust, 0);
       await restart();
@@ -112,9 +132,9 @@ void main() {
       () async {
     await settings.earnStardust(0);
     expect(await settings.buySkin(GameSkin.cowAbduction), isFalse);
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(store.walletWrites, 0);
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     expect(await settings.buySkin(GameSkin.cowAbduction), isTrue);
     expect(await settings.buySkin(GameSkin.cowAbduction), isTrue);
     expect(await settings.buySkin(GameSkin.classic), isTrue);
@@ -129,7 +149,7 @@ void main() {
   test(
       'rapid purchases and earning serialize without lost credit or double spend',
       () async {
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     final results = await Future.wait([
       settings.buySkin(GameSkin.cowAbduction),
       settings.buySkin(GameSkin.cowAbduction),
@@ -138,7 +158,7 @@ void main() {
     expect(settings.stardust, 0);
     expect(store.walletWrites, 2);
 
-    final earn = settings.earnStardust(160);
+    final earn = settings.earnStardust(360);
     final purchase = settings.buySkin(GameSkin.deepBlue);
     final extraEarn = settings.earnStardust(10);
     await earn;
@@ -159,7 +179,7 @@ void main() {
   test('selection requires ownership and persists without charging again',
       () async {
     await expectLater(settings.selectSkin(GameSkin.deepBlue), throwsStateError);
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     await settings.buySkin(GameSkin.cowAbduction);
     await settings.selectSkin(GameSkin.classic);
     expect(settings.selectedSkin, GameSkin.classic);
@@ -170,7 +190,7 @@ void main() {
   });
 
   test('publishes balance and ownership only after saving succeeds', () async {
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     store.holdWrite = Completer<void>();
     var notifications = 0;
     void changed() => notifications++;
@@ -178,7 +198,7 @@ void main() {
     addTearDown(() => settings.removeListener(changed));
     final purchase = settings.buySkin(GameSkin.cowAbduction);
     await Future<void>.delayed(Duration.zero);
-    expect(settings.stardust, 150);
+    expect(settings.stardust, 250);
     expect(settings.ownsSkin(GameSkin.cowAbduction), isFalse);
     expect(settings.selectedSkin, GameSkin.classic);
     expect(notifications, 0);
@@ -192,19 +212,19 @@ void main() {
   for (final throwsWrite in [false, true]) {
     test('failed save ($throwsWrite) keeps the old wallet and queue recovers',
         () async {
-      await settings.earnStardust(50);
+      await settings.earnStardust(250);
       final before = await savedWallet();
       store
         ..rejectWrite = !throwsWrite
         ..throwWrite = throwsWrite;
       await expectLater(
           settings.buySkin(GameSkin.cowAbduction), throwsStateError);
-      expect(settings.stardust, 150);
+      expect(settings.stardust, 250);
       expect(settings.ownsSkin(GameSkin.cowAbduction), isFalse);
       expect(settings.selectedSkin, GameSkin.classic);
       expect(await savedWallet(), before);
       await restart();
-      expect(settings.stardust, 150);
+      expect(settings.stardust, 250);
       expect(settings.ownsSkin(GameSkin.cowAbduction), isFalse);
       store
         ..rejectWrite = false
@@ -267,9 +287,9 @@ void main() {
     }
     await settings.resetSettings();
     expect(settings.walletFailure, isNull);
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     await settings.earnStardust(1);
-    expect(settings.stardust, 101);
+    expect(settings.stardust, 1);
   });
 
   test('read failures preserve saved data and a later initialize can recover',
@@ -284,7 +304,7 @@ void main() {
     expect(await savedWallet(), saved);
     await restart();
     expect(settings.walletFailure, isNull);
-    expect(settings.stardust, 180);
+    expect(settings.stardust, 80);
   });
 
   test('unknown future skins remain owned while the equipped skin falls back',
@@ -327,7 +347,7 @@ void main() {
 
   test('failed reset keeps the saved wallet and statistics', () async {
     settings.setHighScore(42);
-    await settings.earnStardust(50);
+    await settings.earnStardust(250);
     await settings.buySkin(GameSkin.cowAbduction);
     store.rejectClear = true;
     await expectLater(settings.resetSettings(), throwsStateError);
@@ -343,7 +363,7 @@ void main() {
       'reset serializes after pending mutations and clears ownership and stats',
       () async {
     settings.setHighScore(42);
-    final earn = settings.earnStardust(50);
+    final earn = settings.earnStardust(250);
     final purchase = settings.buySkin(GameSkin.cowAbduction);
     final reset = settings.resetSettings();
     final freshEarn = settings.earnStardust(3);
@@ -351,11 +371,11 @@ void main() {
     expect(await purchase, isTrue);
     await reset;
     await freshEarn;
-    expect(settings.stardust, 103);
+    expect(settings.stardust, 3);
     expect(settings.selectedSkin, GameSkin.classic);
     expect(settings.ownsSkin(GameSkin.cowAbduction), isFalse);
     expect(settings.highScore, 0);
     await restart();
-    expect(settings.stardust, 103);
+    expect(settings.stardust, 3);
   });
 }

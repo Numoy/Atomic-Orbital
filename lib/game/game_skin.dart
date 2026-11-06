@@ -5,41 +5,94 @@ import 'package:atomic_orbital/game/adventure_world_art.dart';
 import 'package:atomic_orbital/game/animal_world_art.dart';
 import 'package:atomic_orbital/game/earth_art.dart';
 import 'package:atomic_orbital/game/extra_world_art.dart';
+import 'package:atomic_orbital/models/achievement.dart';
 import 'package:flutter/material.dart';
+
+part 'world_orbit_art.dart';
+part 'collection_art.dart';
 
 enum GameSkin {
   classic('classic', 'Classic', 'The original atomic arena.', 0),
   cowAbduction('cow_abduction', 'Cow Abduction',
-      'Fly the MOO-1. Beam up cows. Dodge Earth’s defenses.', 150),
+      'Fly the MOO-1. Beam up cows. Dodge Earth’s defenses.', 250),
   deepBlue(
       'deep_blue',
       'Deep Blue',
       'Pilot the Bathyscout. Collect treasure chests. Dodge the kraken’s ink.',
-      150),
-  spiderWeb('spider_web', 'Web Escape',
-      'Be a tiny fly. Snatch sugar cubes. Slip past the spider’s webs.', 150),
-  dragonHoard('dragon_hoard', 'Dragon’s Hoard',
-      'Guard your little knight. Gather gems. Dodge dragon fire.', 150),
-  sunflower('sunflower', 'Pollen Patrol',
-      'Fly a busy bee. Gather pollen. Dodge the sunflower’s seeds.', 150),
-  frostBite('frost_bite', 'Frost Bite',
-      'Guide a penguin. Catch fish. Dodge the snow monster’s ice.', 150),
-  hauntedHarvest('haunted_harvest', 'Haunted Harvest',
-      'Float a little ghost. Collect candy. Dodge the pumpkin’s bats.', 150),
-  junkyardDash('junkyard_dash', 'Junkyard Dash',
-      'Pilot a repair drone. Collect bolts. Dodge the robot’s sparks.', 150),
-  volcanoHop('volcano_hop', 'Volcano Hop',
-      'Fly a pterosaur. Rescue eggs. Dodge flying lava.', 150),
-  cheeseChase('cheese_chase', 'Cheese Chase',
-      'Scurry as a mouse. Snatch cheese. Dodge the cat’s yarn.', 150),
-  jungleJam('jungle_jam', 'Jungle Jam',
-      'Fly a toucan. Gather bananas. Dodge the monkey’s coconuts.', 150);
+      350),
+  spiderWeb(
+      'spider_web',
+      'Web Escape',
+      'Be a tiny fly. Snatch sugar cubes. Slip past the spider’s webs.',
+      750,
+      requiredAchievementId: 'normal20'),
+  dragonHoard(
+      'dragon_hoard',
+      'Dragon’s Hoard',
+      'Guard your little knight. Gather gems. Dodge dragon fire.',
+      2500,
+      requiredAchievementId: 'hardcore20'),
+  sunflower(
+      'sunflower',
+      'Pollen Patrol',
+      'Fly a busy bee. Gather pollen. Dodge the sunflower’s seeds.',
+      450,
+      requiredAchievementId: 'findingOrbit'),
+  frostBite(
+      'frost_bite',
+      'Frost Bite',
+      'Guide a penguin. Catch fish. Dodge the snow monster’s ice.',
+      900,
+      requiredAchievementId: 'games50'),
+  hauntedHarvest(
+      'haunted_harvest',
+      'Haunted Harvest',
+      'Float a little ghost. Collect candy. Dodge the pumpkin’s bats.',
+      1250,
+      requiredAchievementId: 'hardcoreCadet'),
+  junkyardDash(
+      'junkyard_dash',
+      'Junkyard Dash',
+      'Pilot a repair drone. Collect bolts. Dodge the robot’s sparks.',
+      1500,
+      requiredAchievementId: 'points1000'),
+  volcanoHop(
+      'volcano_hop',
+      'Volcano Hop',
+      'Fly a pterosaur. Rescue eggs. Dodge flying lava.',
+      1750,
+      requiredAchievementId: 'normal35'),
+  cheeseChase(
+      'cheese_chase',
+      'Cheese Chase',
+      'Scurry as a mouse. Snatch cheese. Dodge the cat’s yarn.',
+      600,
+      requiredAchievementId: 'steadyHands'),
+  jungleJam(
+      'jungle_jam',
+      'Jungle Jam',
+      'Fly a toucan. Gather bananas. Dodge the monkey’s coconuts.',
+      1000,
+      requiredAchievementId: 'points500');
 
-  const GameSkin(this.id, this.name, this.description, this.price);
+  const GameSkin(this.id, this.name, this.description, this.price,
+      {this.requiredAchievementId});
   final String id;
   final String name;
   final String description;
   final int price;
+  final String? requiredAchievementId;
+
+  OrbitalAchievement? get requiredAchievement =>
+      OrbitalAchievement.byId(requiredAchievementId);
+
+  int get tier => switch (this) {
+        classic => 0,
+        cowAbduction || deepBlue || sunflower => 1,
+        cheeseChase || spiderWeb || frostBite || jungleJam => 2,
+        hauntedHarvest || junkyardDash || volcanoHop => 3,
+        dragonHoard => 4,
+      };
 
   Color get accent => switch (this) {
         classic => const Color(0xFFCFDCE6),
@@ -59,12 +112,45 @@ enum GameSkin {
   static GameSkin byId(String? id) =>
       values.firstWhere((skin) => skin.id == id, orElse: () => classic);
 
-  void drawCore(Canvas canvas, Offset center, double radius) {
+  Color get hazardColor => switch (this) {
+        classic => GameConstants.photonColor,
+        cowAbduction => const Color(0xFF96FFE1),
+        deepBlue => const Color(0xFFE6B5FF),
+        spiderWeb => const Color(0xFFEAE5FF),
+        dragonHoard => const Color(0xFFFFBE69),
+        sunflower => const Color(0xFFE2C28D),
+        frostBite => const Color(0xFFD2F4FF),
+        hauntedHarvest => const Color(0xFFD1B9FF),
+        junkyardDash => const Color(0xFFFFE99D),
+        volcanoHop => const Color(0xFFFFAD69),
+        cheeseChase => const Color(0xFF93E8DD),
+        jungleJam => const Color(0xFFE8C498),
+      };
+
+  void drawOrbit(Canvas canvas, Offset center, double radius,
+          {double rotation = 0,
+          double time = 0,
+          double strokeWidth = 1,
+          bool active = false}) =>
+      _drawWorldOrbit(canvas, this, center, radius,
+          rotation: rotation,
+          time: time,
+          strokeWidth: strokeWidth,
+          active: active);
+
+  void drawCollection(Canvas canvas, Offset center, double radius,
+          {required double progress}) =>
+      _drawCollection(canvas, this, center, radius, progress);
+
+  void drawCore(Canvas canvas, Offset center, double radius,
+      {double time = 0, double charge = 0, double fire = 0}) {
     if (radius <= 0) return;
     if (this == classic) {
       canvas.drawCircle(center, radius, _fill(GameConstants.atomColor));
       return;
     }
+    charge = charge.clamp(0.0, 1.0);
+    fire = fire.clamp(0.0, 1.0);
     final draw = switch (this) {
       deepBlue => _drawKraken,
       spiderWeb => _drawSpiderCore,
@@ -79,10 +165,10 @@ enum GameSkin {
       _ => null,
     };
     if (draw != null) {
-      canvas.drawCircle(center, radius, _fill(GameConstants.backgroundColor));
-      _inside(canvas, center, radius, () => draw(canvas));
-      canvas.drawCircle(center, radius * .985,
-          _line(accent.withValues(alpha: .3), radius * .025));
+      _inside(canvas, center, radius, () {
+        _drawCoreSetting(canvas, this, time);
+        draw(canvas, time: time, charge: charge, fire: fire);
+      });
       return;
     }
     _inside(canvas, center, radius, () {
@@ -109,7 +195,10 @@ enum GameSkin {
           ..cubicTo(.07, .45, .24, .48, .46, .63)
           ..cubicTo(.2, .56, .06, .61, -.12, .62)
           ..close();
+        canvas.save();
+        canvas.rotate(.065 * math.sin(time * math.pi / 4));
         canvas.drawPath(clouds, _fill(Colors.white.withValues(alpha: .48)));
+        canvas.restore();
       }
       canvas.drawCircle(
           Offset.zero,
@@ -143,6 +232,27 @@ enum GameSkin {
           math.pi * .69,
           false,
           _line(const Color(0xFFB3E9E8).withValues(alpha: .5), .022));
+      if (charge > 0 || fire > 0) {
+        canvas.drawCircle(
+            Offset.zero,
+            .955 - .035 * charge + .02 * fire,
+            _line(
+                const Color(0xFFB9FFE5)
+                    .withValues(alpha: .2 * charge + .65 * fire),
+                .025 + .03 * fire));
+        canvas.drawCircle(
+            Offset.zero,
+            1,
+            Paint()
+              ..shader = RadialGradient(
+                colors: [
+                  Colors.transparent,
+                  const Color(0xFFB9FFE5)
+                      .withValues(alpha: .12 * charge + .28 * fire)
+                ],
+                stops: const [.72, 1],
+              ).createShader(_disc));
+      }
     });
   }
 
@@ -539,24 +649,15 @@ enum GameSkin {
       } else {
         final gold = _line(const Color(0xFFF4D383), .065);
         final side = Path()
-          ..moveTo(.48, -.06)
-          ..lineTo(.84, -.25)
-          ..lineTo(.84, .43)
-          ..lineTo(.48, .65)
+          ..moveTo(.36, -.02)
+          ..lineTo(.78, -.22)
+          ..lineTo(.78, .36)
+          ..lineTo(.36, .58)
           ..close();
         canvas.drawPath(side, _fill(const Color(0xFF795036)));
         canvas.drawPath(side, gold);
-        final lidSide = Path()
-          ..moveTo(.48, -.06)
-          ..lineTo(.84, -.25)
-          ..lineTo(.84, -.48)
-          ..cubicTo(.8, -.76, .53, -.81, .22, -.67)
-          ..lineTo(.48, -.3)
-          ..close();
-        canvas.drawPath(lidSide, _fill(const Color(0xFFB77A47)));
-        canvas.drawPath(lidSide, gold);
         final front = RRect.fromRectAndRadius(
-            const Rect.fromLTRB(-.76, -.08, .48, .65),
+            const Rect.fromLTRB(-.74, -.02, .36, .58),
             const Radius.circular(.035));
         canvas.drawRRect(
             front,
@@ -567,11 +668,34 @@ enum GameSkin {
                 colors: [Color(0xFFBD824B), Color(0xFF865331)],
               ).createShader(_disc));
         canvas.drawRRect(front, gold);
+        final roof = Path()
+          ..moveTo(-.74, -.28)
+          ..cubicTo(-.74, -.7, .36, -.7, .36, -.28)
+          ..lineTo(.78, -.48)
+          ..cubicTo(.78, -.86, -.32, -.86, -.32, -.48)
+          ..close();
+        canvas.drawPath(
+            roof,
+            Paint()
+              ..shader = const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Color(0xFFE8BC80), Color(0xFFB47B49)],
+              ).createShader(_disc));
+        canvas.drawPath(roof, gold);
+        final lidSide = Path()
+          ..moveTo(.36, -.02)
+          ..lineTo(.78, -.22)
+          ..lineTo(.78, -.48)
+          ..lineTo(.36, -.28)
+          ..close();
+        canvas.drawPath(lidSide, _fill(const Color(0xFF9A613B)));
+        canvas.drawPath(lidSide, gold);
         final lid = Path()
-          ..moveTo(-.76, -.06)
-          ..lineTo(-.76, -.3)
-          ..cubicTo(-.76, -.75, .48, -.75, .48, -.3)
-          ..lineTo(.48, -.06)
+          ..moveTo(-.74, -.02)
+          ..lineTo(-.74, -.28)
+          ..cubicTo(-.74, -.7, .36, -.7, .36, -.28)
+          ..lineTo(.36, -.02)
           ..close();
         canvas.drawPath(
             lid,
@@ -582,30 +706,49 @@ enum GameSkin {
                 colors: [Color(0xFFE8B879), Color(0xFFA3693F)],
               ).createShader(_disc));
         canvas.drawPath(lid, gold);
-        canvas.drawLine(const Offset(-.72, .35), const Offset(.44, .35),
+        canvas.drawLine(const Offset(-.7, .31), const Offset(.32, .31),
             _line(const Color(0xFF6B422D), .035));
-        for (final x in [-.54, .26]) {
-          canvas.drawLine(Offset(x, -.46), Offset(x, .61),
-              _line(const Color(0xFFF4D383), .11));
+        canvas.drawLine(const Offset(.39, .3), const Offset(.74, .12),
+            _line(const Color(0xFF5B3C2C), .035));
+        for (final x in [-.53, .15]) {
+          canvas.drawPath(
+              Path()
+                ..moveTo(x, .54)
+                ..lineTo(x, -.46)
+                ..quadraticBezierTo(x + .06, -.5, x + .15, -.54)
+                ..lineTo(x + .38, -.66),
+              _line(const Color(0xFFF4D383), .105));
         }
-        canvas.drawLine(const Offset(-.73, -.06), const Offset(.45, -.06),
-            _line(const Color(0xFF5B3C2C), .065));
+        canvas.drawPath(
+            Path()
+              ..moveTo(-.7, -.02)
+              ..lineTo(.36, -.02)
+              ..lineTo(.74, -.2),
+            _line(const Color(0xFF5B3C2C), .055));
         canvas.drawRRect(
-            RRect.fromRectAndRadius(const Rect.fromLTRB(-.28, -.14, -.02, .18),
+            RRect.fromRectAndRadius(const Rect.fromLTRB(-.31, -.12, -.07, .2),
                 const Radius.circular(.035)),
             _fill(const Color(0xFFFFE5A0)));
         canvas.drawCircle(
-            const Offset(-.15, -.005), .046, _fill(const Color(0xFF5B3C2C)));
-        canvas.drawLine(const Offset(-.15, .015), const Offset(-.15, .09),
+            const Offset(-.19, .015), .046, _fill(const Color(0xFF5B3C2C)));
+        canvas.drawLine(const Offset(-.19, .035), const Offset(-.19, .12),
             _line(const Color(0xFF5B3C2C), .04));
       }
     });
   }
 
-  void drawHazard(Canvas canvas, Offset center, double radius) {
+  void drawHazard(Canvas canvas, Offset center, double radius,
+      {double time = 0}) {
     if (radius <= 0) return;
-    canvas.drawCircle(center, radius, _fill(GameConstants.photonColor));
-    if (this == classic) return;
+    if (this == classic) {
+      canvas.drawCircle(center, radius, _fill(GameConstants.photonColor));
+      return;
+    }
+    // A quiet boundary shows the unchanged circular hitbox around each shape.
+    canvas.drawCircle(
+        center, radius, _fill(hazardColor.withValues(alpha: .10)));
+    canvas.drawCircle(center, radius * .96,
+        _line(hazardColor.withValues(alpha: .42), radius * .075));
     final draw = switch (this) {
       deepBlue => _drawInk,
       spiderWeb => _drawWeb,
@@ -620,20 +763,28 @@ enum GameSkin {
       _ => null,
     };
     if (draw != null) {
-      _inside(canvas, center, radius, () => draw(canvas));
+      _inside(canvas, center, radius, () => draw(canvas, time: time));
       return;
     }
     _inside(canvas, center, radius, () {
-      canvas.drawCircle(Offset.zero, .64, _fill(const Color(0xFFA9324E)));
-      canvas.drawCircle(
-          const Offset(-.13, -.12), .35, _fill(const Color(0xFFFFB7BE)));
-      canvas.drawCircle(
-          const Offset(-.2, -.2), .13, _fill(const Color(0xFFFFE0DC)));
+      canvas.rotate(math.pi / 4 + .12 * math.sin(time * math.pi / 4));
+      final bolt = Path()
+        ..moveTo(-.95, 0)
+        ..lineTo(-.24, -.38)
+        ..lineTo(.94, 0)
+        ..lineTo(.24, .38)
+        ..close();
+      canvas.drawPath(bolt, _fill(const Color(0xFF6EDCC8)));
+      canvas.drawPath(bolt, _line(const Color(0xFFBAFFE4), .10));
+      canvas.drawLine(const Offset(-.64, 0), const Offset(.64, 0),
+          _line(const Color(0xFFF1FFDE), .18));
     });
   }
 }
 
-void _drawKraken(Canvas canvas) {
+void _drawKraken(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
+  final phase = time * math.pi / 4;
   final arms = [
     Path()
       ..moveTo(-.37, -.04)
@@ -654,6 +805,8 @@ void _drawKraken(Canvas canvas) {
   for (final side in [-1.0, 1.0]) {
     canvas.save();
     canvas.scale(side, 1);
+    canvas.scale(1 - .1 * charge, 1 - .08 * charge);
+    canvas.rotate(.035 * math.sin(phase * 2) - .07 * charge + .09 * fire);
     for (var i = 0; i < arms.length; i++) {
       canvas.drawPath(arms[i], _line(const Color(0xFF164A5E), .23));
       canvas.drawPath(
@@ -699,9 +852,12 @@ void _drawKraken(Canvas canvas) {
         _fill(const Color(0xFFFFEDC3)));
     canvas.drawOval(
         Rect.fromCenter(
-            center: Offset(x * .82, .015), width: .095, height: .17),
+            center: Offset(x * .82 + .04 * math.sin(phase), .015),
+            width: .095,
+            height: .17),
         _fill(const Color(0xFF102D42)));
-    canvas.drawCircle(Offset(x * .82 - .02, -.025), .023, _fill(Colors.white));
+    canvas.drawCircle(Offset(x * .82 - .02 + .04 * math.sin(phase), -.025),
+        .023, _fill(Colors.white));
   }
   canvas.drawPath(
       Path()
@@ -711,17 +867,21 @@ void _drawKraken(Canvas canvas) {
         ..lineTo(.08, -.12),
       _line(const Color(0xFF23717B), .065));
   canvas.drawOval(
-      const Rect.fromLTRB(-.07, .22, .07, .35), _fill(const Color(0xFF173C52)));
+      Rect.fromCenter(
+          center: const Offset(0, .285),
+          width: .14 - .04 * charge + .13 * fire,
+          height: .13 + .035 * charge + .12 * fire),
+      _fill(const Color(0xFF173C52)));
 }
 
-void _drawInk(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, .88, _fill(const Color(0xFF51426F)));
+void _drawInk(Canvas canvas, {double time = 0}) {
+  canvas.rotate(.13 * math.sin(time * math.pi / 2));
   for (final spot in [
     const Offset(-.4, .31),
     const Offset(.43, .16),
     const Offset(.1, .47),
   ]) {
-    canvas.drawCircle(spot, .25, _fill(const Color(0xFFB681CB)));
+    canvas.drawCircle(spot, .27, _fill(const Color(0xFFAD75D1)));
   }
   final drop = Path()
     ..moveTo(0, -.79)
@@ -730,14 +890,19 @@ void _drawInk(Canvas canvas) {
     ..cubicTo(.47, -.24, .1, -.45, 0, -.79)
     ..close();
   canvas.drawPath(drop, _fill(const Color(0xFFE6A5DA)));
+  canvas.drawPath(drop, _line(const Color(0xFFF1CEFF), .08));
   canvas.drawOval(
       const Rect.fromLTRB(-.28, -.1, -.1, .19), _fill(const Color(0xFFFFD4E9)));
 }
 
-void _drawSpiderCore(Canvas canvas) {
+void _drawSpiderCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
+  final phase = time * math.pi / 4;
   for (final side in [-1.0, 1.0]) {
     canvas.save();
     canvas.scale(side, 1);
+    canvas.scale(1 - .15 * charge, 1 - .08 * charge);
+    canvas.rotate(.025 * math.sin(phase * 2) - .035 * charge + .07 * fire);
     final legs = [
       Path()
         ..moveTo(.28, -.29)
@@ -793,9 +958,13 @@ void _drawSpiderCore(Canvas canvas) {
         Rect.fromCenter(center: Offset(x, .2), width: .25, height: .29),
         _fill(const Color(0xFFFFD99D)));
     canvas.drawOval(
-        Rect.fromCenter(center: Offset(x * .85, .23), width: .09, height: .14),
+        Rect.fromCenter(
+            center: Offset(x * .85 + .03 * math.sin(phase), .23),
+            width: .09,
+            height: .14),
         _fill(const Color(0xFF302A3F)));
-    canvas.drawCircle(Offset(x * .85 - .018, .19), .022, _fill(Colors.white));
+    canvas.drawCircle(Offset(x * .85 - .018 + .03 * math.sin(phase), .19), .022,
+        _fill(Colors.white));
     canvas.drawCircle(
         Offset(x * .7, -.045), .046, _fill(const Color(0xFFFFD99D)));
     canvas.drawPath(
@@ -881,15 +1050,15 @@ void _drawSpiderPickup(Canvas canvas) {
   }
 }
 
-void _drawWeb(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, .88, _fill(const Color(0xFF554365)));
-  final silk = _line(const Color(0xFFFFE2E8), .065);
+void _drawWeb(Canvas canvas, {double time = 0}) {
+  canvas.rotate(time * math.pi / 4);
+  final silk = _line(const Color(0xFFEAE5FF), .105);
   for (var spoke = 0; spoke < 6; spoke++) {
     final angle = spoke * math.pi / 3;
     canvas.drawLine(
-        Offset.zero, Offset(math.cos(angle), math.sin(angle)) * .86, silk);
+        Offset.zero, Offset(math.cos(angle), math.sin(angle)) * .94, silk);
   }
-  for (final radius in [.32, .61]) {
+  for (final radius in [.35, .7]) {
     final ring = Path();
     for (var spoke = 0; spoke < 6; spoke++) {
       final angle = spoke * math.pi / 3;
@@ -938,12 +1107,17 @@ void _sphere(Canvas canvas, List<Color> colors) => canvas.drawCircle(
       ).createShader(_disc));
 
 class SkinPreview extends CustomPainter {
-  const SkinPreview({required this.skin, this.hero = false});
+  const SkinPreview(
+      {required this.skin, this.hero = false, this.time = 0, this.motion})
+      : super(repaint: motion);
   final GameSkin skin;
   final bool hero;
+  final double time;
+  final Animation<double>? motion;
 
   @override
   void paint(Canvas canvas, Size size) {
+    final seconds = time + (motion?.value ?? 0) * 8;
     final extent = math.min(size.width, size.height);
     final center = size.center(Offset.zero);
     if (hero && skin != GameSkin.classic) {
@@ -963,17 +1137,9 @@ class SkinPreview extends CustomPainter {
               .78,
               1
             ]).createShader(halo));
-      canvas.save();
-      canvas.translate(planet.dx, planet.dy);
-      canvas.rotate(-.3);
-      final orbit = Rect.fromCenter(
-          center: Offset.zero, width: extent * .74, height: extent * .27);
-      canvas.drawArc(orbit, -.4, math.pi * .75, false,
-          _line(GameConstants.quietColor.withValues(alpha: .22), 1));
-      canvas.drawArc(orbit, math.pi * .85, math.pi * .5, false,
-          _line(GameConstants.quietColor.withValues(alpha: .14), 1));
-      canvas.restore();
-      skin.drawCore(canvas, planet, extent * .32);
+      skin.drawOrbit(canvas, planet, extent * .38,
+          time: seconds, strokeWidth: extent * .003);
+      skin.drawCore(canvas, planet, extent * .32, time: seconds);
       if (skin == GameSkin.cowAbduction) {
         final beam = Path()
           ..moveTo(center.dx + extent * .215, center.dy - extent * .19)
@@ -1014,13 +1180,18 @@ class SkinPreview extends CustomPainter {
       skin.drawPickup(canvas, Offset.zero, extent * .105);
       canvas.restore();
       skin.drawHazard(
-          canvas, center + const Offset(.26, .24) * extent, extent * .055);
+          canvas, center + const Offset(.26, .24) * extent, extent * .055,
+          time: seconds);
       return;
     }
     final orbit = extent * (hero ? .4 : .38);
-    canvas.drawCircle(center, orbit,
-        _line(GameConstants.quietColor.withValues(alpha: .55), 1));
-    skin.drawCore(canvas, center, extent * (hero ? .28 : .23));
+    if (skin == GameSkin.classic) {
+      canvas.drawCircle(center, orbit,
+          _line(GameConstants.quietColor.withValues(alpha: .55), 1));
+    } else {
+      skin.drawOrbit(canvas, center, orbit, time: seconds);
+    }
+    skin.drawCore(canvas, center, extent * (hero ? .28 : .23), time: seconds);
     if (skin == GameSkin.classic) {
       final score = TextPainter(
           text: const TextSpan(
@@ -1043,10 +1214,14 @@ class SkinPreview extends CustomPainter {
     skin.drawPickup(canvas, center + Offset(-orbit * .71, orbit * .71),
         extent * (hero ? .1 : .085));
     skin.drawHazard(
-        canvas, center + Offset(orbit * .9, orbit * .43), extent * .055);
+        canvas, center + Offset(orbit * .9, orbit * .43), extent * .055,
+        time: seconds);
   }
 
   @override
   bool shouldRepaint(SkinPreview oldDelegate) =>
-      oldDelegate.skin != skin || oldDelegate.hero != hero;
+      oldDelegate.skin != skin ||
+      oldDelegate.hero != hero ||
+      oldDelegate.time != time ||
+      oldDelegate.motion != motion;
 }

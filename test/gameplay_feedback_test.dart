@@ -58,6 +58,81 @@ List<Object> _snapshot(GameEngine engine) => [
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  test('core anticipation and recoil follow the actual projectile release', () {
+    final engine = _playing();
+    addTearDown(engine.dispose);
+    final feedback = GameplayFeedback()..sync(engine);
+    final firstWave = engine.photons.first.logic as PhotonLogicComponent;
+    expect(feedback.charge, 0);
+    expect(feedback.fire, 0);
+    for (var frame = 0; frame < 85; frame++) {
+      engine.advanceFrame();
+      feedback.sync(engine);
+    }
+    expect(feedback.charge, 0);
+    for (var frame = 0; frame < 15; frame++) {
+      final previous = feedback.charge;
+      engine.advanceFrame();
+      feedback.sync(engine);
+      expect(feedback.charge, greaterThan(previous));
+      expect(feedback.fire, 0);
+      expect(firstWave.growing, isTrue);
+    }
+    expect(feedback.charge, 1);
+    engine.advanceFrame();
+    feedback.sync(engine);
+    expect(firstWave.growing, isFalse);
+    expect(feedback.charge, 0);
+    expect(feedback.fire, 1);
+
+    engine.pauseGame();
+    engine.update(10);
+    feedback.sync(engine);
+    expect(feedback.fire, 1);
+    engine.resumeGame();
+    for (var frame = 0; frame < 19; frame++) {
+      engine.advanceFrame();
+      feedback.sync(engine);
+    }
+    expect(feedback.fire, 0);
+    feedback.reset();
+    expect(feedback.charge, 0);
+    expect(feedback.fire, 0);
+  });
+
+  test('late rendering uses the release tick rather than restarting recoil',
+      () {
+    final engine = _playing();
+    addTearDown(engine.dispose);
+    final feedback = GameplayFeedback()..sync(engine);
+    for (var frame = 0; frame < 107; frame++) {
+      engine.advanceFrame();
+    }
+    feedback.sync(engine);
+    expect(engine.photonCycleFrame, 6);
+    expect(feedback.fire, closeTo(2 / 3, 1e-9));
+    final fire = feedback.fire;
+    feedback.sync(engine);
+    expect(feedback.fire, fire);
+    engine.startGame();
+    feedback.sync(engine);
+    expect(feedback.charge, 0);
+    expect(feedback.fire, 0);
+  });
+
+  test('practice produces no firing reaction without actual projectiles', () {
+    final engine = GameEngine(practice: true)..startGame();
+    addTearDown(engine.dispose);
+    final feedback = GameplayFeedback()..sync(engine);
+    engine.onTouchDown();
+    for (var frame = 0; frame < 220; frame++) {
+      engine.advanceFrame();
+      feedback.sync(engine);
+      expect(feedback.charge, 0);
+      expect(feedback.fire, 0);
+    }
+  });
+
   test(
       'trail samples actual positions at most 60Hz and stays short and read only',
       () {

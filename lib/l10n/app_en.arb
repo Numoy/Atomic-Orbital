@@ -15,6 +15,7 @@
   "achievements": "Achievements",
   "scores": "Scores",
   "leaderboard": "Leaderboard",
+  "allLeaderboards": "All leaderboards",
   "signIn": "Sign in",
   "playGames": "Play Games",
   "disconnect": "Disconnect Play Games",
@@ -103,9 +104,9 @@
   "fluxEarnTitle": "1 pickup = 1 Star",
   "fluxEarnHelp": "Collect in either mode. Your Stars are saved as you play.",
   "fluxSpendTitle": "New world. Same challenge.",
-  "fluxSpendHelp": "Spend Stars on worlds in the hangar. Every world keeps the same rules.",
+  "fluxSpendHelp": "Spend Stars on worlds in the hangar. Advanced worlds also require earning specific achievements.",
   "fluxSaveTitle": "Yours to keep",
-  "fluxSaveHelp": "Start with 100 Stars. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.",
+  "fluxSaveHelp": "Start at 0 Stars and earn every world through play. Your balance and worlds are saved on this device; uninstalling or clearing app data can remove them.",
   "equipped": "Equipped",
   "owned": "Owned",
   "useWorld": "Use world",
@@ -421,5 +422,21 @@
     }
   },
   "dailyUnreadable": "Saved daily results could not be read. The original save is preserved. Restore a backup in Settings.",
-  "dailyEndRunHelp": "Leaving now will not save a daily result. Finish the run to record it."
+  "dailyEndRunHelp": "Leaving now will not save a daily result. Finish the run to record it.",
+  "requiresAchievement": "Requires achievement: {title}",
+  "@requiresAchievement": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "worldTier": "{tier, select, 0{CORE} 1{TIER I · EXPLORER} 2{TIER II · CHALLENGER} 3{TIER III · VETERAN} other{TIER IV · MASTER}}",
+  "@worldTier": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  }
 }

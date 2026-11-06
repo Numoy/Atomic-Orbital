@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 const _disc = Rect.fromLTRB(-1, -1, 1, 1);
 const _ink = Color(0xFF172B3A);
-const _danger = Color(0xFFFF4F64);
 
 Paint _fill(Color color) => Paint()..color = color;
 Paint _line(Color color, double width) => Paint()
@@ -20,23 +19,42 @@ Paint _shade(Color light, Color dark) => Paint()
     colors: [light, dark],
   ).createShader(_disc);
 
-void _eyes(Canvas canvas, double y, {double spread = .22}) {
+double _blink(double time) {
+  final phase = time % 4;
+  return phase < 3.75
+      ? 1
+      : math.max(.08, math.cos((phase - 3.75) * math.pi / .25).abs());
+}
+
+void _eyes(Canvas canvas, double y, {double time = 0, double spread = .22}) {
+  final open = _blink(time);
+  final look = math.sin(time * math.pi / 4) * .025;
   for (final x in [-spread, spread]) {
+    canvas.save();
+    canvas.translate(x, y);
+    canvas.scale(1, open);
     canvas.drawOval(
-        Rect.fromCenter(center: Offset(x, y), width: .25, height: .3),
+        Rect.fromCenter(center: Offset.zero, width: .25, height: .3),
         _fill(const Color(0xFFFFF2D5)));
     canvas.drawOval(
         Rect.fromCenter(
-            center: Offset(x + .025, y + .02), width: .105, height: .19),
+            center: Offset(.025 + look, .02), width: .105, height: .19),
         _fill(_ink));
-    canvas.drawCircle(Offset(x + .005, y - .035), .025, _fill(Colors.white));
+    canvas.drawCircle(Offset(.005 + look, -.035), .025, _fill(Colors.white));
+    canvas.restore();
   }
 }
 
-void drawDragonCore(Canvas canvas) {
+void drawDragonCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
   for (final side in [-1.0, 1.0]) {
     canvas.save();
     canvas.scale(side, 1);
+    canvas.save();
+    canvas.translate(.35, .25);
+    canvas.rotate(
+        math.sin(time * math.pi / 2) * .045 - .16 * charge + .12 * fire);
+    canvas.translate(-.35, -.25);
     final wing = Path()
       ..moveTo(.34, .23)
       ..lineTo(.87, -.35)
@@ -51,6 +69,7 @@ void drawDragonCore(Canvas canvas) {
           ..lineTo(.8, -.13)
           ..lineTo(.67, .34),
         _line(const Color(0xFF9CD1A1), .035));
+    canvas.restore();
     canvas.drawPath(
         Path()
           ..moveTo(.29, -.42)
@@ -69,7 +88,7 @@ void drawDragonCore(Canvas canvas) {
         ..lineTo(.13, -.48)
         ..close(),
       _fill(const Color(0xFFE8CA77)));
-  _eyes(canvas, -.19);
+  _eyes(canvas, -.19, time: time);
   for (final side in [-1.0, 1.0]) {
     canvas.drawLine(Offset(side * .1, -.4), Offset(side * .36, -.46),
         _line(const Color(0xFF377665), .065));
@@ -98,6 +117,21 @@ void drawDragonCore(Canvas canvas) {
       _shade(const Color(0xFFE4CE8B), const Color(0xFFB09E64)));
   canvas.drawLine(const Offset(-.18, .63), const Offset(.18, .63),
       _line(const Color(0xFF9A9C65), .035));
+  if (charge > 0 || fire > 0) {
+    canvas.drawOval(
+        Rect.fromCenter(
+            center: const Offset(0, .34),
+            width: .24 + .08 * fire,
+            height: .06 + .08 * charge + .14 * fire),
+        _fill(const Color(0xFF294F45)));
+    canvas.drawPath(
+        Path()
+          ..moveTo(0, .33)
+          ..cubicTo(-.14, .45, -.1, .61, 0, .66)
+          ..cubicTo(.1, .61, .14, .45, 0, .33)
+          ..close(),
+        _fill(const Color(0xFFFFD585).withValues(alpha: fire * .85)));
+  }
 }
 
 void drawDragonPlayer(Canvas canvas) {
@@ -163,19 +197,20 @@ void drawDragonPickup(Canvas canvas) {
       _line(const Color(0xFFFFF5D4), .045));
 }
 
-void drawDragonHazard(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, 1, _fill(_danger));
-  canvas.drawCircle(Offset.zero, .77, _fill(const Color(0xFFB83F4B)));
+void drawDragonHazard(Canvas canvas, {double time = 0}) {
+  canvas.save();
+  canvas.rotate(math.sin(time * math.pi) * .06);
+  final flame = Path()
+    ..moveTo(0, -.93)
+    ..cubicTo(.16, -.48, .74, -.35, .72, .18)
+    ..cubicTo(.7, .96, -.74, .96, -.72, .11)
+    ..quadraticBezierTo(-.66, -.29, -.3, -.53)
+    ..quadraticBezierTo(-.38, -.02, -.2, .02)
+    ..quadraticBezierTo(.06, -.31, 0, -.93)
+    ..close();
+  canvas.drawPath(flame, _line(const Color(0xFFFF9861), .08));
   canvas.drawPath(
-      Path()
-        ..moveTo(0, -.86)
-        ..cubicTo(.16, -.48, .63, -.35, .62, .18)
-        ..cubicTo(.61, .83, -.64, .84, -.62, .11)
-        ..quadraticBezierTo(-.56, -.29, -.3, -.44)
-        ..quadraticBezierTo(-.38, -.02, -.2, .02)
-        ..quadraticBezierTo(.06, -.31, 0, -.86)
-        ..close(),
-      _shade(const Color(0xFFFFD080), const Color(0xFFF38355)));
+      flame, _shade(const Color(0xFFFFCD68), const Color(0xFFF16D3D)));
   canvas.drawPath(
       Path()
         ..moveTo(.04, -.13)
@@ -183,12 +218,17 @@ void drawDragonHazard(Canvas canvas) {
         ..quadraticBezierTo(-.42, .53, .04, -.13)
         ..close(),
       _fill(const Color(0xFFFFEAB0)));
+  canvas.restore();
 }
 
-void drawSunflowerCore(Canvas canvas) {
+void drawSunflowerCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
   for (var i = 0; i < 12; i++) {
     canvas.save();
-    canvas.rotate(i * math.pi / 6);
+    canvas.rotate(i * math.pi / 6 +
+        math.sin(time * math.pi / 4) * .035 +
+        (i.isEven ? .035 : -.035) * fire);
+    canvas.translate(0, .075 * charge - .02 * fire);
     canvas.drawOval(const Rect.fromLTRB(-.17, -.94, .17, -.29),
         _shade(const Color(0xFFFFDB83), const Color(0xFFDC9B45)));
     canvas.drawLine(const Offset(0, -.74), const Offset(0, -.5),
@@ -212,11 +252,15 @@ void drawSunflowerCore(Canvas canvas) {
     canvas.drawCircle(dot, .027, _fill(const Color(0xFFF0C188)));
   }
   for (final x in [-.18, .18]) {
+    canvas.save();
+    canvas.translate(x, -.08);
+    canvas.scale(1, _blink(time));
     canvas.drawOval(
-        Rect.fromCenter(center: Offset(x, -.08), width: .095, height: .16),
+        Rect.fromCenter(center: Offset.zero, width: .095, height: .16),
         _fill(_ink));
     canvas.drawCircle(
-        Offset(x - .015, -.12), .022, _fill(const Color(0xFFFFEFC2)));
+        const Offset(-.015, -.04), .022, _fill(const Color(0xFFFFEFC2)));
+    canvas.restore();
   }
   canvas.drawArc(const Rect.fromLTRB(-.17, -.01, .17, .24), 0, math.pi, false,
       _line(const Color(0xFF643C35), .045));
@@ -278,30 +322,35 @@ void drawSunflowerPickup(Canvas canvas) {
   }
 }
 
-void drawSunflowerHazard(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, 1, _fill(_danger));
-  final thorns = Path();
-  for (var i = 0; i < 16; i++) {
-    final angle = i * math.pi / 8;
-    final radius = i.isEven ? .88 : .57;
-    final x = math.cos(angle) * radius;
-    final y = math.sin(angle) * radius;
-    i == 0 ? thorns.moveTo(x, y) : thorns.lineTo(x, y);
+void drawSunflowerHazard(Canvas canvas, {double time = 0}) {
+  canvas.save();
+  canvas.rotate(time * math.pi / 4);
+  final seed = Path()
+    ..moveTo(0, -.94)
+    ..cubicTo(.78, -.3, .74, .58, 0, .89)
+    ..cubicTo(-.74, .58, -.78, -.3, 0, -.94)
+    ..close();
+  canvas.drawPath(seed, _line(const Color(0xFFFFD88F), .09));
+  canvas.drawPath(
+      seed, _shade(const Color(0xFF9D7752), const Color(0xFF473C39)));
+  for (final side in [-1.0, 1.0]) {
+    canvas.drawPath(
+        Path()
+          ..moveTo(side * .08, -.59)
+          ..quadraticBezierTo(side * .36, .09, side * .12, .63),
+        _line(const Color(0xFFFFEDBF), .09));
   }
-  thorns.close();
-  canvas.drawPath(thorns, _fill(const Color(0xFF7E3549)));
-  canvas.drawOval(const Rect.fromLTRB(-.34, -.57, .34, .61),
-      _shade(const Color(0xFFF3B2A4), const Color(0xFFB76169)));
-  canvas.drawLine(const Offset(-.06, -.39), const Offset(.07, .4),
-      _line(const Color(0xFFFFE7C9), .09));
+  canvas.restore();
 }
 
-void drawFrostCore(Canvas canvas) {
+void drawFrostCore(Canvas canvas,
+    {double time = 0, double charge = 0, double fire = 0}) {
   for (final x in [-.61, .61]) {
     canvas.drawCircle(Offset(x, -.08), .23, _fill(const Color(0xFFC0DBE3)));
     canvas.drawCircle(Offset(x, -.08), .12, _fill(const Color(0xFF6895AC)));
   }
-  canvas.drawOval(const Rect.fromLTRB(-.62, -.67, .62, .73),
+  canvas.drawOval(
+      Rect.fromLTRB(-.62, -.67, .62, .73 + math.sin(time * math.pi / 2) * .018),
       _shade(const Color(0xFFF0F5E9), const Color(0xFFA8CBD9)));
   canvas.drawPath(
       Path()
@@ -314,7 +363,12 @@ void drawFrostCore(Canvas canvas) {
       _fill(const Color(0xFFE8F1E6)));
   canvas.drawOval(const Rect.fromLTRB(-.48, -.33, .48, .35),
       _shade(const Color(0xFF84B8C9), const Color(0xFF4C829C)));
-  _eyes(canvas, -.08);
+  canvas.save();
+  canvas.translate(0, -.08);
+  canvas.scale(1, 1 - .22 * charge + .06 * fire);
+  canvas.translate(0, .08);
+  _eyes(canvas, -.08, time: time);
+  canvas.restore();
   canvas.drawOval(
       const Rect.fromLTRB(-.13, .04, .13, .19), _fill(const Color(0xFF315971)));
   canvas.drawArc(const Rect.fromLTRB(-.28, .17, .28, .46), 0, math.pi, false,
@@ -338,6 +392,16 @@ void drawFrostCore(Canvas canvas) {
       _shade(const Color(0xFFCC817A), const Color(0xFFA44F61)));
   canvas.drawLine(const Offset(-.22, .58), const Offset(-.2, .75),
       _line(const Color(0xFFF2B8A0), .09));
+  if (fire > 0) {
+    for (final x in [-.12, .08]) {
+      canvas.drawOval(
+          Rect.fromCenter(
+              center: Offset(x, .39 + .05 * fire),
+              width: .17 + .1 * fire,
+              height: .07 + .1 * fire),
+          _fill(const Color(0xFFD9F6FF).withValues(alpha: .62 * fire)));
+    }
+  }
 }
 
 void drawFrostPlayer(Canvas canvas) {
@@ -396,27 +460,29 @@ void drawFrostPickup(Canvas canvas) {
       math.pi, false, _line(const Color(0xFF76ACBB), .035));
 }
 
-void drawFrostHazard(Canvas canvas) {
-  canvas.drawCircle(Offset.zero, 1, _fill(_danger));
-  canvas.drawCircle(Offset.zero, .77, _fill(const Color(0xFF315B74)));
+void drawFrostHazard(Canvas canvas, {double time = 0}) {
+  canvas.save();
+  canvas.rotate(time * math.pi / 4);
   final ice = Path()
-    ..moveTo(0, -.86)
-    ..lineTo(.63, -.06)
-    ..lineTo(.38, .68)
-    ..lineTo(-.34, .72)
-    ..lineTo(-.62, -.08)
+    ..moveTo(0, -.94)
+    ..lineTo(.74, -.06)
+    ..lineTo(.42, .75)
+    ..lineTo(-.4, .78)
+    ..lineTo(-.73, -.08)
     ..close();
+  canvas.drawPath(ice, _line(const Color(0xFFD8F8FF), .07));
   canvas.drawPath(
-      ice, _shade(const Color(0xFFE1FAFF), const Color(0xFF79BDD9)));
+      ice, _shade(const Color(0xFFE1FAFF), const Color(0xFF5C9FC4)));
   canvas.drawPath(
       Path()
-        ..moveTo(0, -.86)
+        ..moveTo(0, -.94)
         ..lineTo(-.08, .04)
-        ..lineTo(.38, .68)
-        ..moveTo(-.62, -.08)
+        ..lineTo(.42, .75)
+        ..moveTo(-.73, -.08)
         ..lineTo(-.08, .04)
-        ..lineTo(.63, -.06)
+        ..lineTo(.74, -.06)
         ..moveTo(-.08, .04)
-        ..lineTo(-.34, .72),
-      _line(const Color(0xFFF5FEFF), .055));
+        ..lineTo(-.4, .78),
+      _line(const Color(0xFFF5FEFF), .07));
+  canvas.restore();
 }

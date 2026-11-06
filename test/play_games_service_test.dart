@@ -304,6 +304,28 @@ void main() {
         {'leaderboardId': PlayGamesService.hardcoreLeaderboard});
   });
 
+  test('all leaderboards require successful sign-in before opening Google UI',
+      () async {
+    await service.initialize();
+    acceptSignIn = false;
+    expect(await service.showAllLeaderboards(), isFalse);
+    expect(
+        calls.where((call) => call.method == 'showAllLeaderboards'), isEmpty);
+    acceptSignIn = true;
+    expect(await service.showAllLeaderboards(), isTrue);
+    expect(calls.last.method, 'showAllLeaderboards');
+    expect(calls.last.arguments, isNull);
+  });
+
+  test('Google all-leaderboards action is unavailable on Apple', () async {
+    debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
+    await expectLater(
+        service.showAllLeaderboards(),
+        throwsA(isA<PlatformException>()
+            .having((error) => error.code, 'code', 'unsupported_platform')));
+    expect(calls, isEmpty);
+  });
+
   test('an in-flight older score cannot clear a newly earned higher score',
       () async {
     await service.initialize();

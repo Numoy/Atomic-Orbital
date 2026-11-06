@@ -214,7 +214,7 @@ void main() {
     expect(settings.totalPoints, 0);
     expect(settings.totalPlayTime, 0);
     expect(settings.unlockedCount, 0);
-    expect(settings.stardust, 100);
+    expect(settings.stardust, 0);
     expect(PlayGamesService.instance.pendingCount, queued);
     await daily.recordResult(challenge,
         score: engine.score, seconds: engine.gameTime.round());
@@ -385,5 +385,32 @@ void main() {
     await prefs.remove('save_import_journal_v1');
     await daily.flush();
     expect(daily.bestFor(challenge), 8);
+  });
+
+  test('daily summary metrics track best duration, all-time best and streaks',
+      () async {
+    expect(daily.bestDurationFor(challenge), isNull);
+    expect(daily.completedDaysCount, 0);
+    expect(daily.allTimeDailyBest, 0);
+    expect(daily.streakFor(DateTime.utc(2026, 10, 27)), 0);
+
+    await daily.recordResult(
+        DailyChallenge.forDate(DateTime.utc(2026, 10, 24)),
+        score: 6,
+        seconds: 45);
+    await daily.recordResult(challenge, score: 14, seconds: 75);
+    await daily.recordResult(
+        DailyChallenge.forDate(DateTime.utc(2026, 10, 26)),
+        score: 9,
+        seconds: 50);
+
+    expect(daily.bestDurationFor(challenge), 75);
+    expect(daily.completedDaysCount, 3);
+    expect(daily.allTimeDailyBest, 14);
+    expect(daily.streakFor(DateTime.utc(2026, 10, 26)), 3);
+    // Yesterday completed keeps streak alive before today's run is played.
+    expect(daily.streakFor(DateTime.utc(2026, 10, 27)), 3);
+    // A full skipped day resets the active streak.
+    expect(daily.streakFor(DateTime.utc(2026, 10, 28)), 0);
   });
 }

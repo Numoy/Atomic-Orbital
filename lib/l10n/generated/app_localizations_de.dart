@@ -54,6 +54,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get leaderboard => 'Bestenliste';
 
   @override
+  String get allLeaderboards => 'Alle Bestenlisten';
+
+  @override
   String get signIn => 'Anmelden';
 
   @override
@@ -331,14 +334,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get fluxSpendHelp =>
-      'Schalte mit Sternen Welten im Hangar frei. Für jede Welt gelten dieselben Regeln.';
+      'Schalte mit Sternen Welten im Hangar frei. Fortgeschrittene Welten erfordern zusätzlich bestimmte Erfolge.';
 
   @override
   String get fluxSaveTitle => 'Deine Sammlung, dein Gerät';
 
   @override
   String get fluxSaveHelp =>
-      'Du startest mit 100 Sternen. Guthaben und Welten werden auf diesem Gerät gespeichert; eine Deinstallation oder das Löschen der App-Daten kann sie entfernen.';
+      'Du startest bei 0 Sternen und erspielst dir jede Welt. Guthaben und Welten werden auf diesem Gerät gespeichert; eine Deinstallation oder das Löschen der App-Daten kann sie entfernen.';
 
   @override
   String get equipped => 'Ausgewählt';
@@ -814,4 +817,24 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get dailyEndRunHelp =>
       'Wenn du jetzt gehst, wird kein Tagesergebnis gespeichert. Beende den Lauf, um es festzuhalten.';
+
+  @override
+  String requiresAchievement(String title) {
+    return 'Erfordert Erfolg: $title';
+  }
+
+  @override
+  String worldTier(String tier) {
+    String _temp0 = intl.Intl.selectLogic(
+      tier,
+      {
+        '0': 'BASIS',
+        '1': 'STUFE I · ENTDECKER',
+        '2': 'STUFE II · HERAUSFORDERER',
+        '3': 'STUFE III · VETERAN',
+        'other': 'STUFE IV · MEISTER',
+      },
+    );
+    return '$_temp0';
+  }
 }

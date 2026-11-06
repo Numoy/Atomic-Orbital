@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:atomic_orbital/constants/game_constants.dart';
 import 'package:atomic_orbital/game/game_engine.dart';
+import 'package:atomic_orbital/models/components.dart';
 
 class GameplayFeedback {
   final _trail = <({Offset position, double time})>[];
@@ -8,10 +10,16 @@ class GameplayFeedback {
   ({Offset position, double time})? _hit;
   double? _lastTime;
   double? _lastHealth;
+  PhotonLogicComponent? _charging;
+  double? _firedAt;
+  double _charge = 0;
+  double _fire = 0;
 
   List<({Offset position, double time})> get trail => List.unmodifiable(_trail);
   ({Offset position, double time})? get collection => _collection;
   ({Offset position, double time})? get hit => _hit;
+  double get charge => _charge;
+  double get fire => _fire;
 
   void reset() {
     _trail.clear();
@@ -19,6 +27,10 @@ class GameplayFeedback {
     _hit = null;
     _lastTime = null;
     _lastHealth = null;
+    _charging = null;
+    _firedAt = null;
+    _charge = 0;
+    _fire = 0;
   }
 
   void collect(Offset position, double time) {
@@ -40,6 +52,24 @@ class GameplayFeedback {
       return;
     }
     if (time == _lastTime) return;
+    if (_charging != null && !_charging!.growing) {
+      // A slow display frame may cover several simulation ticks after release.
+      _firedAt = time - engine.photonCycleFrame * GameConstants.frameTime;
+    }
+    _charging = null;
+    for (final photon in engine.photons) {
+      final logic = photon.logic as PhotonLogicComponent;
+      if (logic.growing) {
+        _charging = logic;
+        break;
+      }
+    }
+    _charge = _charging == null
+        ? 0
+        : ((engine.photonCycleFrame - 85) / 15).clamp(0.0, 1.0);
+    _fire =
+        _firedAt == null ? 0 : (1 - (time - _firedAt!) / .3).clamp(0.0, 1.0);
+    if (_fire == 0) _firedAt = null;
     final player = engine.player.position.position;
     final position = Offset(player.x, player.y);
     if (_lastHealth != null && engine.health < _lastHealth!) {

@@ -1,0 +1,696 @@
+{
+  "fps": 10,
+  "source": "GamePainter with real 60 Hz engine transitions; controlled pickups; photon collisions disabled",
+  "frames": [
+    {
+      "frame": 0,
+      "score": 5,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 1,
+      "score": 5,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        472.5
+      ],
+      "playerRadius": 262.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 2,
+      "score": 5,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        459.0
+      ],
+      "playerRadius": 325.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 3,
+      "score": 5,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        445.5
+      ],
+      "playerRadius": 388.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 4,
+      "score": 5,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        432.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 5,
+      "score": 5,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        418.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 6,
+      "score": 5,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        405.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 7,
+      "score": 5,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        391.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 8,
+      "score": 5,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        378.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 9,
+      "score": 5,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        364.5
+      ],
+      "playerRadius": 419.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 10,
+      "score": 5,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 11,
+      "score": 5,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 12,
+      "score": 5,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 13,
+      "score": 5,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 14,
+      "score": 5,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.26666666666666666,
+      "fire": 0.0
+    },
+    {
+      "frame": 15,
+      "score": 5,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.6666666666666666,
+      "fire": 0.0
+    },
+    {
+      "frame": 16,
+      "score": 10,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        351.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true,
+      "charge": 1.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 17,
+      "score": 10,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        346.5,
+        477.0
+      ],
+      "playerRadius": 262.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.7222222222222232
+    },
+    {
+      "frame": 18,
+      "score": 10,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        342.0,
+        468.0
+      ],
+      "playerRadius": 325.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.38888888888889106
+    },
+    {
+      "frame": 19,
+      "score": 10,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        337.5,
+        459.0
+      ],
+      "playerRadius": 388.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.05555555555555891
+    },
+    {
+      "frame": 20,
+      "score": 10,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        333.0,
+        450.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 21,
+      "score": 10,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        328.5,
+        441.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 22,
+      "score": 10,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        324.0,
+        432.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 23,
+      "score": 10,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        319.5,
+        423.0
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 24,
+      "score": 10,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        315.0,
+        414.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 25,
+      "score": 10,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        310.5,
+        405.0
+      ],
+      "playerRadius": 419.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 26,
+      "score": 10,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 27,
+      "score": 10,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 28,
+      "score": 10,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 29,
+      "score": 10,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 30,
+      "score": 10,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 31,
+      "score": 10,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.26666666666666666,
+      "fire": 0.0
+    },
+    {
+      "frame": 32,
+      "score": 20,
+      "tick": 0,
+      "orbits": [
+        216.0,
+        306.0,
+        396.0,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": true,
+      "charge": 0.9333333333333333,
+      "fire": 0.0
+    },
+    {
+      "frame": 33,
+      "score": 20,
+      "tick": 6,
+      "orbits": [
+        216.0,
+        303.75,
+        391.5,
+        479.25
+      ],
+      "playerRadius": 262.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.7777777777777786
+    },
+    {
+      "frame": 34,
+      "score": 20,
+      "tick": 12,
+      "orbits": [
+        216.0,
+        301.5,
+        387.0,
+        472.5
+      ],
+      "playerRadius": 325.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.4444444444444464
+    },
+    {
+      "frame": 35,
+      "score": 20,
+      "tick": 18,
+      "orbits": [
+        216.0,
+        299.25,
+        382.5,
+        465.75
+      ],
+      "playerRadius": 388.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.11111111111111427
+    },
+    {
+      "frame": 36,
+      "score": 20,
+      "tick": 24,
+      "orbits": [
+        216.0,
+        297.0,
+        378.0,
+        459.0
+      ],
+      "playerRadius": 451.5,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 37,
+      "score": 20,
+      "tick": 30,
+      "orbits": [
+        216.0,
+        294.75,
+        373.5,
+        452.25
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 38,
+      "score": 20,
+      "tick": 36,
+      "orbits": [
+        216.0,
+        292.5,
+        369.0,
+        445.5
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 39,
+      "score": 20,
+      "tick": 42,
+      "orbits": [
+        216.0,
+        290.25,
+        364.5,
+        438.75
+      ],
+      "playerRadius": 486.0,
+      "holding": true,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 40,
+      "score": 20,
+      "tick": 48,
+      "orbits": [
+        216.0,
+        288.0,
+        360.0,
+        432.0
+      ],
+      "playerRadius": 481.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 41,
+      "score": 20,
+      "tick": 54,
+      "orbits": [
+        216.0,
+        285.75,
+        355.5,
+        425.25
+      ],
+      "playerRadius": 419.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 42,
+      "score": 20,
+      "tick": 60,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 356.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 43,
+      "score": 20,
+      "tick": 66,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 293.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 44,
+      "score": 20,
+      "tick": 72,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 230.5,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 45,
+      "score": 20,
+      "tick": 78,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 46,
+      "score": 20,
+      "tick": 84,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.0,
+      "fire": 0.0
+    },
+    {
+      "frame": 47,
+      "score": 20,
+      "tick": 90,
+      "orbits": [
+        216.0,
+        283.5,
+        351.0,
+        418.5,
+        486.0
+      ],
+      "playerRadius": 216.0,
+      "holding": false,
+      "charge": 0.2,
+      "fire": 0.0
+    }
+  ]
+}

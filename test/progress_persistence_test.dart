@@ -94,7 +94,7 @@ void main() {
     expect(s.gamesPlayed, 0);
     expect(s.totalPoints, 0);
     expect(s.highScore, 0);
-    expect(s.stardust, 100);
+    expect(s.stardust, 0);
   });
 
   test('world tour requires actual pickups in all original worlds', () async {

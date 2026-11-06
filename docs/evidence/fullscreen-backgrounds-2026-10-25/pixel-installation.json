@@ -1,0 +1,19 @@
+{
+  "apkSha256": "8aa0a07ae4c5b2d65bad1cf10a46040df3d68f0052b6bc6d535e422cf423906d",
+  "bytes": 41615073,
+  "ownedThemesBefore": 12,
+  "equippedBefore": "deep_blue",
+  "device": "Pixel 9 Pro",
+  "version": "2.3.0",
+  "build": 45,
+  "installation": "in-place upgrade succeeded",
+  "preferencesPreserved": true,
+  "ownedThemesAfter": 12,
+  "equippedAfter": "deep_blue",
+  "verifiedOn": "2026-10-25",
+  "homeBackground": "visually verified full screen, including system bar areas",
+  "gameReadyBackground": "visually verified full screen, including former fitted-arena margins",
+  "gameplayGeometry": "unchanged; covered by the 451-test suite",
+  "testFlightUpdated": false,
+  "sustainedPerformanceChecked": false
+}
